@@ -13,17 +13,161 @@
 		04A9BCDE1F05FA760032BDBC /* LexusApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BCDC1F05FA760032BDBC /* LexusApp.xcdatamodeld */; };
 		04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCDF1F05FA760032BDBC /* Assets.xcassets */; };
 		04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCE11F05FA760032BDBC /* LaunchScreen.storyboard */; };
+		04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BCED1F05FB550032BDBC /* CustomHeader.swift */; };
+		04A9BCF01F05FB5F0032BDBC /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCEF1F05FB5F0032BDBC /* CustomHeader.xib */; };
+		04A9BCF21F0600A10032BDBC /* CustomOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BCF11F0600A10032BDBC /* CustomOverviewCell.swift */; };
+		04A9BCF41F06022C0032BDBC /* CustomOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCF31F06022C0032BDBC /* CustomOverviewCell.xib */; };
+		04A9BCF71F0605220032BDBC /* CustomColorPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BCF51F0605220032BDBC /* CustomColorPickerCell.swift */; };
+		04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCF61F0605220032BDBC /* CustomColorPickerCell.xib */; };
+		04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCFB1F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png */; };
+		04A9BD221F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCFC1F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png */; };
+		04A9BD231F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCFD1F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png */; };
+		04A9BD241F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCFE1F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png */; };
+		04A9BD251F0605F60032BDBC /* Den-Black-(212).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BCFF1F0605F60032BDBC /* Den-Black-(212).png */; };
+		04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD001F0605F60032BDBC /* Den-Graaphite-Black-(223).png */; };
+		04A9BD271F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD011F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png */; };
+		04A9BD281F0605F60032BDBC /* Big-Image-1-(1000x560).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD031F0605F60032BDBC /* Big-Image-1-(1000x560).png */; };
+		04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD041F0605F60032BDBC /* Big-Image-2-(1000x560).png */; };
+		04A9BD2A1F0605F60032BDBC /* Big-Image-4-(1000x560).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD051F0605F60032BDBC /* Big-Image-4-(1000x560).png */; };
+		04A9BD2B1F0605F60032BDBC /* img_gallery_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD061F0605F60032BDBC /* img_gallery_02.jpg */; };
+		04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD071F0605F60032BDBC /* img_gallery_04.jpg */; };
+		04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD081F0605F60032BDBC /* img_gallery_05.jpg */; };
+		04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD091F0605F60032BDBC /* Small-image-1.png */; };
+		04A9BD2F1F0605F60032BDBC /* 3-eye-LED-headlamps.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD0B1F0605F60032BDBC /* 3-eye-LED-headlamps.png */; };
+		04A9BD301F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD0C1F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png */; };
+		04A9BD311F0605F60032BDBC /* Dual-Exhaust-pipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD0D1F0605F60032BDBC /* Dual-Exhaust-pipes.png */; };
+		04A9BD321F0605F60032BDBC /* Moonroof.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD0E1F0605F60032BDBC /* Moonroof.png */; };
+		04A9BD331F0605F60032BDBC /* rc-7-inch-display.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD0F1F0605F60032BDBC /* rc-7-inch-display.jpg */; };
+		04A9BD341F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD101F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg */; };
+		04A9BD351F0605F60032BDBC /* rc200t-wheels.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD111F0605F60032BDBC /* rc200t-wheels.jpg */; };
+		04A9BD361F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD121F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png */; };
+		04A9BD371F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD141F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png */; };
+		04A9BD381F0605F60032BDBC /* DRIVE-MODE-SELECT.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD151F0605F60032BDBC /* DRIVE-MODE-SELECT.png */; };
+		04A9BD391F0605F60032BDBC /* rc-performance-aerodynamics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD161F0605F60032BDBC /* rc-performance-aerodynamics.jpg */; };
+		04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD171F0605F60032BDBC /* rc-performance-powerful-braking.jpg */; };
+		04A9BD3B1F0605F60032BDBC /* rc-performance-short-wheelbase.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD181F0605F60032BDBC /* rc-performance-short-wheelbase.jpg */; };
+		04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD191F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg */; };
+		04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD1A1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg */; };
+		04A9BD3E1F0605F60032BDBC /* RC8053---superior-stability.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD1B1F0605F60032BDBC /* RC8053---superior-stability.jpg */; };
+		04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD1D1F0605F60032BDBC /* 8-SRS-AIRBAGS.png */; };
+		04A9BD401F0605F60032BDBC /* rc-safety-popuphood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD1E1F0605F60032BDBC /* rc-safety-popuphood.jpg */; };
+		04A9BD411F0605F60032BDBC /* rc350-safety-blindspot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD1F1F0605F60032BDBC /* rc350-safety-blindspot.jpg */; };
+		04A9BD421F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD201F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png */; };
+		04A9BD551F060E360032BDBC /* NOBD____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD461F060E360032BDBC /* NOBD____.TTF */; };
+		04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD471F060E360032BDBC /* NOBDI___.TTF */; };
+		04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD481F060E360032BDBC /* NobelVnu-Bold.ttf */; };
+		04A9BD581F060E360032BDBC /* NobelVnu-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD491F060E360032BDBC /* NobelVnu-Book.ttf */; };
+		04A9BD591F060E360032BDBC /* NobelVnu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4A1F060E360032BDBC /* NobelVnu-Light.ttf */; };
+		04A9BD5A1F060E360032BDBC /* NobelVnu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4B1F060E360032BDBC /* NobelVnu-Regular.ttf */; };
+		04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4C1F060E360032BDBC /* NOBK____.TTF */; };
+		04A9BD5C1F060E360032BDBC /* NOBKI___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4D1F060E360032BDBC /* NOBKI___.TTF */; };
+		04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4E1F060E360032BDBC /* NOBL____.TTF */; };
+		04A9BD5E1F060E360032BDBC /* NOBLI___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD4F1F060E360032BDBC /* NOBLI___.TTF */; };
+		04A9BD5F1F060E360032BDBC /* NOLT____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD501F060E360032BDBC /* NOLT____.TTF */; };
+		04A9BD601F060E360032BDBC /* NOLTI___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD511F060E360032BDBC /* NOLTI___.TTF */; };
+		04A9BD611F060E360032BDBC /* NOR_____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD521F060E360032BDBC /* NOR_____.TTF */; };
+		04A9BD621F060E360032BDBC /* NORI____.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD531F060E360032BDBC /* NORI____.TTF */; };
+		04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD541F060E360032BDBC /* ufonts.com_nobel-bold.ttf */; };
+		04A9BD661F0655B80032BDBC /* CustomBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BD641F0655B80032BDBC /* CustomBodyCell.swift */; };
+		04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */; };
+		04F40A791F07675500D38D4D /* CustomSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */; };
+		04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */; };
+		04F40A801F076C7200D38D4D /* YNExpandableCellEx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */; };
+		04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */; };
+		04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A841F076D0500D38D4D /* CustomAccordianView.swift */; };
+		04F40A871F076D1600D38D4D /* CustomAccordianView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A861F076D1600D38D4D /* CustomAccordianView.xib */; };
+		04F40A891F077C0300D38D4D /* CustomHeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */; };
+		04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */; };
+		04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */; };
+		04F40A911F07939A00D38D4D /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A901F07939A00D38D4D /* Specification.swift */; };
+		04F40A931F07946800D38D4D /* DetailSpecificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */; };
+		04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */; };
+		04F40A9C1F07B79B00D38D4D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */; };
+		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04A9BCD21F05FA760032BDBC /* LexusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9BCD51F05FA760032BDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04A9BCD71F05FA760032BDBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A9BCD71F05FA760032BDBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = LexusApp/ViewController.swift; sourceTree = "<group>"; };
 		04A9BCDA1F05FA760032BDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A9BCDD1F05FA760032BDBC /* LexusApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LexusApp.xcdatamodel; sourceTree = "<group>"; };
 		04A9BCDF1F05FA760032BDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A9BCE21F05FA760032BDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A9BCE41F05FA760032BDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A9BCED1F05FB550032BDBC /* CustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		04A9BCEF1F05FB5F0032BDBC /* CustomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
+		04A9BCF11F0600A10032BDBC /* CustomOverviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverviewCell.swift; sourceTree = "<group>"; };
+		04A9BCF31F06022C0032BDBC /* CustomOverviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverviewCell.xib; sourceTree = "<group>"; };
+		04A9BCF51F0605220032BDBC /* CustomColorPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorPickerCell.swift; sourceTree = "<group>"; };
+		04A9BCF61F0605220032BDBC /* CustomColorPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomColorPickerCell.xib; sourceTree = "<group>"; };
+		04A9BCFB1F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bac-Platinum-Silver-ME.-(1J4).png"; sourceTree = "<group>"; };
+		04A9BCFC1F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghi-Sonic-Titanium-(1J7).png"; sourceTree = "<group>"; };
+		04A9BCFD1F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trang-Sonic-Quartz-(085).png"; sourceTree = "<group>"; };
+		04A9BCFE1F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Xam-Mecury-Gray-MC.-(1H9).png"; sourceTree = "<group>"; };
+		04A9BCFF1F0605F60032BDBC /* Den-Black-(212).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Den-Black-(212).png"; sourceTree = "<group>"; };
+		04A9BD001F0605F60032BDBC /* Den-Graaphite-Black-(223).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Den-Graaphite-Black-(223).png"; sourceTree = "<group>"; };
+		04A9BD011F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Do--Radiant-Red-CL.-(3T5).png"; sourceTree = "<group>"; };
+		04A9BD031F0605F60032BDBC /* Big-Image-1-(1000x560).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Big-Image-1-(1000x560).png"; sourceTree = "<group>"; };
+		04A9BD041F0605F60032BDBC /* Big-Image-2-(1000x560).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Big-Image-2-(1000x560).png"; sourceTree = "<group>"; };
+		04A9BD051F0605F60032BDBC /* Big-Image-4-(1000x560).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Big-Image-4-(1000x560).png"; sourceTree = "<group>"; };
+		04A9BD061F0605F60032BDBC /* img_gallery_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_gallery_02.jpg; sourceTree = "<group>"; };
+		04A9BD071F0605F60032BDBC /* img_gallery_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_gallery_04.jpg; sourceTree = "<group>"; };
+		04A9BD081F0605F60032BDBC /* img_gallery_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_gallery_05.jpg; sourceTree = "<group>"; };
+		04A9BD091F0605F60032BDBC /* Small-image-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Small-image-1.png"; sourceTree = "<group>"; };
+		04A9BD0B1F0605F60032BDBC /* 3-eye-LED-headlamps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-eye-LED-headlamps.png"; sourceTree = "<group>"; };
+		04A9BD0C1F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOLD-SPINDLE-GRILLE.png"; sourceTree = "<group>"; };
+		04A9BD0D1F0605F60032BDBC /* Dual-Exhaust-pipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dual-Exhaust-pipes.png"; sourceTree = "<group>"; };
+		04A9BD0E1F0605F60032BDBC /* Moonroof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moonroof.png; sourceTree = "<group>"; };
+		04A9BD0F1F0605F60032BDBC /* rc-7-inch-display.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-7-inch-display.jpg"; sourceTree = "<group>"; };
+		04A9BD101F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-comfort-folddown-mechanism.jpg"; sourceTree = "<group>"; };
+		04A9BD111F0605F60032BDBC /* rc200t-wheels.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc200t-wheels.jpg"; sourceTree = "<group>"; };
+		04A9BD121F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SHIMAMOKU-ORNAMENTATION.png"; sourceTree = "<group>"; };
+		04A9BD141F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-speed-SPDS-(Sport-Direct-Shift).png"; sourceTree = "<group>"; };
+		04A9BD151F0605F60032BDBC /* DRIVE-MODE-SELECT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DRIVE-MODE-SELECT.png"; sourceTree = "<group>"; };
+		04A9BD161F0605F60032BDBC /* rc-performance-aerodynamics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-performance-aerodynamics.jpg"; sourceTree = "<group>"; };
+		04A9BD171F0605F60032BDBC /* rc-performance-powerful-braking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-performance-powerful-braking.jpg"; sourceTree = "<group>"; };
+		04A9BD181F0605F60032BDBC /* rc-performance-short-wheelbase.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-performance-short-wheelbase.jpg"; sourceTree = "<group>"; };
+		04A9BD191F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc200t-performance-8-speed-automatic-transmission.jpg"; sourceTree = "<group>"; };
+		04A9BD1A1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc350-performance-tuned-exhaust.jpg"; sourceTree = "<group>"; };
+		04A9BD1B1F0605F60032BDBC /* RC8053---superior-stability.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RC8053---superior-stability.jpg"; sourceTree = "<group>"; };
+		04A9BD1D1F0605F60032BDBC /* 8-SRS-AIRBAGS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-SRS-AIRBAGS.png"; sourceTree = "<group>"; };
+		04A9BD1E1F0605F60032BDBC /* rc-safety-popuphood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-safety-popuphood.jpg"; sourceTree = "<group>"; };
+		04A9BD1F1F0605F60032BDBC /* rc350-safety-blindspot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc350-safety-blindspot.jpg"; sourceTree = "<group>"; };
+		04A9BD201F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RCTA-(Rear-Cross-Traffic-Alert).png"; sourceTree = "<group>"; };
+		04A9BD461F060E360032BDBC /* NOBD____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBD____.TTF"; sourceTree = "<group>"; };
+		04A9BD471F060E360032BDBC /* NOBDI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBDI___.TTF"; sourceTree = "<group>"; };
+		04A9BD481F060E360032BDBC /* NobelVnu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Bold.ttf"; sourceTree = "<group>"; };
+		04A9BD491F060E360032BDBC /* NobelVnu-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Book.ttf"; sourceTree = "<group>"; };
+		04A9BD4A1F060E360032BDBC /* NobelVnu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Light.ttf"; sourceTree = "<group>"; };
+		04A9BD4B1F060E360032BDBC /* NobelVnu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Regular.ttf"; sourceTree = "<group>"; };
+		04A9BD4C1F060E360032BDBC /* NOBK____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBK____.TTF"; sourceTree = "<group>"; };
+		04A9BD4D1F060E360032BDBC /* NOBKI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBKI___.TTF"; sourceTree = "<group>"; };
+		04A9BD4E1F060E360032BDBC /* NOBL____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBL____.TTF"; sourceTree = "<group>"; };
+		04A9BD4F1F060E360032BDBC /* NOBLI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBLI___.TTF"; sourceTree = "<group>"; };
+		04A9BD501F060E360032BDBC /* NOLT____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOLT____.TTF"; sourceTree = "<group>"; };
+		04A9BD511F060E360032BDBC /* NOLTI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOLTI___.TTF"; sourceTree = "<group>"; };
+		04A9BD521F060E360032BDBC /* NOR_____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOR_____.TTF"; sourceTree = "<group>"; };
+		04A9BD531F060E360032BDBC /* NORI____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NORI____.TTF"; sourceTree = "<group>"; };
+		04A9BD541F060E360032BDBC /* ufonts.com_nobel-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_nobel-bold.ttf"; sourceTree = "<group>"; };
+		04A9BD641F0655B80032BDBC /* CustomBodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBodyCell.swift; sourceTree = "<group>"; };
+		04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomBodyCell.xib; sourceTree = "<group>"; };
+		04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpecificationCell.swift; sourceTree = "<group>"; };
+		04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSpecificationCell.xib; sourceTree = "<group>"; };
+		04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YNExpandableCellEx.xib; sourceTree = "<group>"; };
+		04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNExpandableCells.swift; sourceTree = "<group>"; };
+		04F40A841F076D0500D38D4D /* CustomAccordianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAccordianView.swift; sourceTree = "<group>"; };
+		04F40A861F076D1600D38D4D /* CustomAccordianView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAccordianView.xib; sourceTree = "<group>"; };
+		04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderSectionView.xib; sourceTree = "<group>"; };
+		04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderSectionView.swift; sourceTree = "<group>"; };
+		04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		04F40A901F07939A00D38D4D /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSpecificationCell.xib; sourceTree = "<group>"; };
+		04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecificationCell.swift; sourceTree = "<group>"; };
+		04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +187,8 @@
 			children = (
 				04A9BCD41F05FA760032BDBC /* LexusApp */,
 				04A9BCD31F05FA760032BDBC /* Products */,
+				0B437B25816823CB50F70429 /* Pods */,
+				6D24365CEE93E398AC7227F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +203,11 @@
 		04A9BCD41F05FA760032BDBC /* LexusApp */ = {
 			isa = PBXGroup;
 			children = (
+				04A9BCF91F0605C00032BDBC /* Materials */,
+				04A9BCEC1F05FB330032BDBC /* ViewControllers */,
+				04A9BCEB1F05FB2A0032BDBC /* Views */,
+				04A9BCEA1F05FB250032BDBC /* Model */,
 				04A9BCD51F05FA760032BDBC /* AppDelegate.swift */,
-				04A9BCD71F05FA760032BDBC /* ViewController.swift */,
 				04A9BCD91F05FA760032BDBC /* Main.storyboard */,
 				04A9BCDF1F05FA760032BDBC /* Assets.xcassets */,
 				04A9BCE11F05FA760032BDBC /* LaunchScreen.storyboard */,
@@ -67,6 +217,187 @@
 			path = LexusApp;
 			sourceTree = "<group>";
 		};
+		04A9BCEA1F05FB250032BDBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F40A901F07939A00D38D4D /* Specification.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04A9BCEB1F05FB2A0032BDBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04F40A7B1F076C6500D38D4D /* Cells */,
+				04A9BCED1F05FB550032BDBC /* CustomHeader.swift */,
+				04A9BCEF1F05FB5F0032BDBC /* CustomHeader.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		04A9BCEC1F05FB330032BDBC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BCD71F05FA760032BDBC /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		04A9BCF91F0605C00032BDBC /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD451F060E360032BDBC /* Font Lexus VN */,
+				04A9BCFA1F0605F60032BDBC /* 00 Mau xe */,
+				04A9BD021F0605F60032BDBC /* 01 Hinh thu vien */,
+				04A9BD0A1F0605F60032BDBC /* 01 Thiet ke va tien nghi */,
+				04A9BD131F0605F60032BDBC /* 02 Van hanh */,
+				04A9BD1C1F0605F60032BDBC /* 03 An toan */,
+			);
+			name = Materials;
+			sourceTree = "<group>";
+		};
+		04A9BCFA1F0605F60032BDBC /* 00 Mau xe */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BCFB1F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png */,
+				04A9BCFC1F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png */,
+				04A9BCFD1F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png */,
+				04A9BCFE1F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png */,
+				04A9BCFF1F0605F60032BDBC /* Den-Black-(212).png */,
+				04A9BD001F0605F60032BDBC /* Den-Graaphite-Black-(223).png */,
+				04A9BD011F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png */,
+			);
+			path = "00 Mau xe";
+			sourceTree = "<group>";
+		};
+		04A9BD021F0605F60032BDBC /* 01 Hinh thu vien */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD031F0605F60032BDBC /* Big-Image-1-(1000x560).png */,
+				04A9BD041F0605F60032BDBC /* Big-Image-2-(1000x560).png */,
+				04A9BD051F0605F60032BDBC /* Big-Image-4-(1000x560).png */,
+				04A9BD061F0605F60032BDBC /* img_gallery_02.jpg */,
+				04A9BD071F0605F60032BDBC /* img_gallery_04.jpg */,
+				04A9BD081F0605F60032BDBC /* img_gallery_05.jpg */,
+				04A9BD091F0605F60032BDBC /* Small-image-1.png */,
+			);
+			path = "01 Hinh thu vien";
+			sourceTree = "<group>";
+		};
+		04A9BD0A1F0605F60032BDBC /* 01 Thiet ke va tien nghi */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD0B1F0605F60032BDBC /* 3-eye-LED-headlamps.png */,
+				04A9BD0C1F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png */,
+				04A9BD0D1F0605F60032BDBC /* Dual-Exhaust-pipes.png */,
+				04A9BD0E1F0605F60032BDBC /* Moonroof.png */,
+				04A9BD0F1F0605F60032BDBC /* rc-7-inch-display.jpg */,
+				04A9BD101F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg */,
+				04A9BD111F0605F60032BDBC /* rc200t-wheels.jpg */,
+				04A9BD121F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png */,
+			);
+			path = "01 Thiet ke va tien nghi";
+			sourceTree = "<group>";
+		};
+		04A9BD131F0605F60032BDBC /* 02 Van hanh */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD141F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png */,
+				04A9BD151F0605F60032BDBC /* DRIVE-MODE-SELECT.png */,
+				04A9BD161F0605F60032BDBC /* rc-performance-aerodynamics.jpg */,
+				04A9BD171F0605F60032BDBC /* rc-performance-powerful-braking.jpg */,
+				04A9BD181F0605F60032BDBC /* rc-performance-short-wheelbase.jpg */,
+				04A9BD191F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg */,
+				04A9BD1A1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg */,
+				04A9BD1B1F0605F60032BDBC /* RC8053---superior-stability.jpg */,
+			);
+			path = "02 Van hanh";
+			sourceTree = "<group>";
+		};
+		04A9BD1C1F0605F60032BDBC /* 03 An toan */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD1D1F0605F60032BDBC /* 8-SRS-AIRBAGS.png */,
+				04A9BD1E1F0605F60032BDBC /* rc-safety-popuphood.jpg */,
+				04A9BD1F1F0605F60032BDBC /* rc350-safety-blindspot.jpg */,
+				04A9BD201F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png */,
+			);
+			path = "03 An toan";
+			sourceTree = "<group>";
+		};
+		04A9BD451F060E360032BDBC /* Font Lexus VN */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD461F060E360032BDBC /* NOBD____.TTF */,
+				04A9BD471F060E360032BDBC /* NOBDI___.TTF */,
+				04A9BD481F060E360032BDBC /* NobelVnu-Bold.ttf */,
+				04A9BD491F060E360032BDBC /* NobelVnu-Book.ttf */,
+				04A9BD4A1F060E360032BDBC /* NobelVnu-Light.ttf */,
+				04A9BD4B1F060E360032BDBC /* NobelVnu-Regular.ttf */,
+				04A9BD4C1F060E360032BDBC /* NOBK____.TTF */,
+				04A9BD4D1F060E360032BDBC /* NOBKI___.TTF */,
+				04A9BD4E1F060E360032BDBC /* NOBL____.TTF */,
+				04A9BD4F1F060E360032BDBC /* NOBLI___.TTF */,
+				04A9BD501F060E360032BDBC /* NOLT____.TTF */,
+				04A9BD511F060E360032BDBC /* NOLTI___.TTF */,
+				04A9BD521F060E360032BDBC /* NOR_____.TTF */,
+				04A9BD531F060E360032BDBC /* NORI____.TTF */,
+				04A9BD541F060E360032BDBC /* ufonts.com_nobel-bold.ttf */,
+			);
+			path = "Font Lexus VN";
+			sourceTree = "<group>";
+		};
+		04F40A7B1F076C6500D38D4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04F40A961F07A5CC00D38D4D /* Specification */,
+				04A9BCF11F0600A10032BDBC /* CustomOverviewCell.swift */,
+				04A9BCF31F06022C0032BDBC /* CustomOverviewCell.xib */,
+				04A9BCF51F0605220032BDBC /* CustomColorPickerCell.swift */,
+				04A9BCF61F0605220032BDBC /* CustomColorPickerCell.xib */,
+				04A9BD641F0655B80032BDBC /* CustomBodyCell.swift */,
+				04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		04F40A961F07A5CC00D38D4D /* Specification */ = {
+			isa = PBXGroup;
+			children = (
+				04F40A841F076D0500D38D4D /* CustomAccordianView.swift */,
+				04F40A861F076D1600D38D4D /* CustomAccordianView.xib */,
+				04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */,
+				04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */,
+				04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */,
+				04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */,
+				04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */,
+				04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */,
+				04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */,
+				04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */,
+				04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */,
+				04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */,
+			);
+			name = Specification;
+			sourceTree = "<group>";
+		};
+		0B437B25816823CB50F70429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */,
+				3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D24365CEE93E398AC7227F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +405,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9BCE71F05FA760032BDBC /* Build configuration list for PBXNativeTarget "LexusApp" */;
 			buildPhases = (
+				4989BC9CBEFCED83271F275D /* [CP] Check Pods Manifest.lock */,
 				04A9BCCE1F05FA760032BDBC /* Sources */,
 				04A9BCCF1F05FA760032BDBC /* Frameworks */,
 				04A9BCD01F05FA760032BDBC /* Resources */,
+				AE8C73D8F437453D2C67B113 /* [CP] Embed Pods Frameworks */,
+				265FFF15D41DEF2E41B3698C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,8 +433,7 @@
 				TargetAttributes = {
 					04A9BCD11F05FA760032BDBC = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = GYEARP5PXS;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,20 +460,138 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A9BD271F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png in Resources */,
+				04A9BD401F0605F60032BDBC /* rc-safety-popuphood.jpg in Resources */,
+				04A9BD551F060E360032BDBC /* NOBD____.TTF in Resources */,
+				04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */,
+				04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */,
+				04A9BD611F060E360032BDBC /* NOR_____.TTF in Resources */,
+				04A9BD331F0605F60032BDBC /* rc-7-inch-display.jpg in Resources */,
+				04A9BD2A1F0605F60032BDBC /* Big-Image-4-(1000x560).png in Resources */,
+				04A9BD221F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png in Resources */,
+				04A9BD5C1F060E360032BDBC /* NOBKI___.TTF in Resources */,
+				04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */,
+				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
+				04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */,
 				04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */,
+				04A9BD301F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png in Resources */,
+				04A9BD2B1F0605F60032BDBC /* img_gallery_02.jpg in Resources */,
+				04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */,
+				04A9BD241F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png in Resources */,
+				04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */,
+				04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */,
+				04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */,
+				04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */,
+				04A9BD281F0605F60032BDBC /* Big-Image-1-(1000x560).png in Resources */,
+				04A9BD391F0605F60032BDBC /* rc-performance-aerodynamics.jpg in Resources */,
+				04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */,
+				04A9BD591F060E360032BDBC /* NobelVnu-Light.ttf in Resources */,
+				04A9BD421F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png in Resources */,
+				04A9BD381F0605F60032BDBC /* DRIVE-MODE-SELECT.png in Resources */,
+				04A9BD311F0605F60032BDBC /* Dual-Exhaust-pipes.png in Resources */,
+				04F40A891F077C0300D38D4D /* CustomHeaderSectionView.xib in Resources */,
+				04A9BD581F060E360032BDBC /* NobelVnu-Book.ttf in Resources */,
+				04A9BCF01F05FB5F0032BDBC /* CustomHeader.xib in Resources */,
+				04A9BD2F1F0605F60032BDBC /* 3-eye-LED-headlamps.png in Resources */,
+				04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */,
+				04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */,
+				04A9BD251F0605F60032BDBC /* Den-Black-(212).png in Resources */,
+				04F40A801F076C7200D38D4D /* YNExpandableCellEx.xib in Resources */,
+				04A9BD601F060E360032BDBC /* NOLTI___.TTF in Resources */,
+				04A9BD5A1F060E360032BDBC /* NobelVnu-Regular.ttf in Resources */,
+				04F40A871F076D1600D38D4D /* CustomAccordianView.xib in Resources */,
+				04A9BD621F060E360032BDBC /* NORI____.TTF in Resources */,
+				04F40A931F07946800D38D4D /* DetailSpecificationCell.xib in Resources */,
+				04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */,
+				04A9BD3E1F0605F60032BDBC /* RC8053---superior-stability.jpg in Resources */,
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
+				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
+				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
+				04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */,
+				04F40A9C1F07B79B00D38D4D /* DetailTableViewCell.xib in Resources */,
 				04A9BCDB1F05FA760032BDBC /* Main.storyboard in Resources */,
+				04A9BD231F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png in Resources */,
+				04A9BD351F0605F60032BDBC /* rc200t-wheels.jpg in Resources */,
+				04A9BD5F1F060E360032BDBC /* NOLT____.TTF in Resources */,
+				04A9BD5E1F060E360032BDBC /* NOBLI___.TTF in Resources */,
+				04A9BD361F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png in Resources */,
+				04A9BD321F0605F60032BDBC /* Moonroof.png in Resources */,
+				04A9BD3B1F0605F60032BDBC /* rc-performance-short-wheelbase.jpg in Resources */,
+				04A9BD411F0605F60032BDBC /* rc350-safety-blindspot.jpg in Resources */,
+				04A9BD371F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png in Resources */,
+				04A9BD341F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg in Resources */,
+				04A9BCF41F06022C0032BDBC /* CustomOverviewCell.xib in Resources */,
+				04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		265FFF15D41DEF2E41B3698C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4989BC9CBEFCED83271F275D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE8C73D8F437453D2C67B113 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04A9BCCE1F05FA760032BDBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */,
 				04A9BCD81F05FA760032BDBC /* ViewController.swift in Sources */,
+				04F40A911F07939A00D38D4D /* Specification.swift in Sources */,
+				04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */,
+				04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */,
+				04A9BCF21F0600A10032BDBC /* CustomOverviewCell.swift in Sources */,
+				04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */,
+				04A9BCF71F0605220032BDBC /* CustomColorPickerCell.swift in Sources */,
+				04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */,
+				04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */,
+				04F40A791F07675500D38D4D /* CustomSpecificationCell.swift in Sources */,
+				04A9BD661F0655B80032BDBC /* CustomBodyCell.swift in Sources */,
 				04A9BCDE1F05FA760032BDBC /* LexusApp.xcdatamodeld in Sources */,
 				04A9BCD61F05FA760032BDBC /* AppDelegate.swift in Sources */,
 			);
@@ -265,26 +716,30 @@
 		};
 		04A9BCE81F05FA760032BDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GYEARP5PXS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LexusApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercoolapps.LexusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		04A9BCE91F05FA760032BDBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GYEARP5PXS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LexusApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercoolapps.LexusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +763,7 @@
 				04A9BCE91F05FA760032BDBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

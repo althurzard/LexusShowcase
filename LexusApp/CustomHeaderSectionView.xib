@@ -1,16 +1,54 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NobelVnu-Book.ttf">
+            <string>NobelVnu-Book</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomHeaderSectionView" customModule="LexusApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="538" height="70"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-Hy-oAk">
+                    <rect key="frame" x="10" y="68" width="518" height="2"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG SỐ KỸ THUẬT" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJw-eC-YbL">
+                    <rect key="frame" x="10" y="12" width="288" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="XIG-6g-Alk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="i1G-Hy-oAk" secondAttribute="bottom" id="0cO-CN-wGa"/>
+                <constraint firstItem="i1G-Hy-oAk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="6PK-ln-0TA"/>
+                <constraint firstAttribute="trailing" secondItem="i1G-Hy-oAk" secondAttribute="trailing" constant="10" id="BWD-ba-g2t"/>
+                <constraint firstItem="UJw-eC-YbL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jfk-xg-Kbv"/>
+                <constraint firstItem="UJw-eC-YbL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ptu-jQ-sSx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="UJw-eC-YbL" id="9Yr-XI-zWw"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="-245"/>
         </view>
     </objects>
+    <resources>
+        <image name="Line" width="962" height="2"/>
+    </resources>
 </document>

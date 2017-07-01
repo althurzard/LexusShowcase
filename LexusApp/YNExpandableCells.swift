@@ -16,6 +16,7 @@ class YNExpandableCellEx: YNExpandableCell {
 
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+ 
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -27,41 +28,6 @@ class YNExpandableCellEx: YNExpandableCell {
     }
 }
 
-class YNSliderCell: UITableViewCell {
-    static let ID = "YNSliderCell"
-    
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        self.selectionStyle = .none
-    }
-    
-}
 
-class YNSegmentCell: UITableViewCell {
-    static let ID = "YNSegmentCell"
-    
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        self.selectionStyle = .none
 
-    }
 
-}

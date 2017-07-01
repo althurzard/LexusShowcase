@@ -1,19 +1,178 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NobelVnu-Book.ttf">
+            <string>NobelVnu-Book</string>
+        </array>
+        <array key="NobelVnu-Light.ttf">
+            <string>NobelVnu-Light</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomColorPickerCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="643" id="KGk-i7-Jjw" customClass="CustomColorPickerCell" customModule="LexusApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="750" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="750" height="599.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ghi-Sonic-Titanium-(1J7).png" translatesAutoresizingMaskIntoConstraints="NO" id="mix-1e-fc8">
+                        <rect key="frame" x="0.0" y="0.0" width="750" height="360"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
+                        <rect key="frame" x="28" y="393" width="250.5" height="175.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="GS Turbo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-Uf-s34">
+                                <rect key="frame" x="0.0" y="0.0" width="250.5" height="70.5"/>
+                                <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạc sonic silver&lt;1J2&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYK-oJ-Tc9">
+                                <rect key="frame" x="0.0" y="95.5" width="184.5" height="25"/>
+                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.130.000.000 VNĐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
+                                <rect key="frame" x="0.0" y="145.5" width="242.5" height="30"/>
+                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-u7-Eam">
+                        <rect key="frame" x="302" y="410" width="430" height="160"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i27-eG-XJG">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-Fk-SVl">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="kXl-0u-Y9L"/>
+                                            <constraint firstAttribute="width" constant="70" id="yPE-Yk-Dmo"/>
+                                        </constraints>
+                                        <state key="normal" title="Ghi Sonic Titanium &lt;1J7&gt;" image="btn-sonic-titanium"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OtV-MC-UlL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvi-Dd-iUp">
+                                        <rect key="frame" x="90" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Trắng sonic quartz &lt;085&gt;" image="btn-sonic-quartz"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xat-5g-pOq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mak-cq-1jM">
+                                        <rect key="frame" x="180" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Bạc Platinum Silver Metallic &lt;1J4&gt;" image="btn-platinum-silver-metallic"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lEe-py-uDq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-Rd-g5g">
+                                        <rect key="frame" x="270" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Xám Mercury Gray MC. &lt;1H9&gt;" image="btn-mercury-gray-mc"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7Hp-1v-EkD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbT-4p-ach">
+                                        <rect key="frame" x="360" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Đen Black &lt;212&gt;" image="btn-black"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5sz-Qp-1Vd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CBa-Rd-g5g" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="2hO-rX-6pi"/>
+                                    <constraint firstItem="Lvi-Dd-iUp" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="3d8-ZX-0Ws"/>
+                                    <constraint firstItem="zbT-4p-ach" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="FTh-7Y-GcD"/>
+                                    <constraint firstItem="zbT-4p-ach" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="hAK-u7-lEe"/>
+                                    <constraint firstItem="Mak-cq-1jM" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="k40-7j-dkV"/>
+                                    <constraint firstItem="CBa-Rd-g5g" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="kem-qm-FGV"/>
+                                    <constraint firstItem="Lvi-Dd-iUp" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="ugl-i2-SCU"/>
+                                    <constraint firstItem="Mak-cq-1jM" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="wTd-wy-8Yw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uRh-XZ-fGq">
+                                <rect key="frame" x="0.0" y="90" width="160" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJa-fu-JYF">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Đen Graphite Black &lt;223&gt;" image="btn-graphite-black"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jR9-zm-0mh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-ud-iIV">
+                                        <rect key="frame" x="90" y="0.0" width="70" height="70"/>
+                                        <state key="normal" title="Đỏ Radiant Red CL. &lt;3T5&gt;" image="btn-radiant-red-cl"/>
+                                        <state key="selected" image="btn-selected" backgroundImage="btn-selected"/>
+                                        <connections>
+                                            <action selector="didTapSelectColorButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cCO-WC-dk0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MEY-ud-iIV" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="3k1-Of-NsO"/>
+                            <constraint firstItem="LJa-fu-JYF" firstAttribute="width" secondItem="Vtf-Fk-SVl" secondAttribute="width" id="4BL-Rj-uQp"/>
+                            <constraint firstItem="LJa-fu-JYF" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="csT-Va-zSx"/>
+                            <constraint firstItem="MEY-ud-iIV" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="iaQ-GU-GtC"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8bu-u7-Eam" firstAttribute="top" secondItem="mix-1e-fc8" secondAttribute="bottom" constant="50" id="3GN-c7-XhS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8bu-u7-Eam" secondAttribute="trailing" constant="10" id="Ahd-9W-gZQ"/>
+                    <constraint firstItem="DLp-dH-5AW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="VsP-W3-url"/>
+                    <constraint firstItem="DLp-dH-5AW" firstAttribute="top" secondItem="mix-1e-fc8" secondAttribute="bottom" constant="33" id="giM-FX-1bv"/>
+                    <constraint firstItem="mix-1e-fc8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gnq-eK-aGN"/>
+                    <constraint firstItem="mix-1e-fc8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qc4-ZA-7nb"/>
+                    <constraint firstAttribute="trailing" secondItem="mix-1e-fc8" secondAttribute="trailing" id="wGv-V8-Q49"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="carImageView" destination="mix-1e-fc8" id="brt-Ig-A9B"/>
+                <outlet property="lblCarModel" destination="bl3-Uf-s34" id="WDx-DV-MFP"/>
+                <outlet property="lblColorModel" destination="YYK-oJ-Tc9" id="8DV-HD-Dee"/>
+                <outlet property="lblPrice" destination="AqE-k6-a8P" id="F98-lY-ytr"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="353"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Ghi-Sonic-Titanium-(1J7).png" width="950" height="360"/>
+        <image name="btn-black" width="200" height="200"/>
+        <image name="btn-graphite-black" width="200" height="200"/>
+        <image name="btn-mercury-gray-mc" width="200" height="200"/>
+        <image name="btn-platinum-silver-metallic" width="200" height="200"/>
+        <image name="btn-radiant-red-cl" width="200" height="200"/>
+        <image name="btn-selected" width="254" height="254"/>
+        <image name="btn-sonic-quartz" width="200" height="200"/>
+        <image name="btn-sonic-titanium" width="200" height="200"/>
+    </resources>
 </document>

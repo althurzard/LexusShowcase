@@ -20,6 +20,24 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NOBD____.TTF</string>
+		<string>NOBDI___.TTF</string>
+		<string>NobelVnu-Bold.ttf</string>
+		<string>NobelVnu-Book.ttf</string>
+		<string>NobelVnu-Light.ttf</string>
+        <string>NobelVnu-Regular.ttf</string>
+        <string>NOBK____.TTF</string>
+        <string>NOBKI___.TTF</string>
+        <string>NOBL____.TTF</string>
+        <string>NOBLI___.TTF</string>
+        <string>NOLT____.TTF</string>
+        <string>NOLTI___.TTF</string>
+        <string>NOR_____.TTF</string>
+        <string>NORI____.TTF</string>
+        <string>ufonts.com_nobel-bold.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
