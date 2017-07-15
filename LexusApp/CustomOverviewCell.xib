@@ -1,61 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="ubh-W2-SCO" customClass="CustomOverviewCell" customModule="LexusApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="521" height="148"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="391" id="ubh-W2-SCO" customClass="CustomOverviewCell" customModule="LexusApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="586" height="377"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubh-W2-SCO" id="VDx-V6-wUl">
-                <rect key="frame" x="0.0" y="0.0" width="521" height="147.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" translatesAutoresizingMaskIntoConstraints="NO" id="L6z-QR-0E3" customClass="SpringImageView" customModule="Spring">
-                        <rect key="frame" x="0.0" y="0.0" width="260.5" height="147.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-fr-Xzs">
+                        <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-sz-bcE" customClass="DesignableImageView" customModule="Spring">
+                                <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ouh-sz-bcE" secondAttribute="bottom" id="1hX-cn-Dwu"/>
+                            <constraint firstItem="ouh-sz-bcE" firstAttribute="top" secondItem="TBj-fr-Xzs" secondAttribute="top" id="lae-U1-vUk"/>
+                            <constraint firstItem="ouh-sz-bcE" firstAttribute="leading" secondItem="TBj-fr-Xzs" secondAttribute="leading" id="pNI-AV-FgJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ouh-sz-bcE" secondAttribute="trailing" id="vKD-P7-FWA"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tong-quan-1" translatesAutoresizingMaskIntoConstraints="NO" id="x2z-I6-gPw" customClass="DesignableImageView" customModule="Spring">
+                        <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                <real key="value" value="1"/>
+                                <real key="value" value="1.5"/>
                             </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_02" translatesAutoresizingMaskIntoConstraints="NO" id="7FS-jG-d4p" customClass="SpringImageView" customModule="Spring">
-                        <rect key="frame" x="260.5" y="0.0" width="260.5" height="147.5"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                <real key="value" value="1"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                <real key="value" value="1.2"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="L6z-QR-0E3" secondAttribute="bottom" id="3eH-8f-HrT"/>
-                    <constraint firstItem="L6z-QR-0E3" firstAttribute="leading" secondItem="VDx-V6-wUl" secondAttribute="leading" id="6qh-iI-KEA"/>
-                    <constraint firstItem="L6z-QR-0E3" firstAttribute="width" secondItem="VDx-V6-wUl" secondAttribute="width" multiplier="0.5" id="8Ig-pC-awl"/>
-                    <constraint firstAttribute="trailing" secondItem="7FS-jG-d4p" secondAttribute="trailing" id="8cF-au-yaM"/>
-                    <constraint firstItem="7FS-jG-d4p" firstAttribute="top" secondItem="VDx-V6-wUl" secondAttribute="top" id="Xsc-li-DDC"/>
-                    <constraint firstItem="7FS-jG-d4p" firstAttribute="leading" secondItem="L6z-QR-0E3" secondAttribute="trailing" id="awW-2t-dpY"/>
-                    <constraint firstAttribute="bottom" secondItem="7FS-jG-d4p" secondAttribute="bottom" id="eZw-zK-B1Y"/>
-                    <constraint firstItem="L6z-QR-0E3" firstAttribute="top" secondItem="VDx-V6-wUl" secondAttribute="top" id="geN-fc-xJf"/>
+                    <constraint firstItem="x2z-I6-gPw" firstAttribute="leading" secondItem="VDx-V6-wUl" secondAttribute="leading" id="4Lr-pV-FDu"/>
+                    <constraint firstItem="x2z-I6-gPw" firstAttribute="top" secondItem="VDx-V6-wUl" secondAttribute="top" id="Ad3-oe-TbO"/>
+                    <constraint firstItem="TBj-fr-Xzs" firstAttribute="leading" secondItem="VDx-V6-wUl" secondAttribute="leading" id="GLB-r8-T8b"/>
+                    <constraint firstAttribute="trailing" secondItem="TBj-fr-Xzs" secondAttribute="trailing" id="Lda-aH-NH2"/>
+                    <constraint firstItem="TBj-fr-Xzs" firstAttribute="top" secondItem="VDx-V6-wUl" secondAttribute="top" id="NXd-ua-vkQ"/>
+                    <constraint firstAttribute="bottom" secondItem="x2z-I6-gPw" secondAttribute="bottom" id="QQI-Dl-YUA"/>
+                    <constraint firstAttribute="bottom" secondItem="TBj-fr-Xzs" secondAttribute="bottom" id="bht-YT-h6a"/>
+                    <constraint firstAttribute="trailing" secondItem="x2z-I6-gPw" secondAttribute="trailing" id="jQG-WK-IF2"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="7.5" y="-6"/>
+            <connections>
+                <outlet property="desktopImageView" destination="ouh-sz-bcE" id="ZTx-eB-PSu"/>
+                <outlet property="desktopView" destination="TBj-fr-Xzs" id="i0D-xf-p8m"/>
+                <outlet property="overlayImageView" destination="x2z-I6-gPw" id="p2r-oR-K4Z"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="130.5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" width="1000" height="560"/>
-        <image name="RC200t_desktop_galleryhighlights_lightbox_1400x784px_02" width="1400" height="784"/>
+        <image name="tong-quan-1" width="2048" height="1536"/>
     </resources>
 </document>

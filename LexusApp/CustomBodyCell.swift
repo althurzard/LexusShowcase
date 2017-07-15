@@ -12,13 +12,29 @@ import Spruce
 
 class CustomBodyCell: Cell<Bool>, CellType {
     
-    fileprivate lazy var animation: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
+    lazy var animationToLeft: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
+    lazy var animationToRight: [StockAnimation] = [.fadeIn,.slide(.right, .moderately)]
+    lazy var animationToBottom: [StockAnimation] = [.fadeIn,.slide(.down, .moderately)]
+    lazy var animationToUp: [StockAnimation] = [.fadeIn,.slide(.up, .moderately)]
     
-    fileprivate var isAnimating = false
+    var isAnimating = true
+    let duration = 1.5
+    
+    @IBOutlet weak var stackViewTopLeft: UIStackView!
+    
+    @IBOutlet weak var stackViewTopMiddle: UIStackView!
+    
+    @IBOutlet weak var stackViewTopRight: UIStackView!
+    
+    @IBOutlet weak var stackViewBottomLeft: UIStackView!
+    
+    @IBOutlet weak var stackViewBottomMiddle: UIStackView!
+    
+    @IBOutlet weak var stackViewBottomRight: UIStackView!
     
     public override func setup() {
         super.setup()
-        //prepareAnimation()
+        prepareAnimation()
     }
     
     public override func update() {
@@ -27,17 +43,30 @@ class CustomBodyCell: Cell<Bool>, CellType {
         
     }
     
-    func startAnimation() {
+    open func startAnimation() {
         if !isAnimating {
-            self.spruce.animate(animation, duration: 1.5)
+            self.stackViewTopLeft.spruce.animate(animationToRight, duration: duration)
+            self.stackViewBottomLeft.spruce.animate(animationToRight, duration: duration)
+            self.stackViewTopRight.spruce.animate(animationToLeft, duration: duration)
+            self.stackViewBottomRight.spruce.animate(animationToLeft, duration: duration)
+            self.stackViewTopMiddle.spruce.animate(animationToBottom, duration: duration)
+            self.stackViewBottomMiddle.spruce.animate(animationToUp, duration: duration)
+            
             isAnimating = true
         }
         
     }
     
-    func prepareAnimation() {
+    open func prepareAnimation() {
+        if isAnimating {
         isAnimating = false
-        self.spruce.prepare(with: animation)
+        self.stackViewTopLeft.spruce.prepare(with: animationToRight)
+        self.stackViewBottomLeft.spruce.prepare(with: animationToRight)
+        self.stackViewTopRight.spruce.prepare(with: animationToLeft)
+        self.stackViewBottomRight.spruce.prepare(with: animationToLeft)
+        self.stackViewTopMiddle.spruce.prepare(with: animationToBottom)
+        self.stackViewBottomMiddle.spruce.prepare(with: animationToUp)
+        }
     }
 }
 

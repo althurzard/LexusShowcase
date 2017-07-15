@@ -1,0 +1,6 @@
+framework module IncrementableLabel {
+  umbrella header "IncrementableLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

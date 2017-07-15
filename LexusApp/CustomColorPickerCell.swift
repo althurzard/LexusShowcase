@@ -9,9 +9,10 @@
 import UIKit
 import Eureka
 import Spruce
+import Spring
 class CustomColorPickerCell: Cell<Bool>, CellType {
 
-    @IBOutlet weak var carImageView: UIImageView!
+    @IBOutlet weak var carImageView: DesignableImageView!
     
     @IBOutlet weak var lblColorModel: UILabel!
     
@@ -20,7 +21,7 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     @IBOutlet weak var lblCarModel: UILabel!
     
 
-    fileprivate var isAnimating = false
+    fileprivate var isAnimating = true
     
     enum ColorModel {
         case SonicTitanium(String)
@@ -33,10 +34,12 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     }
     
     fileprivate lazy var animation: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
+    fileprivate lazy var animateToBottom: [StockAnimation] = [.fadeIn,.slide(.down, .moderately)]
+    fileprivate lazy var animateToTop: [StockAnimation] = [.fadeIn,.slide(.up, .moderately)]
     
     public override func setup() {
         super.setup()
-        self.prepareAnimtation()
+        self.prepareAnimation()
     }
     
     public override func update() {
@@ -93,18 +96,28 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
         }
         
     }
+    @IBOutlet weak var colorStackView: UIStackView!
+    
+    @IBOutlet weak var bottomLeftView: UIView!
+    @IBOutlet weak var topLeftView: UIView!
     
     func startAnimation() {
         if !isAnimating {
-            self.spruce.animate(animation,duration: 1.5)
+            colorStackView.spruce.animate(animation,duration: 1.5)
+            bottomLeftView.spruce.animate(animateToTop, duration: 1.5)
+            topLeftView.spruce.animate(animateToBottom, duration: 1.5)
             isAnimating = true
         }
         
     }
     
-    func prepareAnimtation() {
-        self.spruce.prepare(with: animation)
-        isAnimating = false
+    func prepareAnimation() {
+        if isAnimating {
+            colorStackView.spruce.prepare(with: animation)
+            bottomLeftView.spruce.prepare(with: animateToTop)
+            topLeftView.spruce.prepare(with: animateToBottom)
+            isAnimating = false
+        }
     }
     
     

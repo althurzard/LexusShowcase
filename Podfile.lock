@@ -1,11 +1,13 @@
 PODS:
   - Eureka (3.0.0)
+  - IncrementableLabel (1.2.0)
   - Spring (1.0.3)
   - Spruce (1.0.0)
   - YNExpandableCell (1.1.0)
 
 DEPENDENCIES:
   - Eureka
+  - IncrementableLabel
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - Spruce
   - YNExpandableCell
@@ -22,10 +24,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  IncrementableLabel: fe0f6239b4ebc68cbb13a817bfb59405204147d3
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
   YNExpandableCell: 47bf7cff721aa535c0e9e1163bf22b5573441bb4
 
-PODFILE CHECKSUM: c9d4f4a308fa5727138881b29eda978c48192779
+PODFILE CHECKSUM: bb0282fe1aa798d63b8e61aabdea7b4ae6c0b2e9
 
 COCOAPODS: 1.2.1

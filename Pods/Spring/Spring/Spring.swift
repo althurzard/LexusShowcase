@@ -519,10 +519,10 @@ public class Spring : NSObject {
         scaleX = 1
         scaleY = 1
         rotate = 0
-        damping = 0.7
-        velocity = 0.7
+        //damping = 0.7
+        //velocity = 0.7
         repeatCount = 1
-        delay = 0
+        //delay = 0
         //duration = 0.7
     }
     

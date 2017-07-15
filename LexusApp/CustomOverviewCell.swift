@@ -10,17 +10,22 @@ import UIKit
 import Eureka
 import Spruce
 import Spring
+
 class CustomOverviewCell: Cell<Bool>, CellType {
     
     
-    fileprivate lazy var animation: [StockAnimation] = [.fadeIn,.expand(.moderately)]
-    
-    fileprivate var isAnimating = false
-
+    fileprivate lazy var animation1: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
+    fileprivate lazy var animation2: [StockAnimation] = [.fadeIn]
+    fileprivate var isAnimating = true
+    @IBOutlet weak var desktopImageView: DesignableImageView!
+    @IBOutlet weak var overlayImageView: DesignableImageView!
+    @IBOutlet weak var desktopView: UIView!
     public override func setup() {
         super.setup()
         prepareAnimation()
     }
+    
+
     
     public override func update() {
         super.update()
@@ -30,16 +35,9 @@ class CustomOverviewCell: Cell<Bool>, CellType {
     func startAnimation() {
         if !isAnimating {
 
-            for view in self.subviews {
-                for subview in view.subviews {
-                    if let image = subview as? SpringImageView {
-
-                        image.animate()
-
-                    }
-                }
-               
-            }
+           
+            desktopView.spruce.animate(animation1, duration: 1.5)
+            overlayImageView.animate()
             
             isAnimating = true
         }
@@ -47,18 +45,13 @@ class CustomOverviewCell: Cell<Bool>, CellType {
     }
     
     func prepareAnimation() {
+        if isAnimating {
         isAnimating = false
-        //self.spruce.hideAllSubviews()
-        for view in self.subviews {
-            for subview in view.subviews {
-                if let image = subview as? SpringImageView {
-                    image.alpha = 0.0
-                    
-                }
-            }
-            
+    
+        desktopView.spruce.prepare(with: animation1)
+        overlayImageView.alpha = 0.0
+
         }
-        //self.spruce.prepare(with: animation)
     }
     
     
@@ -70,5 +63,7 @@ final class CustomOverviewRow: Row<CustomOverviewCell>, RowType {
         super.init(tag: tag)
         cellProvider = CellProvider<CustomOverviewCell>(nibName: "CustomOverviewCell")
     }
+    
+    
     
 }
