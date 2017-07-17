@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "59E3CDABE4A001773C3D6D0620B2BB94"
+               BlueprintIdentifier = "47ED7B5B26A142DF040FE1F5584AC4D2"
                BuildableName = "Pods_LexusApp.framework"
                BlueprintName = "Pods-LexusApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "59E3CDABE4A001773C3D6D0620B2BB94"
+            BlueprintIdentifier = "47ED7B5B26A142DF040FE1F5584AC4D2"
             BuildableName = "Pods_LexusApp.framework"
             BlueprintName = "Pods-LexusApp"
             ReferencedContainer = "container:Pods.xcodeproj">

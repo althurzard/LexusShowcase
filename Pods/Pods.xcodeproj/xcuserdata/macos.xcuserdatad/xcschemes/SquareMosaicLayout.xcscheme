@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D6841036F04A0A7E57A8FAC3EF89264E'
-               BlueprintName = 'Spruce'
+               BlueprintIdentifier = '444D65D9C44256A329CD6A99F9BE50FA'
+               BlueprintName = 'SquareMosaicLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Spruce.framework'>
+               BuildableName = 'SquareMosaicLayout.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

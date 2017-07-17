@@ -16,7 +16,8 @@ class ViewController: FormViewController {
         static let designRow = "THIẾT KẾ"
         static let operationRow = "VẬN HÀNH"
         static let safetyRow = "AN TOÀN"
-        static let specificationRow = "THÔNG SỐ KỸ THUẬT"
+        static let libraryRow = "THƯ VIỆN"
+        static let specificationRow = "THÔNG SỐ"
     }
     
     
@@ -34,6 +35,8 @@ class ViewController: FormViewController {
     fileprivate lazy var customSpecificationRow: CustomSpecificationRow = self.form.rowBy(tag: Constants.specificationRow) as! CustomSpecificationRow
     
     fileprivate lazy var customSafetyRow: CustomSafetyRow = self.form.rowBy(tag: Constants.safetyRow) as! CustomSafetyRow
+    
+    fileprivate lazy var customLirabryRow: CustomLibraryRow = self.form.rowBy(tag: Constants.libraryRow) as! CustomLibraryRow
     
     fileprivate var currentContentOffset: CGPoint = .zero
     override func viewDidLoad() {
@@ -68,6 +71,8 @@ class ViewController: FormViewController {
                 self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
                 self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+                self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: .top, animated: true)
             }
 
         } else {
@@ -82,6 +87,8 @@ class ViewController: FormViewController {
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 5 {
                 self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
                 self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
             }
         }
@@ -134,6 +141,13 @@ class ViewController: FormViewController {
             customSafetyRow.cell.prepareAnimation()
         }
         
+        if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+            customLirabryRow.cell.startAnimation()
+        } else {
+            customLirabryRow.cell.prepareAnimation()
+        }
+        
+        
         
     }
     
@@ -144,6 +158,7 @@ class ViewController: FormViewController {
     
     func loadForm() {
      
+
         
         self.form
         +++
@@ -152,6 +167,11 @@ class ViewController: FormViewController {
                 let customHeaderProvider = HeaderFooterProvider<CustomHeader>.nibFile(name: "CustomHeader", bundle: nil)
                 let customHeaderView = HeaderFooterView<CustomHeader>(customHeaderProvider)
                 section.header = customHeaderView
+                
+                let customFooterProvider = HeaderFooterProvider<CustomFooterView>.nibFile(name: "CustomFooterView", bundle: nil)
+                let customFooterView = HeaderFooterView<CustomFooterView>(customFooterProvider)
+                section.footer = customFooterView
+            
         }
         
             <<< CustomOverviewRow(Constants.overviewRow) {
@@ -179,16 +199,18 @@ class ViewController: FormViewController {
             
             <<< CustomSpecificationRow(Constants.specificationRow) {
                 
-                let tableView = $0.cell.accordianTableView
-                let totalHeight = CGFloat(tableView!.dataSource.count) * Specification.cellHeight + CGFloat(tableView!.numberOfSection) * Specification.cellHeight
+//                let tableView = $0.cell.accordianTableView
+//                let totalHeight = CGFloat(tableView!.dataSource.count) * Specification.cellHeight + CGFloat(tableView!.numberOfSection) * Specification.cellHeight
                 
                 $0.cell.height = { self.heightRow }
                 $0.cell.accordianTableView.delegate = self
         }
         
-            <<< CustomBodyRow("abc") {
-                $0.cell.height = { 490 }
+            <<< CustomLibraryRow(Constants.libraryRow) {
+                $0.cell.height = { self.heightRow }
         }
+        
+           
                 
 
     }

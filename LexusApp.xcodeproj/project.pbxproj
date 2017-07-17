@@ -87,6 +87,18 @@
 		224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */; };
 		22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */; };
 		22876B6C1F1C9E7E00227DB2 /* CustomSafetyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B6A1F1C9E7E00227DB2 /* CustomSafetyCell.xib */; };
+		22876B711F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B701F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift */; };
+		22876B7C1F1CFFB800227DB2 /* CustomLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B7B1F1CFFB800227DB2 /* CustomLibraryView.swift */; };
+		22876B7E1F1CFFC400227DB2 /* CustomLibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B7D1F1CFFC400227DB2 /* CustomLibraryView.xib */; };
+		22876B811F1D033900227DB2 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B801F1D033900227DB2 /* UICollectionView+Extensions.swift */; };
+		22876B831F1D0A0100227DB2 /* RC5047.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876B821F1D0A0100227DB2 /* RC5047.png */; };
+		22876B871F1D0AFC00227DB2 /* RC3004.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876B841F1D0AFC00227DB2 /* RC3004.png */; };
+		22876B881F1D0AFC00227DB2 /* RC3402.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876B851F1D0AFC00227DB2 /* RC3402.png */; };
+		22876B891F1D0AFC00227DB2 /* RC6089.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876B861F1D0AFC00227DB2 /* RC6089.png */; };
+		22876B8C1F1D106A00227DB2 /* CustomLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B8A1F1D106A00227DB2 /* CustomLibraryCell.swift */; };
+		22876B8D1F1D106A00227DB2 /* CustomLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */; };
+		22876B8F1F1D1B4700227DB2 /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */; };
+		22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B901F1D22C200227DB2 /* CustomFooterView.swift */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -173,6 +185,18 @@
 		224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOperationCell.xib; sourceTree = "<group>"; };
 		22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSafetyCell.swift; sourceTree = "<group>"; };
 		22876B6A1F1C9E7E00227DB2 /* CustomSafetyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSafetyCell.xib; sourceTree = "<group>"; };
+		22876B701F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareMosaicLayoutPatterns.swift; sourceTree = "<group>"; };
+		22876B7B1F1CFFB800227DB2 /* CustomLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLibraryView.swift; sourceTree = "<group>"; };
+		22876B7D1F1CFFC400227DB2 /* CustomLibraryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLibraryView.xib; sourceTree = "<group>"; };
+		22876B801F1D033900227DB2 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		22876B821F1D0A0100227DB2 /* RC5047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RC5047.png; sourceTree = "<group>"; };
+		22876B841F1D0AFC00227DB2 /* RC3004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RC3004.png; sourceTree = "<group>"; };
+		22876B851F1D0AFC00227DB2 /* RC3402.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RC3402.png; sourceTree = "<group>"; };
+		22876B861F1D0AFC00227DB2 /* RC6089.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RC6089.png; sourceTree = "<group>"; };
+		22876B8A1F1D106A00227DB2 /* CustomLibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLibraryCell.swift; sourceTree = "<group>"; };
+		22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLibraryCell.xib; sourceTree = "<group>"; };
+		22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
+		22876B901F1D22C200227DB2 /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9BCF91F0605C00032BDBC /* Materials */,
+				22876B7F1F1D033000227DB2 /* Extensions */,
 				04A9BCEC1F05FB330032BDBC /* ViewControllers */,
 				04A9BCEB1F05FB2A0032BDBC /* Views */,
 				04A9BCEA1F05FB250032BDBC /* Model */,
@@ -236,9 +261,12 @@
 		04A9BCEB1F05FB2A0032BDBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22876B6F1F1CFCE600227DB2 /* Pattern */,
 				04F40A7B1F076C6500D38D4D /* Cells */,
 				04A9BCED1F05FB550032BDBC /* CustomHeader.swift */,
 				04A9BCEF1F05FB5F0032BDBC /* CustomHeader.xib */,
+				22876B901F1D22C200227DB2 /* CustomFooterView.swift */,
+				22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -282,6 +310,10 @@
 		04A9BD021F0605F60032BDBC /* 01 Hinh thu vien */ = {
 			isa = PBXGroup;
 			children = (
+				22876B841F1D0AFC00227DB2 /* RC3004.png */,
+				22876B851F1D0AFC00227DB2 /* RC3402.png */,
+				22876B861F1D0AFC00227DB2 /* RC6089.png */,
+				22876B821F1D0A0100227DB2 /* RC5047.png */,
 				04A9BD031F0605F60032BDBC /* Big-Image-1-(1000x560).png */,
 				04A9BD041F0605F60032BDBC /* Big-Image-2-(1000x560).png */,
 				04A9BD051F0605F60032BDBC /* Big-Image-4-(1000x560).png */,
@@ -359,6 +391,7 @@
 		04F40A7B1F076C6500D38D4D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				22876B721F1CFD2900227DB2 /* Library */,
 				22876B681F1C9E6200227DB2 /* Safety */,
 				224A1F891F1A7629008CDDB1 /* Operation */,
 				224A1F881F1A570D008CDDB1 /* Design */,
@@ -442,6 +475,33 @@
 			name = Safety;
 			sourceTree = "<group>";
 		};
+		22876B6F1F1CFCE600227DB2 /* Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				22876B701F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift */,
+			);
+			name = Pattern;
+			sourceTree = "<group>";
+		};
+		22876B721F1CFD2900227DB2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				22876B7B1F1CFFB800227DB2 /* CustomLibraryView.swift */,
+				22876B7D1F1CFFC400227DB2 /* CustomLibraryView.xib */,
+				22876B8A1F1D106A00227DB2 /* CustomLibraryCell.swift */,
+				22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		22876B7F1F1D033000227DB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22876B801F1D033900227DB2 /* UICollectionView+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		6D24365CEE93E398AC7227F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,13 +576,16 @@
 				04A9BD401F0605F60032BDBC /* rc-safety-popuphood.jpg in Resources */,
 				04A9BD551F060E360032BDBC /* NOBD____.TTF in Resources */,
 				04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */,
+				22876B7E1F1CFFC400227DB2 /* CustomLibraryView.xib in Resources */,
 				04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */,
 				04A9BD611F060E360032BDBC /* NOR_____.TTF in Resources */,
 				04A9BD331F0605F60032BDBC /* rc-7-inch-display.jpg in Resources */,
 				04A9BD2A1F0605F60032BDBC /* Big-Image-4-(1000x560).png in Resources */,
 				04A9BD221F0605F60032BDBC /* Ghi-Sonic-Titanium-(1J7).png in Resources */,
+				22876B891F1D0AFC00227DB2 /* RC6089.png in Resources */,
 				04A9BD5C1F060E360032BDBC /* NOBKI___.TTF in Resources */,
 				04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */,
+				22876B831F1D0A0100227DB2 /* RC5047.png in Resources */,
 				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
 				04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */,
 				04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */,
@@ -531,6 +594,7 @@
 				04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */,
 				04A9BD241F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png in Resources */,
 				04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */,
+				22876B881F1D0AFC00227DB2 /* RC3402.png in Resources */,
 				04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */,
 				04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */,
 				04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */,
@@ -544,6 +608,7 @@
 				04F40A891F077C0300D38D4D /* CustomHeaderSectionView.xib in Resources */,
 				04A9BD581F060E360032BDBC /* NobelVnu-Book.ttf in Resources */,
 				04A9BCF01F05FB5F0032BDBC /* CustomHeader.xib in Resources */,
+				22876B8F1F1D1B4700227DB2 /* CustomFooterView.xib in Resources */,
 				04A9BD2F1F0605F60032BDBC /* 3-eye-LED-headlamps.png in Resources */,
 				04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */,
 				04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */,
@@ -570,7 +635,9 @@
 				04A9BD361F0605F60032BDBC /* SHIMAMOKU-ORNAMENTATION.png in Resources */,
 				04A9BD321F0605F60032BDBC /* Moonroof.png in Resources */,
 				04A9BD3B1F0605F60032BDBC /* rc-performance-short-wheelbase.jpg in Resources */,
+				22876B8D1F1D106A00227DB2 /* CustomLibraryCell.xib in Resources */,
 				224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */,
+				22876B871F1D0AFC00227DB2 /* RC3004.png in Resources */,
 				04A9BD411F0605F60032BDBC /* rc350-safety-blindspot.jpg in Resources */,
 				04A9BD371F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png in Resources */,
 				04A9BD341F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg in Resources */,
@@ -634,8 +701,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */,
 				04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */,
 				04A9BCD81F05FA760032BDBC /* ViewController.swift in Sources */,
+				22876B8C1F1D106A00227DB2 /* CustomLibraryCell.swift in Sources */,
 				04F40A911F07939A00D38D4D /* Specification.swift in Sources */,
 				04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */,
 				04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */,
@@ -646,8 +715,11 @@
 				04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */,
 				224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */,
 				04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */,
+				22876B811F1D033900227DB2 /* UICollectionView+Extensions.swift in Sources */,
 				04F40A791F07675500D38D4D /* CustomSpecificationCell.swift in Sources */,
 				04A9BD661F0655B80032BDBC /* CustomBodyCell.swift in Sources */,
+				22876B711F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift in Sources */,
+				22876B7C1F1CFFB800227DB2 /* CustomLibraryView.swift in Sources */,
 				04A9BCDE1F05FA760032BDBC /* LexusApp.xcdatamodeld in Sources */,
 				04A9BCD61F05FA760032BDBC /* AppDelegate.swift in Sources */,
 			);

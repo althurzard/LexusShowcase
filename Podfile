@@ -10,6 +10,7 @@ target ‘LexusApp’ do
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
     pod 'YNExpandableCell'
     pod 'IncrementableLabel'
+    pod 'SquareMosaicLayout'
 end
 
 post_install do |installer|

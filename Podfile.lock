@@ -3,6 +3,7 @@ PODS:
   - IncrementableLabel (1.2.0)
   - Spring (1.0.3)
   - Spruce (1.0.0)
+  - SquareMosaicLayout (0.7.1)
   - YNExpandableCell (1.1.0)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - IncrementableLabel
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - Spruce
+  - SquareMosaicLayout
   - YNExpandableCell
 
 EXTERNAL SOURCES:
@@ -27,8 +29,9 @@ SPEC CHECKSUMS:
   IncrementableLabel: fe0f6239b4ebc68cbb13a817bfb59405204147d3
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
+  SquareMosaicLayout: aef8321419b105cd034d78cc09e9613a9d4a630d
   YNExpandableCell: 47bf7cff721aa535c0e9e1163bf22b5573441bb4
 
-PODFILE CHECKSUM: bb0282fe1aa798d63b8e61aabdea7b4ae6c0b2e9
+PODFILE CHECKSUM: abd2394add46e1e33e419a10e0f894b7ba76e1b6
 
 COCOAPODS: 1.2.1
