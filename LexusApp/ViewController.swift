@@ -15,10 +15,11 @@ class ViewController: FormViewController {
         static let colorPicker = "CHỌN MÀU XE"
         static let designRow = "THIẾT KẾ"
         static let operationRow = "VẬN HÀNH"
+        static let safetyRow = "AN TOÀN"
         static let specificationRow = "THÔNG SỐ KỸ THUẬT"
     }
     
-    fileprivate lazy var height:CGFloat = UIScreen.main.bounds.height - 60
+    fileprivate lazy var height:CGFloat = UIScreen.main.bounds.height - CustomHeader.height
     
     fileprivate lazy var customColorPickerRow: CustomColorPickerRow = self.form.rowBy(tag: Constants.colorPicker) as! CustomColorPickerRow
     
@@ -29,6 +30,8 @@ class ViewController: FormViewController {
     fileprivate lazy var customOperationRow: CustomOperationRow = self.form.rowBy(tag: Constants.operationRow) as! CustomOperationRow
     
     fileprivate lazy var customSpecificationRow: CustomSpecificationRow = self.form.rowBy(tag: Constants.specificationRow) as! CustomSpecificationRow
+    
+    fileprivate lazy var customSafetyRow: CustomSafetyRow = self.form.rowBy(tag: Constants.safetyRow) as! CustomSafetyRow
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,16 +53,19 @@ class ViewController: FormViewController {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let locationOnScreenY = scrollView.contentOffset.y
         
-        if locationOnScreenY < customOverviewRow.cell.height!() , locationOnScreenY > customOverviewRow.cell.height!() / 2 {
-            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+        if locationOnScreenY < self.height / 2 {
+            self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
         } else if locationOnScreenY < self.height * 1.5, locationOnScreenY > self.height / 2 {
             self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
         } else if locationOnScreenY < self.height * 2.5, locationOnScreenY > self.height * 1.5 {
             self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
         } else if locationOnScreenY < self.height * 3.5, locationOnScreenY > self.height * 2.5 {
             self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+        } else if locationOnScreenY < self.height * 4.5, locationOnScreenY > self.height * 3.5 {
+            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
         }
         
+
         
     }
     
@@ -67,27 +73,44 @@ class ViewController: FormViewController {
         let locationOnScreenY = scrollView.contentOffset.y
         
         if locationOnScreenY < customOverviewRow.cell.height!() / 2 {
+            
+            self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
             customOverviewRow.cell.startAnimation()
         } else {
             customOverviewRow.cell.prepareAnimation()
         }
             
         if locationOnScreenY < self.height * 1.5, locationOnScreenY > self.height / 2 {
+           
+            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+            
             customColorPickerRow.cell.startAnimation()
         } else {
             customColorPickerRow.cell.prepareAnimation()
         }
             
         if locationOnScreenY < self.height * 2.5, locationOnScreenY > self.height * 1.5 {
+            
+            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
             customBodyRow.cell.startAnimation()
         } else {
             customBodyRow.cell.prepareAnimation()
         }
         
         if locationOnScreenY < self.height * 3.5, locationOnScreenY > self.height * 2.5 {
+            
+            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
             customOperationRow.cell.startAnimation()
         } else {
             customOperationRow.cell.prepareAnimation()
+        }
+        
+        if locationOnScreenY < self.height * 4.5, locationOnScreenY > self.height * 3.5 {
+            
+            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+            customSafetyRow.cell.startAnimation()
+        } else {
+            customSafetyRow.cell.prepareAnimation()
         }
         
         
@@ -97,7 +120,14 @@ class ViewController: FormViewController {
         
     }
     
+    func stopScrolling() {
+        tableView.isScrollEnabled = false
+        tableView.isScrollEnabled = true
+    }
+    
     func loadForm() {
+     
+        
         self.form
         +++
             Section(""){ section in
@@ -108,7 +138,7 @@ class ViewController: FormViewController {
         }
         
             <<< CustomOverviewRow(Constants.overviewRow) {
-                $0.cell.height = { self.height }
+                $0.cell.height = { self.height}
                 
             }
             
@@ -117,10 +147,14 @@ class ViewController: FormViewController {
             }
         
             <<< CustomBodyRow(Constants.designRow) {
-                $0.cell.height = { self.height }
+                $0.cell.height = { self.height}
         }
             
             <<< CustomOperationRow(Constants.operationRow) {
+                $0.cell.height = { self.height }
+            }
+            
+            <<< CustomSafetyRow(Constants.safetyRow) {
                 $0.cell.height = { self.height }
             }
         
@@ -139,6 +173,10 @@ class ViewController: FormViewController {
         }
                 
 
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
 

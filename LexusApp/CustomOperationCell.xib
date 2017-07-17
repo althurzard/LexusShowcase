@@ -38,7 +38,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-8J-oeK">
                                 <rect key="frame" x="0.0" y="0.0" width="988" height="330"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-iG-ExU">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeQ-iG-ExU">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="330"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc-performance-aerodynamics.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-ry-TCQ">
@@ -48,7 +48,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHÍ ĐỘNG HỌC" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-gJ-use">
-                                                <rect key="frame" x="0.0" y="195.5" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194.5" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="pbW-at-vw5"/>
                                                 </constraints>
@@ -57,7 +57,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0XT-qO-FG6">
-                                                <rect key="frame" x="0.0" y="230.5" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217.5" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>
@@ -66,7 +66,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-EW-nJ4">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-EW-nJ4">
                                         <rect key="frame" x="336" y="0.0" width="316" height="330"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC8053---superior-stability.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-bi-Znb">
@@ -76,7 +76,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHUNG XE CỨNG VỮNG" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cUS-Oo-swn">
-                                                <rect key="frame" x="0.0" y="195.5" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194.5" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ra8-dE-CYf"/>
                                                 </constraints>
@@ -85,7 +85,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bxw-Rt-8kA">
-                                                <rect key="frame" x="0.0" y="230.5" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217.5" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>
@@ -94,7 +94,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-a7-wYy">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-a7-wYy">
                                         <rect key="frame" x="672" y="0.0" width="316" height="330"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc-performance-short-wheelbase.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="s1L-Yf-Sri">
@@ -104,7 +104,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHIỀU DÀI CƠ SỞ NGẮN" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qK0-B5-BEb">
-                                                <rect key="frame" x="0.0" y="195.5" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194.5" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="w3C-yw-dbQ"/>
                                                 </constraints>
@@ -113,7 +113,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="v2y-Y3-GbE">
-                                                <rect key="frame" x="0.0" y="230.5" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217.5" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>
@@ -127,7 +127,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-1B-A8w">
                                 <rect key="frame" x="0.0" y="330" width="988" height="329.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ODU-OS-umR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODU-OS-umR">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="329.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DRIVE-MODE-SELECT.png" translatesAutoresizingMaskIntoConstraints="NO" id="5SV-IY-27K">
@@ -137,7 +137,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LỰA CHỌN CHẾ ĐỘ LÁI" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-KD-VFJ">
-                                                <rect key="frame" x="0.0" y="195" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="zcP-ib-nyn"/>
                                                 </constraints>
@@ -146,7 +146,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-YA-Ma5">
-                                                <rect key="frame" x="0.0" y="230" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>
@@ -155,7 +155,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mqp-x0-OXP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mqp-x0-OXP">
                                         <rect key="frame" x="336" y="0.0" width="316" height="329.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc350-performance-tuned-exhaust.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cA6-sI-b8C">
@@ -165,7 +165,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HỆ THỐNG XẢ ĐƯỢC TINH CHỈNH" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqF-Qb-JHX">
-                                                <rect key="frame" x="0.0" y="195" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="eWN-e2-nh6"/>
                                                 </constraints>
@@ -174,7 +174,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IZ5-dq-9H0">
-                                                <rect key="frame" x="0.0" y="230" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>
@@ -183,7 +183,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HoC-Z7-Etp">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoC-Z7-Etp">
                                         <rect key="frame" x="672" y="0.0" width="316" height="329.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc200t-performance-8-speed-automatic-transmission.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rtU-me-fAJ">
@@ -193,7 +193,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐỘNG CƠ" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ku3-ZI-M4S">
-                                                <rect key="frame" x="0.0" y="195" width="316" height="30"/>
+                                                <rect key="frame" x="0.0" y="194" width="316" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="YJi-Qs-MAH"/>
                                                 </constraints>
@@ -202,7 +202,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-pi-M9b">
-                                                <rect key="frame" x="0.0" y="230" width="316" height="99.5"/>
+                                                <rect key="frame" x="0.0" y="217" width="316" height="112.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, dolor nec venenatis blandit, eros tortor molestie sem, vitae condimentum purus tellus quis lectus.
 </string>
                                                 <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel-Light" pointSize="24"/>

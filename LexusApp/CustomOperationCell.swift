@@ -36,7 +36,6 @@ class CustomOperationCell: CustomBodyCell {
     public override func update() {
         super.update()
         
-        
     }
     
     override func startAnimation() {

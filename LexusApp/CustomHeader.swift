@@ -18,6 +18,8 @@ class CustomHeader: UIView {
     }
     */
     
+    static let height: CGFloat = 60
+    
     @IBOutlet weak var tongQuanView: UIView!
 
     @IBOutlet weak var thietKeView: UIView!

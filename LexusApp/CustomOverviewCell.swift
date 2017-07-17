@@ -30,6 +30,7 @@ class CustomOverviewCell: Cell<Bool>, CellType {
     public override func update() {
         super.update()
         backgroundColor =  .black
+        selectionStyle = .none
     }
 
     func startAnimation() {

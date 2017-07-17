@@ -20,17 +20,17 @@ class CustomBodyCell: Cell<Bool>, CellType {
     var isAnimating = true
     let duration = 1.5
     
-    @IBOutlet weak var stackViewTopLeft: UIStackView!
+    @IBOutlet weak var stackViewTopLeft: UIStackView?
     
-    @IBOutlet weak var stackViewTopMiddle: UIStackView!
+    @IBOutlet weak var stackViewTopMiddle: UIStackView?
     
-    @IBOutlet weak var stackViewTopRight: UIStackView!
+    @IBOutlet weak var stackViewTopRight: UIStackView?
     
-    @IBOutlet weak var stackViewBottomLeft: UIStackView!
+    @IBOutlet weak var stackViewBottomLeft: UIStackView?
     
-    @IBOutlet weak var stackViewBottomMiddle: UIStackView!
+    @IBOutlet weak var stackViewBottomMiddle: UIStackView?
     
-    @IBOutlet weak var stackViewBottomRight: UIStackView!
+    @IBOutlet weak var stackViewBottomRight: UIStackView?
     
     public override func setup() {
         super.setup()
@@ -39,18 +39,18 @@ class CustomBodyCell: Cell<Bool>, CellType {
     
     public override func update() {
         super.update()
-
+        selectionStyle = .none
         
     }
     
     open func startAnimation() {
         if !isAnimating {
-            self.stackViewTopLeft.spruce.animate(animationToRight, duration: duration)
-            self.stackViewBottomLeft.spruce.animate(animationToRight, duration: duration)
-            self.stackViewTopRight.spruce.animate(animationToLeft, duration: duration)
-            self.stackViewBottomRight.spruce.animate(animationToLeft, duration: duration)
-            self.stackViewTopMiddle.spruce.animate(animationToBottom, duration: duration)
-            self.stackViewBottomMiddle.spruce.animate(animationToUp, duration: duration)
+            self.stackViewTopLeft?.spruce.animate(animationToRight, duration: duration)
+            self.stackViewBottomLeft?.spruce.animate(animationToRight, duration: duration)
+            self.stackViewTopRight?.spruce.animate(animationToLeft, duration: duration)
+            self.stackViewBottomRight?.spruce.animate(animationToLeft, duration: duration)
+            self.stackViewTopMiddle?.spruce.animate(animationToBottom, duration: duration)
+            self.stackViewBottomMiddle?.spruce.animate(animationToUp, duration: duration)
             
             isAnimating = true
         }
@@ -60,12 +60,12 @@ class CustomBodyCell: Cell<Bool>, CellType {
     open func prepareAnimation() {
         if isAnimating {
         isAnimating = false
-        self.stackViewTopLeft.spruce.prepare(with: animationToRight)
-        self.stackViewBottomLeft.spruce.prepare(with: animationToRight)
-        self.stackViewTopRight.spruce.prepare(with: animationToLeft)
-        self.stackViewBottomRight.spruce.prepare(with: animationToLeft)
-        self.stackViewTopMiddle.spruce.prepare(with: animationToBottom)
-        self.stackViewBottomMiddle.spruce.prepare(with: animationToUp)
+        self.stackViewTopLeft?.spruce.prepare(with: animationToRight)
+        self.stackViewBottomLeft?.spruce.prepare(with: animationToRight)
+        self.stackViewTopRight?.spruce.prepare(with: animationToLeft)
+        self.stackViewBottomRight?.spruce.prepare(with: animationToLeft)
+        self.stackViewTopMiddle?.spruce.prepare(with: animationToBottom)
+        self.stackViewBottomMiddle?.spruce.prepare(with: animationToUp)
         }
     }
 }

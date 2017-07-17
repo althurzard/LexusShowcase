@@ -45,6 +45,7 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     public override func update() {
         super.update()
         backgroundColor = .white
+        selectionStyle = .none
     }
     
     @IBAction func didTapSelectColorButton(_ sender: UIButton) {

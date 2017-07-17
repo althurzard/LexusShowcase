@@ -31,7 +31,7 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
     
     public override func update() {
         super.update()
-        
+        selectionStyle = .none
         
     }
     
