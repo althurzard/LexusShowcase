@@ -132,4 +132,8 @@ final class CustomColorPickerRow: Row<CustomColorPickerCell>, RowType {
         
     }
     
+    var currentContentOffset: CGPoint {
+        get { return CGPoint(x: 0, y: self.cell!.height!()) }
+    }
+    
 }

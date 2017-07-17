@@ -24,7 +24,7 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
         accordianTableView.translatesAutoresizingMaskIntoConstraints = false
         accordianTableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         accordianTableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        accordianTableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        accordianTableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 50).isActive = true
         accordianTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
     }

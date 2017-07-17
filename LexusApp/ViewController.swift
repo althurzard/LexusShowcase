@@ -19,7 +19,9 @@ class ViewController: FormViewController {
         static let specificationRow = "THÔNG SỐ KỸ THUẬT"
     }
     
-    fileprivate lazy var height:CGFloat = UIScreen.main.bounds.height - CustomHeader.height
+    
+    
+    fileprivate lazy var heightRow:CGFloat = UIScreen.main.bounds.height - CustomHeader.height
     
     fileprivate lazy var customColorPickerRow: CustomColorPickerRow = self.form.rowBy(tag: Constants.colorPicker) as! CustomColorPickerRow
     
@@ -33,6 +35,7 @@ class ViewController: FormViewController {
     
     fileprivate lazy var customSafetyRow: CustomSafetyRow = self.form.rowBy(tag: Constants.safetyRow) as! CustomSafetyRow
     
+    fileprivate var currentContentOffset: CGPoint = .zero
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,71 +54,85 @@ class ViewController: FormViewController {
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+
         let locationOnScreenY = scrollView.contentOffset.y
         
-        if locationOnScreenY < self.height / 2 {
-            self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
-        } else if locationOnScreenY < self.height * 1.5, locationOnScreenY > self.height / 2 {
-            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
-        } else if locationOnScreenY < self.height * 2.5, locationOnScreenY > self.height * 1.5 {
-            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
-        } else if locationOnScreenY < self.height * 3.5, locationOnScreenY > self.height * 2.5 {
-            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
-        } else if locationOnScreenY < self.height * 4.5, locationOnScreenY > self.height * 3.5 {
-            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
-        }
-        
+        if locationOnScreenY > currentContentOffset.y {
+            if locationOnScreenY <= self.heightRow {
+                self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
+                self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
+                self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
+                self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+            }
 
+        } else {
+            if locationOnScreenY <= self.heightRow {
+                self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
+                self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
+                self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
+                self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 5 {
+                self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+            } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+            }
+        }
+
+        self.currentContentOffset.y = locationOnScreenY
+        print("end scrolling")
         
     }
     
+    
+    
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        
+        let locationOnScreenY = scrollView.contentOffset.y
+        self.currentContentOffset.y = locationOnScreenY
+        
+    }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let locationOnScreenY = scrollView.contentOffset.y
-        
+        stopScrolling()
         if locationOnScreenY < customOverviewRow.cell.height!() / 2 {
-            
-            self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
             customOverviewRow.cell.startAnimation()
         } else {
             customOverviewRow.cell.prepareAnimation()
         }
             
-        if locationOnScreenY < self.height * 1.5, locationOnScreenY > self.height / 2 {
-           
-            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+        if locationOnScreenY < self.heightRow * 1.5, locationOnScreenY > self.heightRow / 2 {
             
             customColorPickerRow.cell.startAnimation()
         } else {
             customColorPickerRow.cell.prepareAnimation()
         }
             
-        if locationOnScreenY < self.height * 2.5, locationOnScreenY > self.height * 1.5 {
-            
-            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+        if locationOnScreenY < self.heightRow * 2.5, locationOnScreenY > self.heightRow * 1.5 {
             customBodyRow.cell.startAnimation()
         } else {
             customBodyRow.cell.prepareAnimation()
         }
         
-        if locationOnScreenY < self.height * 3.5, locationOnScreenY > self.height * 2.5 {
-            
-            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+        if locationOnScreenY < self.heightRow * 3.5, locationOnScreenY > self.heightRow * 2.5 {
+
             customOperationRow.cell.startAnimation()
         } else {
             customOperationRow.cell.prepareAnimation()
         }
         
-        if locationOnScreenY < self.height * 4.5, locationOnScreenY > self.height * 3.5 {
-            
-            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+        if locationOnScreenY < self.heightRow * 4.5, locationOnScreenY > self.heightRow * 3.5 {
             customSafetyRow.cell.startAnimation()
         } else {
             customSafetyRow.cell.prepareAnimation()
         }
-        
-        
-        print("is scrolling \(locationOnScreenY)")
-        
         
         
     }
@@ -138,24 +155,25 @@ class ViewController: FormViewController {
         }
         
             <<< CustomOverviewRow(Constants.overviewRow) {
-                $0.cell.height = { self.height}
+                $0.cell.height = { self.heightRow}
+                
                 
             }
             
             <<< CustomColorPickerRow(Constants.colorPicker) {
-                $0.cell.height = { self.height }
+                $0.cell.height = { self.heightRow }
             }
         
             <<< CustomBodyRow(Constants.designRow) {
-                $0.cell.height = { self.height}
+                $0.cell.height = { self.heightRow}
         }
             
             <<< CustomOperationRow(Constants.operationRow) {
-                $0.cell.height = { self.height }
+                $0.cell.height = { self.heightRow }
             }
             
             <<< CustomSafetyRow(Constants.safetyRow) {
-                $0.cell.height = { self.height }
+                $0.cell.height = { self.heightRow }
             }
         
             
@@ -164,7 +182,7 @@ class ViewController: FormViewController {
                 let tableView = $0.cell.accordianTableView
                 let totalHeight = CGFloat(tableView!.dataSource.count) * Specification.cellHeight + CGFloat(tableView!.numberOfSection) * Specification.cellHeight
                 
-                $0.cell.height = { totalHeight }
+                $0.cell.height = { self.heightRow }
                 $0.cell.accordianTableView.delegate = self
         }
         

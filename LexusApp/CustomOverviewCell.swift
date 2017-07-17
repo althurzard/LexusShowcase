@@ -66,5 +66,9 @@ final class CustomOverviewRow: Row<CustomOverviewCell>, RowType {
     }
     
     
+    var currentContentOffset: CGPoint {
+        get { return CGPoint(x: 0, y: 0) }
+    }
+    
     
 }

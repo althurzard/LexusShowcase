@@ -18,7 +18,7 @@ class CustomHeader: UIView {
     }
     */
     
-    static let height: CGFloat = 60
+    static let height: CGFloat = 80
     
     @IBOutlet weak var tongQuanView: UIView!
 

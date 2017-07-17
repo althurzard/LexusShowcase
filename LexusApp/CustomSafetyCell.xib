@@ -17,6 +17,9 @@
         <array key="NobelVnu-Bold.ttf">
             <string>NobelVnu-Bold</string>
         </array>
+        <array key="NobelVnu-Light.ttf">
+            <string>NobelVnu-Light</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -188,18 +191,39 @@
                         </constraints>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEd-dm-l9X">
-                        <rect key="frame" x="15" y="48" width="994" height="1"/>
+                        <rect key="frame" x="15" y="68" width="994" height="1"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="oiS-CT-TCa"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="bE0-9x-mgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NwR-kk-Oq9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AN TOÀN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-LR-PsS">
+                        <rect key="frame" x="28" y="8" width="83" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="HJ7-Cx-BgT"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Md7-DF-Umc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="0.72941176470000002" green="0.74509803919999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
+                    <constraint firstItem="bE0-9x-mgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2YM-Tl-pY0"/>
+                    <constraint firstItem="bE0-9x-mgQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A3a-z6-8lA"/>
+                    <constraint firstAttribute="trailing" secondItem="bE0-9x-mgQ" secondAttribute="trailing" id="Btp-ze-ycx"/>
+                    <constraint firstItem="ZFa-LR-PsS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Dbk-N6-gai"/>
+                    <constraint firstItem="ZFa-LR-PsS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="FO1-e3-vRo"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3iy-Vw-OWp" secondAttribute="bottom" id="LFC-C4-7HS"/>
                     <constraint firstItem="3iy-Vw-OWp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Otp-rZ-Hkn"/>
-                    <constraint firstItem="NEd-dm-l9X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="40" id="b2b-rj-T5B"/>
+                    <constraint firstItem="NEd-dm-l9X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="60" id="b2b-rj-T5B"/>
                     <constraint firstItem="3iy-Vw-OWp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="100" id="f0p-Le-Q9s"/>
                     <constraint firstAttribute="trailing" secondItem="3iy-Vw-OWp" secondAttribute="trailing" constant="15" id="osK-Vc-NWa"/>
                     <constraint firstItem="NEd-dm-l9X" firstAttribute="width" secondItem="3iy-Vw-OWp" secondAttribute="width" id="ttR-gC-VsU"/>
@@ -212,7 +236,7 @@
                 <outlet property="stackViewTopLeft" destination="C0F-b1-ARe" id="2LZ-T3-Hm8"/>
                 <outlet property="stackViewTopRight" destination="M2S-pt-xcB" id="L8Z-8J-xKD"/>
             </connections>
-            <point key="canvasLocation" x="48.5" y="151.5"/>
+            <point key="canvasLocation" x="48" y="151"/>
         </tableViewCell>
     </objects>
     <resources>
@@ -221,5 +245,6 @@
         <image name="RCTA-(Rear-Cross-Traffic-Alert).png" width="600" height="335"/>
         <image name="rc-safety-popuphood.jpg" width="600" height="335"/>
         <image name="rc350-safety-blindspot.jpg" width="600" height="335"/>
+        <image name="sub-header" width="2048" height="80"/>
     </resources>
 </document>

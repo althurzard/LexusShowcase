@@ -31,4 +31,8 @@ final class CustomSafetyRow: Row<CustomSafetyCell>, RowType {
         
     }
     
+    var currentContentOffset: CGPoint {
+        get { return CGPoint(x: 0, y: self.cell!.height!() * 4) }
+    }
+    
 }

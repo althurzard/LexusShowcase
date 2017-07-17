@@ -28,14 +28,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="993" height="708.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="pga-lG-SXp">
+                        <rect key="frame" x="0.0" y="0.0" width="993" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="N4p-1E-Nhf"/>
+                        </constraints>
+                    </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-C2-2Qy">
-                        <rect key="frame" x="-2" y="-2" width="397" height="712.5"/>
+                        <rect key="frame" x="-2" y="50" width="397" height="660.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-xk-wEp">
-                                <rect key="frame" x="0.0" y="0.0" width="397" height="356.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="330.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-8D-Ter" customClass="DesignableImageView" customModule="Spring">
-                                        <rect key="frame" x="0.0" y="0.0" width="397" height="356.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="397" height="330.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
@@ -56,10 +62,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ID-sE-tZD">
-                                <rect key="frame" x="0.0" y="356.5" width="397" height="356"/>
+                                <rect key="frame" x="0.0" y="330.5" width="397" height="330"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_02" translatesAutoresizingMaskIntoConstraints="NO" id="e48-dp-KeN" customClass="DesignableImageView" customModule="Spring">
-                                        <rect key="frame" x="0.0" y="-0.5" width="397" height="356.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="397" height="330.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
@@ -82,7 +88,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="huE-Z9-OZf">
-                        <rect key="frame" x="395" y="0.0" width="598" height="708.5"/>
+                        <rect key="frame" x="395" y="40" width="598" height="668.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ghi-Sonic-Titanium-(1J7).png" translatesAutoresizingMaskIntoConstraints="NO" id="mix-1e-fc8" customClass="DesignableImageView" customModule="Spring">
                                 <rect key="frame" x="0.0" y="0.0" width="598" height="360"/>
@@ -103,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JZh-1B-38y">
-                                <rect key="frame" x="29" y="360" width="540" height="348.5"/>
+                                <rect key="frame" x="29" y="360" width="540" height="308.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i27-eG-XJG">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="60"/>
@@ -184,23 +190,23 @@
                                             <constraint firstItem="Mak-cq-1jM" firstAttribute="height" secondItem="Vtf-Fk-SVl" secondAttribute="height" id="wTd-wy-8Yw"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-150" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
-                                        <rect key="frame" x="122" y="60" width="296" height="288.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-50" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
+                                        <rect key="frame" x="145" y="60" width="250.5" height="248.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="GS Turbo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-Uf-s34">
-                                                <rect key="frame" x="0.0" y="0.0" width="296" height="196"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="250.5" height="137.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="70"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạc sonic silver&lt;1J2&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYK-oJ-Tc9">
-                                                <rect key="frame" x="0.0" y="46" width="296" height="196.5"/>
+                                                <rect key="frame" x="0.0" y="53" width="250.5" height="137"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.130.000.000 VNĐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
-                                                <rect key="frame" x="0.0" y="92.5" width="296" height="196"/>
+                                                <rect key="frame" x="0.0" y="111" width="250.5" height="137.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="30"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -211,15 +217,29 @@
                             </stackView>
                         </subviews>
                     </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TỔNG QUAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-h0-Heq">
+                        <rect key="frame" x="28" y="8" width="117" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="cgt-Q7-a5f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="pga-lG-SXp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1U9-ke-7SF"/>
+                    <constraint firstItem="jDz-h0-Heq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="C2E-X1-anf"/>
+                    <constraint firstItem="pga-lG-SXp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EFh-5O-649"/>
                     <constraint firstAttribute="bottomMargin" secondItem="WJe-C2-2Qy" secondAttribute="bottom" constant="-10" id="G8J-nD-2gI"/>
                     <constraint firstAttribute="trailing" secondItem="huE-Z9-OZf" secondAttribute="trailing" id="LoK-lX-zmS"/>
-                    <constraint firstItem="WJe-C2-2Qy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-10" id="Q0b-dZ-L8C"/>
+                    <constraint firstItem="WJe-C2-2Qy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="Wmd-6B-LET"/>
                     <constraint firstAttribute="bottom" secondItem="huE-Z9-OZf" secondAttribute="bottom" id="XS2-OD-1bz"/>
+                    <constraint firstItem="jDz-h0-Heq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="gPd-71-f2S"/>
                     <constraint firstItem="WJe-C2-2Qy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="gXA-nA-3n1"/>
                     <constraint firstItem="WJe-C2-2Qy" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="kCt-Es-nXx"/>
-                    <constraint firstItem="huE-Z9-OZf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lVu-LL-Bo5"/>
+                    <constraint firstAttribute="trailing" secondItem="pga-lG-SXp" secondAttribute="trailing" id="kst-Xa-j9P"/>
+                    <constraint firstItem="huE-Z9-OZf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="lVu-LL-Bo5"/>
                     <constraint firstItem="huE-Z9-OZf" firstAttribute="leading" secondItem="WJe-C2-2Qy" secondAttribute="trailing" id="oU1-Mn-lKw"/>
                 </constraints>
             </tableViewCellContentView>
@@ -247,5 +267,6 @@
         <image name="btn-selected" width="254" height="254"/>
         <image name="btn-sonic-quartz" width="200" height="200"/>
         <image name="btn-sonic-titanium" width="200" height="200"/>
+        <image name="sub-header" width="2048" height="80"/>
     </resources>
 </document>

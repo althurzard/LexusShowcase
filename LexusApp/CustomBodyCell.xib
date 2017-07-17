@@ -17,6 +17,9 @@
         <array key="NobelVnu-Bold.ttf">
             <string>NobelVnu-Bold</string>
         </array>
+        <array key="NobelVnu-Light.ttf">
+            <string>NobelVnu-Light</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -212,22 +215,43 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-LW-ZvU">
-                        <rect key="frame" x="20" y="48" width="984" height="1"/>
+                        <rect key="frame" x="20" y="68" width="984" height="1"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="e9n-qx-x7h"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="leL-WB-ypc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="LMT-Za-gRc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIẾT KẾ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icr-NO-arU">
+                        <rect key="frame" x="28" y="8" width="72.5" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="52V-23-HMF"/>
+                            <constraint firstAttribute="height" constant="35" id="KbE-kt-2zb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="0.72941176470588232" green="0.74509803921568629" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Bn0-XD-iYb" secondAttribute="bottom" id="0hp-Ba-d04"/>
                     <constraint firstItem="Bn0-XD-iYb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="100" id="D9Z-C6-llE"/>
                     <constraint firstAttribute="trailing" secondItem="Bn0-XD-iYb" secondAttribute="trailing" constant="20" id="FOQ-Nz-5cA"/>
-                    <constraint firstItem="o4T-LW-ZvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="40" id="FPh-0w-OBS"/>
+                    <constraint firstItem="o4T-LW-ZvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="60" id="FPh-0w-OBS"/>
+                    <constraint firstItem="leL-WB-ypc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IBl-li-75O"/>
+                    <constraint firstItem="Icr-NO-arU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Lon-Pg-wv1"/>
                     <constraint firstItem="Bn0-XD-iYb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="aZa-HE-6Yk"/>
                     <constraint firstItem="o4T-LW-ZvU" firstAttribute="width" secondItem="Bn0-XD-iYb" secondAttribute="width" id="chx-yh-Hcn"/>
+                    <constraint firstItem="Icr-NO-arU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="gkL-9E-xwy"/>
+                    <constraint firstAttribute="trailing" secondItem="leL-WB-ypc" secondAttribute="trailing" id="oNF-Bs-xsQ"/>
                     <constraint firstItem="o4T-LW-ZvU" firstAttribute="centerX" secondItem="Bn0-XD-iYb" secondAttribute="centerX" id="sbS-el-lR3"/>
+                    <constraint firstItem="leL-WB-ypc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yDe-Rd-Dtf"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -248,5 +272,6 @@
         <image name="Moonroof.png" width="600" height="335"/>
         <image name="rc-comfort-folddown-mechanism.jpg" width="600" height="335"/>
         <image name="rc200t-wheels.jpg" width="600" height="335"/>
+        <image name="sub-header" width="2048" height="80"/>
     </resources>
 </document>
