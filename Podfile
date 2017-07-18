@@ -11,6 +11,7 @@ target ‘LexusApp’ do
     pod 'YNExpandableCell'
     pod 'IncrementableLabel'
     pod 'SquareMosaicLayout'
+    pod 'DLRadioButton'
 end
 
 post_install do |installer|

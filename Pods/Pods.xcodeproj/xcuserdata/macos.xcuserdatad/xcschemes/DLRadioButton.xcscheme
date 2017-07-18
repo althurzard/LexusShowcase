@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2E288B5B442C36A45D166BB29A787C23'
-               BlueprintName = 'SquareMosaicLayout'
+               BlueprintIdentifier = 'F6A77E2753C279F67F70C5C21D6FAE15'
+               BlueprintName = 'DLRadioButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SquareMosaicLayout.framework'>
+               BuildableName = 'DLRadioButton.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

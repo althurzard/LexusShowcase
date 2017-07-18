@@ -20,23 +20,19 @@ class CustomHeader: UIView {
     
     static let height: CGFloat = 80
     
-    @IBOutlet weak var tongQuanView: UIView!
-
-    @IBOutlet weak var thietKeView: UIView!
+    @IBOutlet weak var tongQuanStackView: UIStackView!
     
+    @IBOutlet weak var thietKeStackView: UIStackView!
     
-    @IBOutlet weak var vanHanhView: UIView!
+    @IBOutlet weak var vanHanhStackView: UIStackView!
     
-    @IBOutlet weak var anToanView: UIView!
+    @IBOutlet weak var anToanStackView: UIStackView!
     
-    @IBOutlet weak var thongSoView: UIView!
+    @IBOutlet weak var thongSoStackView: UIStackView!
     
-    @IBOutlet weak var thuVienView: UIView!
+    @IBOutlet weak var thuVienStackView: UIStackView!
     
-    
-    @IBOutlet weak var underlineView: UIView!
-    
-    
+    @IBOutlet weak var containerStackView: UIStackView!
     enum LabelName: Int {
         case TongQuan
         case ThietKe
@@ -52,12 +48,12 @@ class CustomHeader: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        tongQuanView.addGestureRecognizer(createTap())
-        thietKeView.addGestureRecognizer(createTap())
-        vanHanhView.addGestureRecognizer(createTap())
-        anToanView.addGestureRecognizer(createTap())
-        thongSoView.addGestureRecognizer(createTap())
-        thuVienView.addGestureRecognizer(createTap())
+        tongQuanStackView.addGestureRecognizer(createTap())
+        thietKeStackView.addGestureRecognizer(createTap())
+        vanHanhStackView.addGestureRecognizer(createTap())
+        anToanStackView.addGestureRecognizer(createTap())
+        thongSoStackView.addGestureRecognizer(createTap())
+        thuVienStackView.addGestureRecognizer(createTap())
     }
     
     func createTap() -> UITapGestureRecognizer {
@@ -67,17 +63,47 @@ class CustomHeader: UIView {
     func didTapOnLabel(sender:UITapGestureRecognizer) {
 
         if let view = sender.view  {
+            hideUnderline()
             let lblName = LabelName(rawValue: view.tag)!
             print(lblName.rawValue)
-//            switch lblName {
-//            case .TongQuan:
-//                
-//            case .ThietKe:
-//            case .VanHanh:
-//            case .AnToan:
-//            case .ThongSo:
-//            case .ThuVien:
-//            }
+            switch lblName {
+            case .TongQuan:
+                showUnderline(view: tongQuanStackView)
+            case .ThietKe:
+                showUnderline(view: thietKeStackView)
+            case .VanHanh:
+                showUnderline(view: vanHanhStackView)
+            case .AnToan:
+                showUnderline(view: anToanStackView)
+            case .ThongSo:
+                showUnderline(view: thongSoStackView)
+            case .ThuVien:
+                showUnderline(view: thuVienStackView)
+            }
+        }
+    }
+    
+    
+    
+    func showUnderline(view: UIView) {
+        for subView in  view.subviews {
+            if subView.isKind(of: UIView.self) {
+                    subView.alpha = 1.0
+            }
+        }
+
+        
+        
+    }
+    
+    func hideUnderline() {
+        for stackView in containerStackView.subviews {
+            for view in stackView.subviews {
+                if view.isKind(of: UILabel.self) { continue }
+                if view.isKind(of: UIView.self) {
+                    view.alpha = 0.0
+                }
+            }
         }
     }
 
