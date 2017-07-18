@@ -592,6 +592,7 @@
 				TargetAttributes = {
 					04A9BCD11F05FA760032BDBC = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9F7VT5AJUA;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -907,13 +908,15 @@
 			baseConfigurationReference = E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 9F7VT5AJUA;
 				INFOPLIST_FILE = LexusApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.supercoolapps.LexusApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.what4apps.lexus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0a2a48f0-81fb-4163-86e3-82a312a64417";
+				PROVISIONING_PROFILE_SPECIFIER = "Lexus-Dis Vuong 13/7/2017";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -924,13 +927,15 @@
 			baseConfigurationReference = 3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 9F7VT5AJUA;
 				INFOPLIST_FILE = LexusApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.supercoolapps.LexusApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.what4apps.lexus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0a2a48f0-81fb-4163-86e3-82a312a64417";
+				PROVISIONING_PROFILE_SPECIFIER = "Lexus-Dis Vuong 13/7/2017";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
