@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" translatesAutoresizingMaskIntoConstraints="NO" id="NLp-RA-MfP" customClass="DesignableImageView" customModule="Spring">
-                        <rect key="frame" x="0.0" y="0.0" width="132" height="131"/>
+                        <rect key="frame" x="5" y="5" width="122" height="121"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="5"/>
@@ -31,10 +31,10 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="NLp-RA-MfP" secondAttribute="trailing" id="IeR-DT-hYr"/>
-                <constraint firstItem="NLp-RA-MfP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X9u-1x-VqP"/>
-                <constraint firstItem="NLp-RA-MfP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ugE-fI-A57"/>
-                <constraint firstAttribute="bottom" secondItem="NLp-RA-MfP" secondAttribute="bottom" id="yNh-So-3ja"/>
+                <constraint firstAttribute="trailing" secondItem="NLp-RA-MfP" secondAttribute="trailing" constant="5" id="IeR-DT-hYr"/>
+                <constraint firstItem="NLp-RA-MfP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="X9u-1x-VqP"/>
+                <constraint firstItem="NLp-RA-MfP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ugE-fI-A57"/>
+                <constraint firstAttribute="bottom" secondItem="NLp-RA-MfP" secondAttribute="bottom" constant="5" id="yNh-So-3ja"/>
             </constraints>
             <size key="customSize" width="132" height="131"/>
             <connections>

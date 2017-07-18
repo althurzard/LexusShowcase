@@ -18,6 +18,12 @@ class BaseCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        let selectedView = UIView(frame: self.frame)
+        selectedView.backgroundColor = .white
+        selectedView.layer.borderWidth = imageView.borderWidth
+        selectedView.layer.cornerRadius = imageView.cornerRadius
+        self.selectedBackgroundView = selectedView
     }
 
 }

@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import Spring
 
 class PopupLibraryView: UIView {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var imageView: DesignableImageView!
+    
+    
+    @IBOutlet weak var backgroundView: UIView!
     
     lazy var dataSourceImages: [UIImage] = {
         var images: [UIImage] = []
@@ -34,19 +40,86 @@ class PopupLibraryView: UIView {
         super.awakeFromNib()
         tableView.delegate = self
         tableView.dataSource = self
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapView))
-        self.addGestureRecognizer(gesture)
+        
+        imageView.addGestureRecognizer(createGesture())
+        imageView.image = dataSourceImages.first
+        
+        backgroundView.addGestureRecognizer(createGesture())
+        
     }
     
-    func didTapView(sender: UIGestureRecognizer) {
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+    
+        // Select first cell for default
+        let indexPath = IndexPath(row: 0, section: 0)
+        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
+            if let cell = row.collectionView.visibleCells.first {
+                let indexPath = row.collectionView.indexPath(for: cell)
+                row.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+                self.collectionView(row.collectionView, didSelectItemAt: indexPath!)
+            }
+        }
+        
+    }
+    
+    func createGesture() -> UITapGestureRecognizer {
+        return UITapGestureRecognizer(target: self, action: #selector(didTapView))
+    }
+    
+    
+     func didTapView(sender: UIGestureRecognizer) {
         self.removeFromSuperview()
+    }
+    
+    enum SelectedDirection {
+        case Left
+        case Right
+    }
+    
+    @IBAction func didTapLeftImageSlider(_ sender: Any) {
+        selectCell(direction: .Left)
+    }
+    
+    @IBAction func didTapRightImageSlider(_ sender: Any) {
+        selectCell(direction: .Right)
+    }
+    
+    func selectCell(direction: SelectedDirection) {
+        let indexPath = IndexPath(row: 0, section: 0)
+        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
+            for cell in row.collectionView.visibleCells {
+                if cell.isSelected {
+                    if let currentCellIndexPath = row.collectionView.indexPath(for: cell) {
+                        var indexPath: IndexPath!
+                        switch direction {
+                        case .Left:
+                            indexPath = IndexPath(item: currentCellIndexPath.item - 1 , section: currentCellIndexPath.section)
+                        
+                        case .Right:
+                            indexPath = IndexPath(item: currentCellIndexPath.item + 1 , section: currentCellIndexPath.section)
+                            
+                        }
+                        
+                        if let _ = row.collectionView.cellForItem(at: indexPath) {
+                            row.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+                            self.collectionView(row.collectionView, didSelectItemAt: indexPath)
+                        }
+                        
+                        
+                        break
+                    }
+                    
+                   
+                }
+            }
+        }
+        
     }
     
     class func instanceFromNib() -> PopupLibraryView {
         return UINib(nibName: "PopupLibraryView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! PopupLibraryView
     }
-    
-    
 
 }
 
@@ -62,8 +135,6 @@ extension PopupLibraryView: UITableViewDelegate {
         guard let cell: GLCollectionTableViewCell = cell as? GLCollectionTableViewCell else {
             return
         }
-        
-
         cell.setCollectionView(dataSource: self, delegate: self, indexPath: indexPath)
         
 
@@ -144,8 +215,11 @@ extension PopupLibraryView: UICollectionViewDataSource {
             fatalError("UICollectionView must be of GLIndexedCollectionView type")
         }
         
+        
+        
         // Configure the cell...
         cell.imageView.image = self.dataSourceImages[indexPath.item]
+
         return cell
     }
     
@@ -154,7 +228,10 @@ extension PopupLibraryView: UICollectionViewDataSource {
 extension PopupLibraryView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if let cell = collectionView.cellForItem(at: indexPath) as? BaseCollectionViewCell {
+            self.imageView.image = cell.imageView.image
+            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
         
     }
     
