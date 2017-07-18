@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CustomHeaderProtocol {
+    func didTapCategory(name: CustomHeader.LabelName)
+}
+
 class CustomHeader: UIView {
 
     /*
@@ -33,7 +37,9 @@ class CustomHeader: UIView {
     @IBOutlet weak var thuVienStackView: UIStackView!
     
     @IBOutlet weak var containerStackView: UIStackView!
-    enum LabelName: Int {
+    
+    var delegate: CustomHeaderProtocol?
+    public enum LabelName: Int {
         case TongQuan
         case ThietKe
         case VanHanh
@@ -63,26 +69,30 @@ class CustomHeader: UIView {
     func didTapOnLabel(sender:UITapGestureRecognizer) {
 
         if let view = sender.view  {
-            hideUnderline()
+            
             let lblName = LabelName(rawValue: view.tag)!
-            print(lblName.rawValue)
-            switch lblName {
-            case .TongQuan:
-                showUnderline(view: tongQuanStackView)
-            case .ThietKe:
-                showUnderline(view: thietKeStackView)
-            case .VanHanh:
-                showUnderline(view: vanHanhStackView)
-            case .AnToan:
-                showUnderline(view: anToanStackView)
-            case .ThongSo:
-                showUnderline(view: thongSoStackView)
-            case .ThuVien:
-                showUnderline(view: thuVienStackView)
-            }
+            delegate?.didTapCategory(name: lblName)
         }
     }
     
+    func switchState(category: LabelName) {
+        hideUnderline()
+        
+        switch category {
+        case .TongQuan:
+            showUnderline(view: tongQuanStackView)
+        case .ThietKe:
+            showUnderline(view: thietKeStackView)
+        case .VanHanh:
+            showUnderline(view: vanHanhStackView)
+        case .AnToan:
+            showUnderline(view: anToanStackView)
+        case .ThongSo:
+            showUnderline(view: thongSoStackView)
+        case .ThuVien:
+            showUnderline(view: thuVienStackView)
+        }
+    }
     
     
     func showUnderline(view: UIView) {

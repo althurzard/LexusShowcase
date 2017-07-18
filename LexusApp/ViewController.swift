@@ -11,6 +11,7 @@ import Eureka
 class ViewController: FormViewController {
 
     struct Constants {
+        static let sectionTag = "Section"
         static let overviewRow = "TỔNG QUAN"
         static let colorPicker = "CHỌN MÀU XE"
         static let designRow = "THIẾT KẾ"
@@ -38,6 +39,8 @@ class ViewController: FormViewController {
     
     fileprivate lazy var customLirabryRow: CustomLibraryRow = self.form.rowBy(tag: Constants.libraryRow) as! CustomLibraryRow
     
+    fileprivate var headerView: CustomHeader?
+    
     fileprivate var currentContentOffset: CGPoint = .zero
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,34 +65,46 @@ class ViewController: FormViewController {
         
         if locationOnScreenY > currentContentOffset.y {
             if locationOnScreenY <= self.heightRow {
-                self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+                
+                goToRowBy(indexPath: customColorPickerRow.indexPath!, category: .TongQuan)
+                
             } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
-                self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+                
+                goToRowBy(indexPath: customBodyRow.indexPath!, category: .ThietKe)
+                
             } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
-                self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+                
+                goToRowBy(indexPath: customOperationRow.indexPath!, category: .VanHanh)
+                
             } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
-                self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+                
+                goToRowBy(indexPath: customSafetyRow.indexPath!, category: .AnToan)
+                
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+                
+                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
+                
             } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customLirabryRow.indexPath!, category: .ThuVien)
             }
 
         } else {
             if locationOnScreenY <= self.heightRow {
+                headerView?.hideUnderline()
                 self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
+                
             } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
-                self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customColorPickerRow.indexPath!, category: .TongQuan)
             } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
-                self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customBodyRow.indexPath!, category: .ThietKe)
             } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
-                self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customOperationRow.indexPath!, category: .VanHanh)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 5 {
-                self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customSafetyRow.indexPath!, category: .AnToan)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
             } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
             }
         }
 
@@ -98,6 +113,10 @@ class ViewController: FormViewController {
         
     }
     
+    func goToRowBy(indexPath: IndexPath, category: CustomHeader.LabelName) {
+        self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        headerView?.switchState(category: category)
+    }
     
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
@@ -162,10 +181,14 @@ class ViewController: FormViewController {
         
         self.form
         +++
-            Section(""){ section in
+            Section(Constants.sectionTag){ section in
                 
                 let customHeaderProvider = HeaderFooterProvider<CustomHeader>.nibFile(name: "CustomHeader", bundle: nil)
-                let customHeaderView = HeaderFooterView<CustomHeader>(customHeaderProvider)
+                var customHeaderView = HeaderFooterView<CustomHeader>(customHeaderProvider)
+                customHeaderView.onSetupView = { (view,section)  in
+                    self.headerView = view
+                    view.delegate = self
+                }
                 section.header = customHeaderView
                 
                 let customFooterProvider = HeaderFooterProvider<CustomFooterView>.nibFile(name: "CustomFooterView", bundle: nil)
@@ -220,6 +243,25 @@ class ViewController: FormViewController {
     }
 
 
+}
+
+extension ViewController: CustomHeaderProtocol {
+    func didTapCategory(name: CustomHeader.LabelName) {
+        switch name {
+        case .TongQuan:
+            goToRowBy(indexPath: customColorPickerRow.indexPath!, category: name)
+        case .ThietKe:
+            goToRowBy(indexPath: customBodyRow.indexPath!, category: name)
+        case .VanHanh:
+           goToRowBy(indexPath: customOperationRow.indexPath!, category: name)
+        case .AnToan:
+           goToRowBy(indexPath: customSafetyRow.indexPath!, category: name)
+        case .ThongSo:
+            goToRowBy(indexPath: customSpecificationRow.indexPath!, category: name)
+        case .ThuVien:
+            goToRowBy(indexPath: customLirabryRow.indexPath!, category: name)
+        }
+    }
 }
 
 
