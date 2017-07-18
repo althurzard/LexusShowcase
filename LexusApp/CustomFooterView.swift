@@ -10,6 +10,7 @@ import UIKit
 
 class CustomFooterView: UIView {
 
+    static let height:CGFloat = 20.0
     class func instanceFromNib() -> CustomFooterView {
         return UINib(nibName: "CustomFooterView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! CustomFooterView
     }

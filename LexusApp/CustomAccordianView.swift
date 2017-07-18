@@ -45,7 +45,7 @@ class CustomAccordianView: UIView {
     func initData() {
         // TODO: Remove when go0live
         for i in 0 ..< 5 {
-            let spec: Specification = Specification(title:"Test\(i)", description: "This is a Description")
+            let spec: Specification = Specification(title:"Test\(i)", description: "Xăng\nĐiện")
             if i == 3 {
                 spec.description = nil
             }

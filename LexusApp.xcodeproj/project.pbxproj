@@ -101,6 +101,13 @@
 		22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B901F1D22C200227DB2 /* CustomFooterView.swift */; };
 		22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */; };
 		22876B951F1DD4C200227DB2 /* CustomRadioBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */; };
+		22876B981F1DE5F500227DB2 /* DetailSpecification2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */; };
+		22876B991F1DE5F500227DB2 /* DetailSpecification2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */; };
+		22876B9B1F1DED2E00227DB2 /* PopupLibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B9A1F1DED2E00227DB2 /* PopupLibraryView.xib */; };
+		22876B9E1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */; };
+		22876BA01F1DF79700227DB2 /* PopupLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */; };
+		22876BA31F1DFA5900227DB2 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BA11F1DFA5900227DB2 /* BaseCollectionViewCell.swift */; };
+		22876BA41F1DFA5900227DB2 /* BaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BA21F1DFA5900227DB2 /* BaseCollectionViewCell.xib */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -201,6 +208,13 @@
 		22876B901F1D22C200227DB2 /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioBarView.xib; sourceTree = "<group>"; };
 		22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRadioBarView.swift; sourceTree = "<group>"; };
+		22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecification2Cell.swift; sourceTree = "<group>"; };
+		22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSpecification2Cell.xib; sourceTree = "<group>"; };
+		22876B9A1F1DED2E00227DB2 /* PopupLibraryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupLibraryView.xib; sourceTree = "<group>"; };
+		22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupLibraryView.swift; sourceTree = "<group>"; };
+		22876BA11F1DFA5900227DB2 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		22876BA21F1DFA5900227DB2 /* BaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9BCF91F0605C00032BDBC /* Materials */,
+				22876B9C1F1DED3500227DB2 /* Libraries */,
 				22876B7F1F1D033000227DB2 /* Extensions */,
 				04A9BCEC1F05FB330032BDBC /* ViewControllers */,
 				04A9BCEB1F05FB2A0032BDBC /* Views */,
@@ -423,6 +438,8 @@
 				04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */,
 				04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */,
 				04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */,
+				22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */,
+				22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */,
 			);
 			name = Specification;
 			sourceTree = "<group>";
@@ -496,6 +513,10 @@
 				22876B7D1F1CFFC400227DB2 /* CustomLibraryView.xib */,
 				22876B8A1F1D106A00227DB2 /* CustomLibraryCell.swift */,
 				22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */,
+				22876B9A1F1DED2E00227DB2 /* PopupLibraryView.xib */,
+				22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */,
+				22876BA11F1DFA5900227DB2 /* BaseCollectionViewCell.swift */,
+				22876BA21F1DFA5900227DB2 /* BaseCollectionViewCell.xib */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -506,6 +527,14 @@
 				22876B801F1D033900227DB2 /* UICollectionView+Extensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		22876B9C1F1DED3500227DB2 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 		6D24365CEE93E398AC7227F9 /* Frameworks */ = {
@@ -599,12 +628,14 @@
 				04A9BD301F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png in Resources */,
 				04A9BD2B1F0605F60032BDBC /* img_gallery_02.jpg in Resources */,
 				04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */,
+				22876B9B1F1DED2E00227DB2 /* PopupLibraryView.xib in Resources */,
 				04A9BD241F0605F60032BDBC /* Xam-Mecury-Gray-MC.-(1H9).png in Resources */,
 				04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */,
 				22876B881F1D0AFC00227DB2 /* RC3402.png in Resources */,
 				04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */,
 				04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */,
 				04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */,
+				22876BA41F1DFA5900227DB2 /* BaseCollectionViewCell.xib in Resources */,
 				04A9BD281F0605F60032BDBC /* Big-Image-1-(1000x560).png in Resources */,
 				04A9BD391F0605F60032BDBC /* rc-performance-aerodynamics.jpg in Resources */,
 				04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */,
@@ -632,6 +663,7 @@
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
 				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
 				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
+				22876B991F1DE5F500227DB2 /* DetailSpecification2Cell.xib in Resources */,
 				04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */,
 				04F40A9C1F07B79B00D38D4D /* DetailTableViewCell.xib in Resources */,
 				04A9BCDB1F05FA760032BDBC /* Main.storyboard in Resources */,
@@ -710,18 +742,22 @@
 			files = (
 				22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */,
 				04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */,
+				22876B981F1DE5F500227DB2 /* DetailSpecification2Cell.swift in Sources */,
 				04A9BCD81F05FA760032BDBC /* ViewController.swift in Sources */,
+				22876B9E1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift in Sources */,
 				22876B8C1F1D106A00227DB2 /* CustomLibraryCell.swift in Sources */,
 				04F40A911F07939A00D38D4D /* Specification.swift in Sources */,
 				04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */,
 				04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */,
 				04A9BCF21F0600A10032BDBC /* CustomOverviewCell.swift in Sources */,
 				04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */,
+				22876BA31F1DFA5900227DB2 /* BaseCollectionViewCell.swift in Sources */,
 				04A9BCF71F0605220032BDBC /* CustomColorPickerCell.swift in Sources */,
 				22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */,
 				04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */,
 				224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */,
 				04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */,
+				22876BA01F1DF79700227DB2 /* PopupLibraryView.swift in Sources */,
 				22876B811F1D033900227DB2 /* UICollectionView+Extensions.swift in Sources */,
 				04F40A791F07675500D38D4D /* CustomSpecificationCell.swift in Sources */,
 				04A9BD661F0655B80032BDBC /* CustomBodyCell.swift in Sources */,

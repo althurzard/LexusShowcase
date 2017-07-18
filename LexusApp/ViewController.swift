@@ -227,7 +227,16 @@ class ViewController: FormViewController {
         
             <<< CustomLibraryRow(Constants.libraryRow) {
                 $0.cell.height = { self.heightRow }
-        }
+        }.onCellSelection({ (cell, row) in
+            let popupView = PopupLibraryView.instanceFromNib()
+            self.view.addSubview(popupView)
+            
+            popupView.translatesAutoresizingMaskIntoConstraints = false
+            popupView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: -10).isActive = true
+            popupView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 10).isActive = true
+            popupView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: -10).isActive = true
+            popupView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -CustomFooterView.height).isActive = true
+        })
         
            
                 

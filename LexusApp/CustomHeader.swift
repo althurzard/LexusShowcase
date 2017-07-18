@@ -101,9 +101,6 @@ class CustomHeader: UIView {
                     subView.alpha = 1.0
             }
         }
-
-        
-        
     }
     
     func hideUnderline() {
