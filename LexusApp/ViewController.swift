@@ -8,6 +8,7 @@
 
 import UIKit
 import Eureka
+import DLRadioButton
 class ViewController: FormViewController {
 
     struct Constants {
@@ -41,6 +42,8 @@ class ViewController: FormViewController {
     
     fileprivate var headerView: CustomHeader?
     
+    @IBOutlet weak var radioGroupStackview: UIStackView!
+    
     fileprivate var currentContentOffset: CGPoint = .zero
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,58 +69,52 @@ class ViewController: FormViewController {
         if locationOnScreenY > currentContentOffset.y {
             if locationOnScreenY <= self.heightRow {
                 
-                goToRowBy(indexPath: customColorPickerRow.indexPath!, category: .TongQuan)
+                goToRowBy(category: .TongQuan)
                 
             } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
                 
-                goToRowBy(indexPath: customBodyRow.indexPath!, category: .ThietKe)
+                goToRowBy(category: .ThietKe)
                 
             } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
                 
-                goToRowBy(indexPath: customOperationRow.indexPath!, category: .VanHanh)
+                goToRowBy(category: .VanHanh)
                 
             } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
                 
-                goToRowBy(indexPath: customSafetyRow.indexPath!, category: .AnToan)
+                goToRowBy(category: .AnToan)
                 
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
                 
-                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
+                goToRowBy(category: .ThongSo)
                 
             } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                goToRowBy(indexPath: customLirabryRow.indexPath!, category: .ThuVien)
+                goToRowBy(category: .ThuVien)
             }
 
         } else {
             if locationOnScreenY <= self.heightRow {
+                hideAllRadioButton()
                 headerView?.hideUnderline()
                 self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
                 
             } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
-                goToRowBy(indexPath: customColorPickerRow.indexPath!, category: .TongQuan)
+                goToRowBy(category: .TongQuan)
             } else if locationOnScreenY > self.heightRow * 2, locationOnScreenY <= self.heightRow * 3 {
-                goToRowBy(indexPath: customBodyRow.indexPath!, category: .ThietKe)
+                goToRowBy(category: .ThietKe)
             } else if locationOnScreenY > self.heightRow * 3, locationOnScreenY <= self.heightRow * 4 {
-                goToRowBy(indexPath: customOperationRow.indexPath!, category: .VanHanh)
+                goToRowBy(category: .VanHanh)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 5 {
-                goToRowBy(indexPath: customSafetyRow.indexPath!, category: .AnToan)
+                goToRowBy(category: .AnToan)
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
+                goToRowBy(category: .ThongSo)
             } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                goToRowBy(indexPath: customSpecificationRow.indexPath!, category: .ThongSo)
+                goToRowBy(category: .ThongSo)
             }
         }
 
         self.currentContentOffset.y = locationOnScreenY
-        print("end scrolling")
         
     }
-    
-    func goToRowBy(indexPath: IndexPath, category: CustomHeader.LabelName) {
-        self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-        headerView?.switchState(category: category)
-    }
-    
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         
@@ -176,8 +173,7 @@ class ViewController: FormViewController {
     }
     
     func loadForm() {
-     
-
+        
         
         self.form
         +++
@@ -238,6 +234,52 @@ class ViewController: FormViewController {
 
     }
     
+    
+    @IBAction fileprivate func didTapOnRadioButtonGroup(sender: UIButton) {
+        let category = CustomHeader.LabelName(rawValue: sender.tag)!
+        goToRowBy(category: category)
+    }
+    
+    func goToRowBy(category: CustomHeader.LabelName) {
+        
+        switch category {
+        case .TongQuan:
+            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+        case .ThietKe:
+            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+        case .VanHanh:
+            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+        case .AnToan:
+            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+        case .ThongSo:
+            self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+        case .ThuVien:
+            self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: .top, animated: true)
+        }
+        
+        hideAllRadioButton(exclude: category)
+        
+        headerView?.switchState(category: category)
+    }
+    
+    
+    func hideAllRadioButton(exclude category: CustomHeader.LabelName? = nil) {
+        for view in radioGroupStackview.subviews {
+            if let button = view as? DLRadioButton {
+                if category != nil {
+                    let buttonCategory = CustomHeader.LabelName(rawValue: button.tag)!
+                    if category == buttonCategory {
+                        button.isSelected = true
+                        break
+                    }
+                } else {
+                    button.deselectOtherButtons()
+                }
+                
+            }
+        }
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -247,20 +289,7 @@ class ViewController: FormViewController {
 
 extension ViewController: CustomHeaderProtocol {
     func didTapCategory(name: CustomHeader.LabelName) {
-        switch name {
-        case .TongQuan:
-            goToRowBy(indexPath: customColorPickerRow.indexPath!, category: name)
-        case .ThietKe:
-            goToRowBy(indexPath: customBodyRow.indexPath!, category: name)
-        case .VanHanh:
-           goToRowBy(indexPath: customOperationRow.indexPath!, category: name)
-        case .AnToan:
-           goToRowBy(indexPath: customSafetyRow.indexPath!, category: name)
-        case .ThongSo:
-            goToRowBy(indexPath: customSpecificationRow.indexPath!, category: name)
-        case .ThuVien:
-            goToRowBy(indexPath: customLirabryRow.indexPath!, category: name)
-        }
+        goToRowBy(category: name)
     }
 }
 

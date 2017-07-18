@@ -99,6 +99,8 @@
 		22876B8D1F1D106A00227DB2 /* CustomLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */; };
 		22876B8F1F1D1B4700227DB2 /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */; };
 		22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B901F1D22C200227DB2 /* CustomFooterView.swift */; };
+		22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */; };
+		22876B951F1DD4C200227DB2 /* CustomRadioBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -197,6 +199,8 @@
 		22876B8B1F1D106A00227DB2 /* CustomLibraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLibraryCell.xib; sourceTree = "<group>"; };
 		22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
 		22876B901F1D22C200227DB2 /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
+		22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioBarView.xib; sourceTree = "<group>"; };
+		22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRadioBarView.swift; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 				04A9BCEF1F05FB5F0032BDBC /* CustomHeader.xib */,
 				22876B901F1D22C200227DB2 /* CustomFooterView.swift */,
 				22876B8E1F1D1B4600227DB2 /* CustomFooterView.xib */,
+				22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */,
+				22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -589,6 +595,7 @@
 				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
 				04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */,
 				04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */,
+				22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */,
 				04A9BD301F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png in Resources */,
 				04A9BD2B1F0605F60032BDBC /* img_gallery_02.jpg in Resources */,
 				04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */,
@@ -722,6 +729,7 @@
 				22876B7C1F1CFFB800227DB2 /* CustomLibraryView.swift in Sources */,
 				04A9BCDE1F05FA760032BDBC /* LexusApp.xcdatamodeld in Sources */,
 				04A9BCD61F05FA760032BDBC /* AppDelegate.swift in Sources */,
+				22876B951F1DD4C200227DB2 /* CustomRadioBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

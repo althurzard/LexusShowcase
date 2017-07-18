@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,32 +18,98 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wGV-mP-he5">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="2mL-ia-xWx"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="to7-uo-r6L"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio-tab-bar" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-Yd-kZB">
+                                <rect key="frame" x="989" y="304" width="35" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="J5r-Vb-cXs"/>
+                                    <constraint firstAttribute="width" constant="35" id="MRe-kf-zp3"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ots-Lp-Kfe">
+                                <rect key="frame" x="994" y="316" width="25" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKU-QR-ob2" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pf-DU-ou0"/>
+                                            <outletCollection property="otherButtons" destination="1r0-Rd-aZG" id="yR3-p6-DKv"/>
+                                            <outletCollection property="otherButtons" destination="hwL-ag-Khq" id="TFH-Ya-Jed"/>
+                                            <outletCollection property="otherButtons" destination="oNA-yd-kTT" id="Cl4-C1-pFz"/>
+                                            <outletCollection property="otherButtons" destination="lZ0-HH-Wls" id="6s9-E8-F1E"/>
+                                            <outletCollection property="otherButtons" destination="V9s-gz-caB" id="Rz4-MX-JvM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r0-Rd-aZG" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="20" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pq-qM-IIX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-ag-Khq" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="40" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnD-RF-k5n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-yd-kTT" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="60" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8V2-XR-Voc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZ0-HH-Wls" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="80" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CAl-bF-7cx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9s-gz-caB" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="100" width="25" height="20"/>
+                                        <connections>
+                                            <action selector="didTapOnRadioButtonGroupWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nef-lc-03G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3QA-Tk-VAH"/>
+                                    <constraint firstAttribute="width" constant="25" id="fh1-OP-Gph"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wGV-mP-he5" secondAttribute="trailing" id="5ds-Z2-Qvn"/>
                             <constraint firstItem="wGV-mP-he5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IGZ-fD-WYi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wGV-mP-he5" secondAttribute="bottom" id="Nwg-64-wCM"/>
+                            <constraint firstItem="ots-Lp-Kfe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8" id="Ojq-Pe-f8s"/>
+                            <constraint firstItem="uxc-Yd-kZB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VWS-Dw-7s5"/>
+                            <constraint firstAttribute="trailing" secondItem="ots-Lp-Kfe" secondAttribute="trailing" constant="5" id="cWY-k6-e5B"/>
                             <constraint firstItem="wGV-mP-he5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="evS-6v-8Z0"/>
+                            <constraint firstAttribute="trailing" secondItem="uxc-Yd-kZB" secondAttribute="trailing" id="tsV-zc-oaB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="radioGroupStackview" destination="ots-Lp-Kfe" id="r6u-If-mvq"/>
                         <outlet property="tableView" destination="wGV-mP-he5" id="yrN-Ey-KgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.984375" y="64.84375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="radio-tab-bar" width="59" height="283"/>
+    </resources>
 </document>
