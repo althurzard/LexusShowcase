@@ -1,5 +1,5 @@
 //
-//  PopupLibraryView.swift
+//  ColorPickerView.swift
 //  LexusApp
 //
 //  Created by MacOS on 7/18/17.
@@ -7,123 +7,41 @@
 //
 
 import UIKit
-import Spring
 
-class PopupLibraryView: UIView {
+
+class ColorPickerView: UIView {
+    
+    static let identifer = "ColorPickerView"
+    static let notificationName = "ColorPickerNotification"
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var imageView: DesignableImageView!
-    
-    
-    @IBOutlet weak var backgroundView: UIView!
-    
     lazy var dataSourceImages: [UIImage] = {
         var images: [UIImage] = []
-        images.append(UIImage(named: "RC3004")!)
-        images.append(UIImage(named: "RC3402")!)
-        images.append(UIImage(named: "RC6089")!)
-        images.append(UIImage(named: "RC5047")!)
-        images.append(UIImage(named: "Big-Image-1-(1000x560)")!)
-        images.append(UIImage(named: "Big-Image-2-(1000x560)")!)
-        images.append(UIImage(named: "Big-Image-4-(1000x560)")!)
-        images.append(UIImage(named: "img_gallery_02.jpg")!)
-        images.append(UIImage(named: "img_gallery_04.jpg")!)
-        images.append(UIImage(named: "img_gallery_05.jpg")!)
-        images.append(UIImage(named: "Small-image-1")!)
+        images.append(#imageLiteral(resourceName: "btn-sonic-titanium"))
+        images.append(#imageLiteral(resourceName: "btn-sonic-quartz"))
+        images.append(#imageLiteral(resourceName: "btn-platinum silver-metallic"))
+        images.append(#imageLiteral(resourceName: "btn-mercury-gray-mc"))
+        images.append(#imageLiteral(resourceName: "btn-black"))
+        images.append(#imageLiteral(resourceName: "btn-graphite-black"))
+        images.append(#imageLiteral(resourceName: "btn-radiant-red-cl"))
         return images
     }()
     
-    static let LibraryTableCellID = "LibraryTableCellID"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        imageView.addGestureRecognizer(createGesture())
-        imageView.image = dataSourceImages.first
-        
-        backgroundView.addGestureRecognizer(createGesture())
-        
     }
     
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-    
-        // Select first cell for default
-//        let indexPath = IndexPath(row: 0, section: 0)
-//        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
-//            if let cell = row.collectionView.visibleCells.first {
-//                let indexPath = row.collectionView.indexPath(for: cell)
-//                
-//                self.collectionView(row.collectionView, didSelectItemAt: indexPath!)
-//            }
-//        }
-        
-    }
-    
-    func createGesture() -> UITapGestureRecognizer {
-        return UITapGestureRecognizer(target: self, action: #selector(didTapView))
-    }
-    
-    
-     func didTapView(sender: UIGestureRecognizer) {
-        self.removeFromSuperview()
-    }
-    
-    enum SelectedDirection {
-        case Left
-        case Right
-    }
-    
-    @IBAction func didTapLeftImageSlider(_ sender: Any) {
-        selectCell(direction: .Left)
-    }
-    
-    @IBAction func didTapRightImageSlider(_ sender: Any) {
-        selectCell(direction: .Right)
-    }
-    
-    func selectCell(direction: SelectedDirection) {
-        let indexPath = IndexPath(row: 0, section: 0)
-        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
-            for cell in row.collectionView.visibleCells {
-                if cell.isSelected {
-                    if let currentCellIndexPath = row.collectionView.indexPath(for: cell) {
-                        var indexPath: IndexPath!
-                        switch direction {
-                        case .Left:
-                            indexPath = IndexPath(item: currentCellIndexPath.item - 1 , section: currentCellIndexPath.section)
-                        
-                        case .Right:
-                            indexPath = IndexPath(item: currentCellIndexPath.item + 1 , section: currentCellIndexPath.section)
-                            
-                        }
-                        
-                        if let _ = row.collectionView.cellForItem(at: indexPath) {
-                            row.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
-                            self.collectionView(row.collectionView, didSelectItemAt: indexPath)
-                        }
-                        
-                        
-                        break
-                    }
-                    
-                   
-                }
-            }
-        }
-        
-    }
-    
-    class func instanceFromNib() -> PopupLibraryView {
-        return UINib(nibName: "PopupLibraryView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! PopupLibraryView
+    class func instanceFromNib() -> ColorPickerView {
+        return UINib(nibName: "ColorPickerView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! ColorPickerView
     }
 
 }
 
-extension PopupLibraryView: UITableViewDelegate {
+extension ColorPickerView: UITableViewDelegate {
     
     // MARK: <UITableView Delegate>
     
@@ -135,19 +53,20 @@ extension PopupLibraryView: UITableViewDelegate {
         guard let cell: GLCollectionTableViewCell = cell as? GLCollectionTableViewCell else {
             return
         }
+        cell.collectionView.backgroundColor = .white
         cell.setCollectionView(dataSource: self, delegate: self, indexPath: indexPath)
         
-
+        
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = .clear
     }
-
+    
     
 }
 
-extension PopupLibraryView: UITableViewDataSource {
+extension ColorPickerView: UITableViewDataSource {
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -178,7 +97,7 @@ extension PopupLibraryView: UITableViewDataSource {
         // will have a different UICollectionView with UICollectionViewCells in
         // it and UITableView reuse won't work as expected giving back wrong
         // cells.
-        var cell: GLCollectionTableViewCell? = tableView.dequeueReusableCell(withIdentifier: PopupLibraryView.LibraryTableCellID + indexPath.section.description) as? GLCollectionTableViewCell
+        var cell: GLCollectionTableViewCell? = tableView.dequeueReusableCell(withIdentifier: ColorPickerView.identifer + indexPath.section.description) as? GLCollectionTableViewCell
         
         if cell == nil {
             cell = GLCollectionTableViewCell(style: .default, reuseIdentifier: PopupLibraryView.LibraryTableCellID + indexPath.section.description)
@@ -186,7 +105,7 @@ extension PopupLibraryView: UITableViewDataSource {
             // Configure the cell...
             cell!.selectionStyle = .none
             cell!.collectionViewPaginatedScroll = true
-  
+            
             
         }
         
@@ -196,7 +115,7 @@ extension PopupLibraryView: UITableViewDataSource {
     
 }
 
-extension PopupLibraryView: UICollectionViewDataSource {
+extension ColorPickerView: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -207,7 +126,7 @@ extension PopupLibraryView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell: BaseCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: BaseCollectionViewCell.identifier, for: indexPath) as? BaseCollectionViewCell else {
+        guard let cell: ColorPickerViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorPickerViewCell.identifier, for: indexPath) as? ColorPickerViewCell else {
             fatalError("UICollectionViewCell must be of ContactCollectionViewCell type")
         }
         
@@ -218,24 +137,41 @@ extension PopupLibraryView: UICollectionViewDataSource {
         
         // Configure the cell...
         cell.imageView.image = self.dataSourceImages[indexPath.item]
-
+        
         if indexPath.item == 0 {
             cell.isSelected = true
             collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+            cell.colorName = "Ghi Sonic Titanium <1J7>"
+        } else if indexPath.item == 1 {
+            cell.colorName = "Trắng Sonic Quartz <085>"
+        } else if indexPath.item == 2 {
+            cell.colorName = "Bạc Platinum Silver Metallic <1J4>"
+            
+        } else if indexPath.item == 3 {
+            cell.colorName = "Xám Mercury Gray MC. <1H9>"
+        } else if indexPath.item == 4 {
+            cell.colorName = "Đen Black <212>"
+            
+        } else if indexPath.item == 5 {
+            cell.colorName = "Đen Graphite Black <223>"
+            
+        } else if indexPath.item == 6 {
+            cell.colorName = "Đỏ Radiant Red CL. <3T5>"
             
         }
+        
+        cell.indexPath = indexPath
+        
         return cell
     }
     
 }
 
-extension PopupLibraryView: UICollectionViewDelegate {
+extension ColorPickerView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? BaseCollectionViewCell {
-            self.imageView.image = cell.imageView.image
-            
-            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        if let cell = collectionView.cellForItem(at: indexPath) as? ColorPickerViewCell {
+           NotificationCenter.default.post(name: Notification.Name.init(rawValue: ColorPickerView.notificationName), object: cell)
         }
         
     }
@@ -243,7 +179,7 @@ extension PopupLibraryView: UICollectionViewDelegate {
     
 }
 
-extension PopupLibraryView: UICollectionViewDelegateFlowLayout {
+extension ColorPickerView: UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -272,6 +208,6 @@ extension PopupLibraryView: UICollectionViewDelegateFlowLayout {
 
 private let collectionTopInset: CGFloat = 0
 private let collectionBottomInset: CGFloat = 0
-private let collectionLeftInset: CGFloat = 5
-private let collectionRightInset: CGFloat = 5
+private let collectionLeftInset: CGFloat = 2.5
+private let collectionRightInset: CGFloat = 2.5
 

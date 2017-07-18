@@ -108,6 +108,10 @@
 		22876BA01F1DF79700227DB2 /* PopupLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */; };
 		22876BA31F1DFA5900227DB2 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BA11F1DFA5900227DB2 /* BaseCollectionViewCell.swift */; };
 		22876BA41F1DFA5900227DB2 /* BaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BA21F1DFA5900227DB2 /* BaseCollectionViewCell.xib */; };
+		22876BAB1F1E396200227DB2 /* ColorPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BA91F1E396200227DB2 /* ColorPickerViewCell.swift */; };
+		22876BAE1F1E3EFC00227DB2 /* ColorPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BAD1F1E3EFC00227DB2 /* ColorPickerViewCell.xib */; };
+		22876BB41F1E42CA00227DB2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BB31F1E42CA00227DB2 /* ColorPickerView.swift */; };
+		22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BB51F1E42D700227DB2 /* ColorPickerView.xib */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +219,10 @@
 		22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupLibraryView.swift; sourceTree = "<group>"; };
 		22876BA11F1DFA5900227DB2 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		22876BA21F1DFA5900227DB2 /* BaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCollectionViewCell.xib; sourceTree = "<group>"; };
+		22876BA91F1E396200227DB2 /* ColorPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewCell.swift; sourceTree = "<group>"; };
+		22876BAD1F1E3EFC00227DB2 /* ColorPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewCell.xib; sourceTree = "<group>"; };
+		22876BB31F1E42CA00227DB2 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		22876BB51F1E42D700227DB2 /* ColorPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -467,6 +475,10 @@
 			children = (
 				04A9BCF51F0605220032BDBC /* CustomColorPickerCell.swift */,
 				04A9BCF61F0605220032BDBC /* CustomColorPickerCell.xib */,
+				22876BA91F1E396200227DB2 /* ColorPickerViewCell.swift */,
+				22876BAD1F1E3EFC00227DB2 /* ColorPickerViewCell.xib */,
+				22876BB31F1E42CA00227DB2 /* ColorPickerView.swift */,
+				22876BB51F1E42D700227DB2 /* ColorPickerView.xib */,
 			);
 			name = ColorPicker;
 			sourceTree = "<group>";
@@ -660,6 +672,7 @@
 				04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */,
 				04A9BD3E1F0605F60032BDBC /* RC8053---superior-stability.jpg in Resources */,
 				22876B6C1F1C9E7E00227DB2 /* CustomSafetyCell.xib in Resources */,
+				22876BAE1F1E3EFC00227DB2 /* ColorPickerViewCell.xib in Resources */,
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
 				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
 				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
@@ -681,6 +694,7 @@
 				04A9BD371F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png in Resources */,
 				04A9BD341F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg in Resources */,
 				04A9BCF41F06022C0032BDBC /* CustomOverviewCell.xib in Resources */,
+				22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */,
 				04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,10 +765,12 @@
 				04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */,
 				04A9BCF21F0600A10032BDBC /* CustomOverviewCell.swift in Sources */,
 				04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */,
+				22876BB41F1E42CA00227DB2 /* ColorPickerView.swift in Sources */,
 				22876BA31F1DFA5900227DB2 /* BaseCollectionViewCell.swift in Sources */,
 				04A9BCF71F0605220032BDBC /* CustomColorPickerCell.swift in Sources */,
 				22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */,
 				04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */,
+				22876BAB1F1E396200227DB2 /* ColorPickerViewCell.swift in Sources */,
 				224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */,
 				04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */,
 				22876BA01F1DF79700227DB2 /* PopupLibraryView.swift in Sources */,

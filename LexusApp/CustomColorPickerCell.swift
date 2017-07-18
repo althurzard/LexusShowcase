@@ -23,6 +23,7 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
 
     fileprivate var isAnimating = true
     
+    @IBOutlet weak var colorPickerView: UIView!
     enum ColorModel {
         case SonicTitanium(String)
         case SonicQuartz(String)
@@ -40,6 +41,17 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     public override func setup() {
         super.setup()
         self.prepareAnimation()
+        
+        let collectionView = ColorPickerView.instanceFromNib()
+        colorPickerView.addSubview(collectionView)
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.leftAnchor.constraint(equalTo: colorPickerView.leftAnchor, constant: 0).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: colorPickerView.rightAnchor, constant: 0).isActive = true
+        collectionView.topAnchor.constraint(equalTo: colorPickerView.topAnchor, constant: 0).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: colorPickerView.bottomAnchor, constant: 0).isActive = true
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didTapSelectColorCell), name: Notification.Name.init(rawValue: ColorPickerView.notificationName), object: nil)
     }
     
     public override func update() {
@@ -48,27 +60,30 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
         selectionStyle = .none
     }
     
-    @IBAction func didTapSelectColorButton(_ sender: UIButton) {
-        
-        switch sender.tag {
-        case 0:
-            switchModel(colorModel: ColorModel.SonicTitanium(sender.currentTitle!))
-        case 1:
-            switchModel(colorModel: ColorModel.SonicQuartz(sender.currentTitle!))
-        case 2:
-            switchModel(colorModel: ColorModel.PlatinumSilverMetallic(sender.currentTitle!))
-        case 3:
-            switchModel(colorModel: ColorModel.MecuryGrayMC(sender.currentTitle!))
-        case 4:
-            switchModel(colorModel: ColorModel.Black(sender.currentTitle!))
-        case 5:
-            switchModel(colorModel: ColorModel.GraphiteBlack(sender.currentTitle!))
-        case 6:
-            switchModel(colorModel: ColorModel.RadiantRedCl(sender.currentTitle!))
-        default:
-            print("Model is unavailable")
-        }
     
+    
+    func didTapSelectColorCell(notification: Notification) {
+    
+        if let cell = notification.object as? ColorPickerViewCell {
+            switch cell.indexPath.item {
+            case 0:
+                switchModel(colorModel: ColorModel.SonicTitanium(cell.colorName!))
+            case 1:
+                switchModel(colorModel: ColorModel.SonicQuartz(cell.colorName!))
+            case 2:
+                switchModel(colorModel: ColorModel.PlatinumSilverMetallic(cell.colorName!))
+            case 3:
+                switchModel(colorModel: ColorModel.MecuryGrayMC(cell.colorName!))
+            case 4:
+                switchModel(colorModel: ColorModel.Black(cell.colorName!))
+            case 5:
+                switchModel(colorModel: ColorModel.GraphiteBlack(cell.colorName!))
+            case 6:
+                switchModel(colorModel: ColorModel.RadiantRedCl(cell.colorName!))
+            default:
+                print("Model is unavailable")
+            }
+        }
     }
     
     func switchModel(colorModel: ColorModel) {
@@ -123,6 +138,10 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     
     
 }
+
+
+
+
 
 final class CustomColorPickerRow: Row<CustomColorPickerCell>, RowType {
     

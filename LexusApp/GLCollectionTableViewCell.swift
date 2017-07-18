@@ -161,6 +161,7 @@ class GLCollectionTableViewCell: UITableViewCell {
 
 		collectionView = GLIndexedCollectionView(frame: .zero, collectionViewLayout: collectionFlowLayout)
 		collectionView.register(UINib(nibName: "BaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: BaseCollectionViewCell.identifier)
+        collectionView.register(UINib(nibName: "ColorPickerViewCell", bundle: nil), forCellWithReuseIdentifier: ColorPickerViewCell.identifier)
 		collectionView.backgroundColor = UIColor(red: 32/255, green: 32/255, blue: 32/255, alpha: 1.0)
 		collectionView.showsHorizontalScrollIndicator = false
 		collectionView.showsVerticalScrollIndicator = false

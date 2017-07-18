@@ -84,8 +84,11 @@ class ViewController: FormViewController {
                 goToRowBy(category: .AnToan)
                 
             } else if locationOnScreenY > self.heightRow * 4, locationOnScreenY <= self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
-                
-                goToRowBy(category: .ThongSo)
+                if self.customSpecificationRow.cell.height!() > self.heightRow {
+                    goToRowBy(category: .ThongSo, position: .bottom)
+                } else {
+                    goToRowBy(category: .ThongSo)
+                }
                 
             } else if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
                 goToRowBy(category: .ThuVien)
@@ -237,9 +240,6 @@ class ViewController: FormViewController {
             popupView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: -10).isActive = true
             popupView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -CustomFooterView.height).isActive = true
         })
-        
-           
-                
 
     }
     
@@ -249,21 +249,21 @@ class ViewController: FormViewController {
         goToRowBy(category: category)
     }
     
-    func goToRowBy(category: CustomHeader.LabelName) {
+    func goToRowBy(category: CustomHeader.LabelName, position: UITableViewScrollPosition = .top) {
         
         switch category {
         case .TongQuan:
-            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: position, animated: true)
         case .ThietKe:
-            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: position, animated: true)
         case .VanHanh:
-            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: position, animated: true)
         case .AnToan:
-            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: position, animated: true)
         case .ThongSo:
-            self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: position, animated: true)
         case .ThuVien:
-            self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: .top, animated: true)
+            self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: position, animated: true)
         }
         
         hideAllRadioButton(exclude: category)

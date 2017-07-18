@@ -19,6 +19,11 @@ class BaseCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        initSelectedBackgroundView()
+        
+    }
+    
+    func initSelectedBackgroundView() {
         let selectedView = UIView(frame: self.frame)
         selectedView.backgroundColor = .white
         selectedView.layer.borderWidth = imageView.borderWidth
