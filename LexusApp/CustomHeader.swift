@@ -22,6 +22,8 @@ class CustomHeader: UIView {
     }
     */
     
+    @IBOutlet weak var logoHeaderButton: UIButton!
+    
     static let height: CGFloat = 80
     
     @IBOutlet weak var tongQuanStackView: UIStackView!

@@ -9,8 +9,8 @@
 import YNExpandableCell
 import UIKit
 
-class YNExpandableCellEx: YNExpandableCell {
-    static let ID = "YNExpandableCellEx"
+class ExpandableCell: UITableViewCell {
+    static let ID = "ExpandableCell"
     
     @IBOutlet var titleLabel: UILabel!
 

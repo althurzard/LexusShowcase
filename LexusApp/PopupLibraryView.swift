@@ -18,6 +18,8 @@ class PopupLibraryView: UIView {
     
     @IBOutlet weak var backgroundView: UIView!
     
+    var initialScrollDone = false
+    
     lazy var dataSourceImages: [UIImage] = {
         var images: [UIImage] = []
         images.append(UIImage(named: "RC3004")!)
@@ -41,10 +43,19 @@ class PopupLibraryView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         
-        imageView.addGestureRecognizer(createGesture())
+        let swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeLeftImage))
+        swipeLeftGesture.direction = .left
+        
+        imageView.addGestureRecognizer(swipeLeftGesture)
+        
+        let swipeRightGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeRightImage))
+        swipeRightGesture.direction = .right
+        imageView.addGestureRecognizer(swipeRightGesture)
+        
         imageView.image = dataSourceImages.first
         
-        backgroundView.addGestureRecognizer(createGesture())
+        let tapBackground = UITapGestureRecognizer(target: self, action: #selector(didTapView))
+        backgroundView.addGestureRecognizer(tapBackground)
         
     }
     
@@ -63,8 +74,13 @@ class PopupLibraryView: UIView {
         
     }
     
-    func createGesture() -> UITapGestureRecognizer {
-        return UITapGestureRecognizer(target: self, action: #selector(didTapView))
+    
+    func didSwipeLeftImage(sender: UIGestureRecognizer) {
+        selectCell(direction: .Right)
+    }
+    
+    func didSwipeRightImage(sender: UIGestureRecognizer) {
+        selectCell(direction: .Left)
     }
     
     
@@ -94,14 +110,20 @@ class PopupLibraryView: UIView {
                         var indexPath: IndexPath!
                         switch direction {
                         case .Left:
-                            indexPath = IndexPath(item: currentCellIndexPath.item - 1 , section: currentCellIndexPath.section)
+                            let item = currentCellIndexPath.item - 1  < 0 ? dataSourceImages.count - 1 : currentCellIndexPath.item - 1
+                            
+                            indexPath = IndexPath(item: item , section: currentCellIndexPath.section)
                         
+                            
                         case .Right:
-                            indexPath = IndexPath(item: currentCellIndexPath.item + 1 , section: currentCellIndexPath.section)
+                            let item = currentCellIndexPath.item + 1  == dataSourceImages.count  ? 0 : currentCellIndexPath.item + 1
+                            indexPath = IndexPath(item: item , section: currentCellIndexPath.section)
                             
                         }
                         
+     
                         if let _ = row.collectionView.cellForItem(at: indexPath) {
+                            
                             row.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
                             self.collectionView(row.collectionView, didSelectItemAt: indexPath)
                         }
@@ -219,7 +241,8 @@ extension PopupLibraryView: UICollectionViewDataSource {
         // Configure the cell...
         cell.imageView.image = self.dataSourceImages[indexPath.item]
 
-        if indexPath.item == 0 {
+        if !initialScrollDone {
+            initialScrollDone = true
             cell.isSelected = true
             collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
             
@@ -234,7 +257,7 @@ extension PopupLibraryView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) as? BaseCollectionViewCell {
             self.imageView.image = cell.imageView.image
-            
+            print(indexPath.item)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
         

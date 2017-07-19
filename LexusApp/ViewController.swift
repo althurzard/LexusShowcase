@@ -96,9 +96,7 @@ class ViewController: FormViewController {
 
         } else {
             if locationOnScreenY <= self.heightRow {
-                hideAllRadioButton()
-                headerView?.hideUnderline()
-                self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
+                scrollToTop()
                 
             } else if locationOnScreenY > self.heightRow, locationOnScreenY <= self.heightRow*2 {
                 goToRowBy(category: .TongQuan)
@@ -175,8 +173,15 @@ class ViewController: FormViewController {
         tableView.isScrollEnabled = true
     }
     
+    func scrollToTop() {
+        hideAllRadioButton()
+        headerView?.hideUnderline()
+        self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
+    }
+    
     func loadForm() {
         
+        tableView.decelerationRate = UIScrollViewDecelerationRateNormal
         
         self.form
         +++
@@ -187,6 +192,7 @@ class ViewController: FormViewController {
                 customHeaderView.onSetupView = { (view,section)  in
                     self.headerView = view
                     view.delegate = self
+                    view.logoHeaderButton.addTarget(self, action: #selector(self.didTapLogoHeader), for: .touchUpInside)
                 }
                 section.header = customHeaderView
                 
@@ -225,7 +231,6 @@ class ViewController: FormViewController {
 //                let totalHeight = CGFloat(tableView!.dataSource.count) * Specification.cellHeight + CGFloat(tableView!.numberOfSection) * Specification.cellHeight
                 
                 $0.cell.height = { self.heightRow }
-                $0.cell.accordianTableView.delegate = self
         }
         
             <<< CustomLibraryRow(Constants.libraryRow) {
@@ -249,26 +254,36 @@ class ViewController: FormViewController {
         goToRowBy(category: category)
     }
     
+    func didTapLogoHeader(sender: UIButton) {
+        scrollToTop()
+    }
+    
     func goToRowBy(category: CustomHeader.LabelName, position: UITableViewScrollPosition = .top) {
+        
         
         switch category {
         case .TongQuan:
-            self.tableView.scrollToRow(at: customColorPickerRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customColorPickerRow.indexPath!, at: position, animated: true)
         case .ThietKe:
-            self.tableView.scrollToRow(at: customBodyRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customBodyRow.indexPath!, at: position, animated: true)
         case .VanHanh:
-            self.tableView.scrollToRow(at: customOperationRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customOperationRow.indexPath!, at: position, animated: true)
         case .AnToan:
-            self.tableView.scrollToRow(at: customSafetyRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customSafetyRow.indexPath!, at: position, animated: true)
         case .ThongSo:
-            self.tableView.scrollToRow(at: customSpecificationRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customSpecificationRow.indexPath!, at: position, animated: true)
         case .ThuVien:
-            self.tableView.scrollToRow(at: customLirabryRow.indexPath!, at: position, animated: true)
+            self.tableView.scrollToRow(at: self.customLirabryRow.indexPath!, at: position, animated: true)
         }
+
         
         hideAllRadioButton(exclude: category)
         
         headerView?.switchState(category: category)
+    }
+    
+    func automateScrolling() {
+        
     }
     
     
@@ -302,32 +317,3 @@ extension ViewController: CustomHeaderProtocol {
     }
 }
 
-
-extension ViewController: CustomAccordianRowProtocol {
-    func didExpandRow(rowHeight: CGFloat) {
-
-        let currentHeight = self.customSpecificationRow.cell.height!()
-        print(currentHeight)
-        self.tableView.beginUpdates()
-        self.customSpecificationRow.cell.accordianTableView.tableView.beginUpdates()
-        self.customSpecificationRow.cell.height = {currentHeight + rowHeight}
-
-        self.tableView.endUpdates()
-        self.customSpecificationRow.cell.accordianTableView.tableView.endUpdates()
-
-        
-    }
-    
-    func didCollapseRow(rowHeight: CGFloat) {
-        let currentHeight = self.customSpecificationRow.cell.height!()
-        print(currentHeight)
-
-        self.tableView.beginUpdates()
-        self.customSpecificationRow.cell.accordianTableView.tableView.beginUpdates()
-        self.customSpecificationRow.cell.height = {currentHeight - rowHeight}
-
-        self.tableView.endUpdates()
-        self.customSpecificationRow.cell.accordianTableView.tableView.endUpdates()
-
-    }
-}

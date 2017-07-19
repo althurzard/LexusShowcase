@@ -4,9 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,7 +31,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG SỐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-09-fb0">
-                        <rect key="frame" x="28" y="8" width="100" height="35"/>
+                        <rect key="frame" x="28" y="8" width="105" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="FZB-XQ-NQh"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="MHA-q4-3Eg"/>
@@ -40,15 +40,65 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-JM-hu3" userLabel="Left View" customClass="AccordionView" customModule="LexusApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="50" width="512" height="709.5"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-5P-2K9">
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="709.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eeM-5P-2K9" secondAttribute="trailing" id="SV6-aX-vvk"/>
+                            <constraint firstItem="eeM-5P-2K9" firstAttribute="top" secondItem="QYc-JM-hu3" secondAttribute="top" id="UFP-Dm-4jd"/>
+                            <constraint firstAttribute="bottom" secondItem="eeM-5P-2K9" secondAttribute="bottom" id="Zwj-m1-dEg"/>
+                            <constraint firstItem="eeM-5P-2K9" firstAttribute="leading" secondItem="QYc-JM-hu3" secondAttribute="leading" id="yoI-jL-xpD"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="eeM-5P-2K9" id="UTL-iR-qxJ"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-yX-EHe" userLabel="Right View" customClass="AccordionView" customModule="LexusApp" customModuleProvider="target">
+                        <rect key="frame" x="504" y="50" width="512" height="709.5"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9S0-IB-sJp">
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="709.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9S0-IB-sJp" secondAttribute="trailing" id="8qd-3Y-7S0"/>
+                            <constraint firstItem="9S0-IB-sJp" firstAttribute="leading" secondItem="nJx-yX-EHe" secondAttribute="leading" id="G1K-RP-kYm"/>
+                            <constraint firstItem="9S0-IB-sJp" firstAttribute="top" secondItem="nJx-yX-EHe" secondAttribute="top" id="Hev-Gs-e1m"/>
+                            <constraint firstAttribute="bottom" secondItem="9S0-IB-sJp" secondAttribute="bottom" id="ORG-Hg-B5x"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="9S0-IB-sJp" id="SiP-46-Xav"/>
+                        </connections>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Jcl-W2-8xq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5vi-V6-D9G"/>
+                    <constraint firstItem="nJx-yX-EHe" firstAttribute="top" secondItem="Jcl-W2-8xq" secondAttribute="bottom" id="8tT-wQ-yKz"/>
+                    <constraint firstItem="QYc-JM-hu3" firstAttribute="top" secondItem="Jcl-W2-8xq" secondAttribute="bottom" id="ADQ-yM-hL6"/>
                     <constraint firstAttribute="trailing" secondItem="Jcl-W2-8xq" secondAttribute="trailing" id="ARZ-Q3-FcF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QYc-JM-hu3" secondAttribute="bottom" id="Hmn-G5-rJ6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nJx-yX-EHe" secondAttribute="trailing" id="IiR-CH-Tur"/>
+                    <constraint firstItem="QYc-JM-hu3" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="JyV-9O-OS7"/>
+                    <constraint firstItem="QYc-JM-hu3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cHL-BW-hbe"/>
+                    <constraint firstItem="nJx-yX-EHe" firstAttribute="width" secondItem="QYc-JM-hu3" secondAttribute="width" id="fpT-7S-XQ0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nJx-yX-EHe" secondAttribute="bottom" id="kgV-oM-LFa"/>
                     <constraint firstItem="Qf5-09-fb0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kjo-sg-e37"/>
                     <constraint firstItem="Jcl-W2-8xq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rWF-cD-E1S"/>
                     <constraint firstItem="Qf5-09-fb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="sam-2l-xmU"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="leftView" destination="QYc-JM-hu3" id="rSI-EQ-V75"/>
+                <outlet property="rightView" destination="nJx-yX-EHe" id="CEx-Cs-kfw"/>
+            </connections>
             <point key="canvasLocation" x="87.5" y="157"/>
         </tableViewCell>
     </objects>

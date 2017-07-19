@@ -72,17 +72,13 @@
 		04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */; };
 		04F40A791F07675500D38D4D /* CustomSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */; };
 		04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */; };
-		04F40A801F076C7200D38D4D /* YNExpandableCellEx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */; };
-		04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */; };
-		04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A841F076D0500D38D4D /* CustomAccordianView.swift */; };
-		04F40A871F076D1600D38D4D /* CustomAccordianView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A861F076D1600D38D4D /* CustomAccordianView.xib */; };
+		04F40A801F076C7200D38D4D /* ExpandableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A7C1F076C7200D38D4D /* ExpandableCell.xib */; };
+		04F40A811F076C7200D38D4D /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A7D1F076C7200D38D4D /* ExpandableCell.swift */; };
 		04F40A891F077C0300D38D4D /* CustomHeaderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */; };
 		04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */; };
-		04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */; };
 		04F40A911F07939A00D38D4D /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A901F07939A00D38D4D /* Specification.swift */; };
 		04F40A931F07946800D38D4D /* DetailSpecificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */; };
 		04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */; };
-		04F40A9C1F07B79B00D38D4D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */; };
 		224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */; };
 		224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */; };
 		22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */; };
@@ -101,8 +97,6 @@
 		22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B901F1D22C200227DB2 /* CustomFooterView.swift */; };
 		22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */; };
 		22876B951F1DD4C200227DB2 /* CustomRadioBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */; };
-		22876B981F1DE5F500227DB2 /* DetailSpecification2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */; };
-		22876B991F1DE5F500227DB2 /* DetailSpecification2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */; };
 		22876B9B1F1DED2E00227DB2 /* PopupLibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B9A1F1DED2E00227DB2 /* PopupLibraryView.xib */; };
 		22876B9E1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */; };
 		22876BA01F1DF79700227DB2 /* PopupLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */; };
@@ -112,6 +106,8 @@
 		22876BAE1F1E3EFC00227DB2 /* ColorPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BAD1F1E3EFC00227DB2 /* ColorPickerViewCell.xib */; };
 		22876BB41F1E42CA00227DB2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BB31F1E42CA00227DB2 /* ColorPickerView.swift */; };
 		22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BB51F1E42D700227DB2 /* ColorPickerView.xib */; };
+		22876BC21F1FBFAC00227DB2 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BC01F1FBFAC00227DB2 /* Parent.swift */; };
+		22876BC41F1FBFBF00227DB2 /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BC31F1FBFBF00227DB2 /* AccordionView.swift */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -183,17 +179,13 @@
 		04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomBodyCell.xib; sourceTree = "<group>"; };
 		04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpecificationCell.swift; sourceTree = "<group>"; };
 		04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSpecificationCell.xib; sourceTree = "<group>"; };
-		04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YNExpandableCellEx.xib; sourceTree = "<group>"; };
-		04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNExpandableCells.swift; sourceTree = "<group>"; };
-		04F40A841F076D0500D38D4D /* CustomAccordianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAccordianView.swift; sourceTree = "<group>"; };
-		04F40A861F076D1600D38D4D /* CustomAccordianView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAccordianView.xib; sourceTree = "<group>"; };
+		04F40A7C1F076C7200D38D4D /* ExpandableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandableCell.xib; sourceTree = "<group>"; };
+		04F40A7D1F076C7200D38D4D /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 		04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderSectionView.xib; sourceTree = "<group>"; };
 		04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderSectionView.swift; sourceTree = "<group>"; };
-		04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		04F40A901F07939A00D38D4D /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSpecificationCell.xib; sourceTree = "<group>"; };
 		04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecificationCell.swift; sourceTree = "<group>"; };
-		04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperationCell.swift; sourceTree = "<group>"; };
 		224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOperationCell.xib; sourceTree = "<group>"; };
 		22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSafetyCell.swift; sourceTree = "<group>"; };
@@ -212,8 +204,6 @@
 		22876B901F1D22C200227DB2 /* CustomFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		22876B921F1DD1EF00227DB2 /* CustomRadioBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioBarView.xib; sourceTree = "<group>"; };
 		22876B941F1DD4C200227DB2 /* CustomRadioBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRadioBarView.swift; sourceTree = "<group>"; };
-		22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecification2Cell.swift; sourceTree = "<group>"; };
-		22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSpecification2Cell.xib; sourceTree = "<group>"; };
 		22876B9A1F1DED2E00227DB2 /* PopupLibraryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupLibraryView.xib; sourceTree = "<group>"; };
 		22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		22876B9F1F1DF79700227DB2 /* PopupLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupLibraryView.swift; sourceTree = "<group>"; };
@@ -223,6 +213,8 @@
 		22876BAD1F1E3EFC00227DB2 /* ColorPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerViewCell.xib; sourceTree = "<group>"; };
 		22876BB31F1E42CA00227DB2 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		22876BB51F1E42D700227DB2 /* ColorPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
+		22876BC01F1FBFAC00227DB2 /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		22876BC31F1FBFBF00227DB2 /* AccordionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -280,6 +272,7 @@
 		04A9BCEA1F05FB250032BDBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22876BC01F1FBFAC00227DB2 /* Parent.swift */,
 				04F40A901F07939A00D38D4D /* Specification.swift */,
 			);
 			name = Model;
@@ -434,20 +427,15 @@
 		04F40A961F07A5CC00D38D4D /* Specification */ = {
 			isa = PBXGroup;
 			children = (
-				04F40A841F076D0500D38D4D /* CustomAccordianView.swift */,
-				04F40A861F076D1600D38D4D /* CustomAccordianView.xib */,
+				22876BC31F1FBFBF00227DB2 /* AccordionView.swift */,
 				04F40A881F077C0300D38D4D /* CustomHeaderSectionView.xib */,
 				04F40A8A1F077D2000D38D4D /* CustomHeaderSectionView.swift */,
-				04F40A7C1F076C7200D38D4D /* YNExpandableCellEx.xib */,
-				04F40A7D1F076C7200D38D4D /* YNExpandableCells.swift */,
+				04F40A7C1F076C7200D38D4D /* ExpandableCell.xib */,
+				04F40A7D1F076C7200D38D4D /* ExpandableCell.swift */,
 				04F40A771F07675500D38D4D /* CustomSpecificationCell.swift */,
 				04F40A781F07675500D38D4D /* CustomSpecificationCell.xib */,
-				04F40A8E1F0788E500D38D4D /* DetailTableViewCell.swift */,
-				04F40A9B1F07B79B00D38D4D /* DetailTableViewCell.xib */,
 				04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */,
 				04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */,
-				22876B961F1DE5F500227DB2 /* DetailSpecification2Cell.swift */,
-				22876B971F1DE5F500227DB2 /* DetailSpecification2Cell.xib */,
 			);
 			name = Specification;
 			sourceTree = "<group>";
@@ -544,9 +532,17 @@
 		22876B9C1F1DED3500227DB2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				22876BC51F1FC0B700227DB2 /* AccordionView */,
 				22876B9D1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		22876BC51F1FC0B700227DB2 /* AccordionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AccordionView;
 			sourceTree = "<group>";
 		};
 		6D24365CEE93E398AC7227F9 /* Frameworks */ = {
@@ -664,10 +660,9 @@
 				04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */,
 				04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */,
 				04A9BD251F0605F60032BDBC /* Den-Black-(212).png in Resources */,
-				04F40A801F076C7200D38D4D /* YNExpandableCellEx.xib in Resources */,
+				04F40A801F076C7200D38D4D /* ExpandableCell.xib in Resources */,
 				04A9BD601F060E360032BDBC /* NOLTI___.TTF in Resources */,
 				04A9BD5A1F060E360032BDBC /* NobelVnu-Regular.ttf in Resources */,
-				04F40A871F076D1600D38D4D /* CustomAccordianView.xib in Resources */,
 				04A9BD621F060E360032BDBC /* NORI____.TTF in Resources */,
 				04F40A931F07946800D38D4D /* DetailSpecificationCell.xib in Resources */,
 				04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */,
@@ -677,9 +672,7 @@
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
 				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
 				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
-				22876B991F1DE5F500227DB2 /* DetailSpecification2Cell.xib in Resources */,
 				04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */,
-				04F40A9C1F07B79B00D38D4D /* DetailTableViewCell.xib in Resources */,
 				04A9BCDB1F05FA760032BDBC /* Main.storyboard in Resources */,
 				04A9BD231F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png in Resources */,
 				04A9BD351F0605F60032BDBC /* rc200t-wheels.jpg in Resources */,
@@ -756,21 +749,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */,
-				04F40A851F076D0500D38D4D /* CustomAccordianView.swift in Sources */,
-				22876B981F1DE5F500227DB2 /* DetailSpecification2Cell.swift in Sources */,
 				04A9BCD81F05FA760032BDBC /* ViewController.swift in Sources */,
 				22876B9E1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift in Sources */,
 				22876B8C1F1D106A00227DB2 /* CustomLibraryCell.swift in Sources */,
 				04F40A911F07939A00D38D4D /* Specification.swift in Sources */,
-				04F40A811F076C7200D38D4D /* YNExpandableCells.swift in Sources */,
+				04F40A811F076C7200D38D4D /* ExpandableCell.swift in Sources */,
 				04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */,
 				04A9BCF21F0600A10032BDBC /* CustomOverviewCell.swift in Sources */,
 				04F40A8B1F077D2000D38D4D /* CustomHeaderSectionView.swift in Sources */,
+				22876BC21F1FBFAC00227DB2 /* Parent.swift in Sources */,
 				22876BB41F1E42CA00227DB2 /* ColorPickerView.swift in Sources */,
 				22876BA31F1DFA5900227DB2 /* BaseCollectionViewCell.swift in Sources */,
 				04A9BCF71F0605220032BDBC /* CustomColorPickerCell.swift in Sources */,
 				22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */,
-				04F40A8F1F0788E500D38D4D /* DetailTableViewCell.swift in Sources */,
 				22876BAB1F1E396200227DB2 /* ColorPickerViewCell.swift in Sources */,
 				224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */,
 				04A9BCEE1F05FB550032BDBC /* CustomHeader.swift in Sources */,
@@ -780,6 +771,7 @@
 				04A9BD661F0655B80032BDBC /* CustomBodyCell.swift in Sources */,
 				22876B711F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift in Sources */,
 				22876B7C1F1CFFB800227DB2 /* CustomLibraryView.swift in Sources */,
+				22876BC41F1FBFBF00227DB2 /* AccordionView.swift in Sources */,
 				04A9BCDE1F05FA760032BDBC /* LexusApp.xcdatamodeld in Sources */,
 				04A9BCD61F05FA760032BDBC /* AppDelegate.swift in Sources */,
 				22876B951F1DD4C200227DB2 /* CustomRadioBarView.swift in Sources */,
