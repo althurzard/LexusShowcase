@@ -9,6 +9,7 @@
 import UIKit
 import Eureka
 import Spruce
+
 class CustomSafetyCell: CustomBodyCell  {
 
     public override func setup() {

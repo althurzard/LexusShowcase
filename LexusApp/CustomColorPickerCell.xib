@@ -39,7 +39,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-xk-wEp">
                                 <rect key="frame" x="0.0" y="0.0" width="397" height="330.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-8D-Ter" customClass="DesignableImageView" customModule="Spring">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tong-quan-thum-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7nD-8D-Ter" customClass="DesignableImageView" customModule="Spring">
                                         <rect key="frame" x="0.0" y="0.0" width="397" height="330.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
@@ -63,7 +63,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ID-sE-tZD">
                                 <rect key="frame" x="0.0" y="330.5" width="397" height="330"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC200t_desktop_galleryhighlights_lightbox_1400x784px_02" translatesAutoresizingMaskIntoConstraints="NO" id="e48-dp-KeN" customClass="DesignableImageView" customModule="Spring">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tong-quan-thumb-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="e48-dp-KeN" customClass="DesignableImageView" customModule="Spring">
                                         <rect key="frame" x="0.0" y="-0.5" width="397" height="330.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
@@ -114,25 +114,25 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JZh-1B-38y">
-                                <rect key="frame" x="174" y="425" width="250.5" height="243.5"/>
+                                <rect key="frame" x="173.5" y="425" width="251.5" height="243.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-50" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
-                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="243.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="251.5" height="243.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="GS Turbo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-Uf-s34">
-                                                <rect key="frame" x="0.0" y="0.0" width="250.5" height="135.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RC Turbo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-Uf-s34">
+                                                <rect key="frame" x="0.0" y="0.0" width="251.5" height="135.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="70"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạc sonic silver&lt;1J2&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYK-oJ-Tc9">
-                                                <rect key="frame" x="0.0" y="51" width="250.5" height="136"/>
+                                                <rect key="frame" x="0.0" y="51" width="251.5" height="136"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.130.000.000 VNĐ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
-                                                <rect key="frame" x="0.0" y="108" width="250.5" height="135.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.980.000.000 VNĐ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
+                                                <rect key="frame" x="0.0" y="108" width="251.5" height="135.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="30"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -189,8 +189,8 @@
     </objects>
     <resources>
         <image name="Ghi-Sonic-Titanium-(1J7).png" width="950" height="360"/>
-        <image name="RC200t_desktop_galleryhighlights_lightbox_1400x784px_01" width="1000" height="560"/>
-        <image name="RC200t_desktop_galleryhighlights_lightbox_1400x784px_02" width="1400" height="784"/>
         <image name="sub-header" width="2048" height="80"/>
+        <image name="tong-quan-thum-2.png" width="768" height="649"/>
+        <image name="tong-quan-thumb-1.png" width="768" height="649"/>
     </resources>
 </document>

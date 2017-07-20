@@ -48,7 +48,6 @@ class CustomOverviewCell: Cell<Bool>, CellType {
     func prepareAnimation() {
         if isAnimating {
         isAnimating = false
-    
         desktopView.spruce.prepare(with: animation1)
         overlayImageView.alpha = 0.0
 

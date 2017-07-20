@@ -157,11 +157,9 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
         rightView.total = 6
     }
     
-    
     public override func update() {
         super.update()
         selectionStyle = .none
-        
     }
     
 }

@@ -20,19 +20,18 @@ class PopupLibraryView: UIView {
     
     var initialScrollDone = false
     
+    var selectedIndex: Int?
+    
     lazy var dataSourceImages: [UIImage] = {
         var images: [UIImage] = []
-        images.append(UIImage(named: "RC3004")!)
-        images.append(UIImage(named: "RC3402")!)
-        images.append(UIImage(named: "RC6089")!)
-        images.append(UIImage(named: "RC5047")!)
-        images.append(UIImage(named: "Big-Image-1-(1000x560)")!)
-        images.append(UIImage(named: "Big-Image-2-(1000x560)")!)
-        images.append(UIImage(named: "Big-Image-4-(1000x560)")!)
-        images.append(UIImage(named: "img_gallery_02.jpg")!)
-        images.append(UIImage(named: "img_gallery_04.jpg")!)
-        images.append(UIImage(named: "img_gallery_05.jpg")!)
-        images.append(UIImage(named: "Small-image-1")!)
+        images.append(UIImage(named: "1.jpg")!)
+        images.append(UIImage(named: "2.jpg")!)
+        images.append(UIImage(named: "3.jpg")!)
+        images.append(UIImage(named: "4.jpg")!)
+        images.append(UIImage(named: "5.jpg")!)
+        images.append(UIImage(named: "6.jpg")!)
+        images.append(UIImage(named: "7.jpg")!)
+        images.append(UIImage(named: "8.jpg")!)
         return images
     }()
     
@@ -42,6 +41,7 @@ class PopupLibraryView: UIView {
         super.awakeFromNib()
         tableView.delegate = self
         tableView.dataSource = self
+
         
         let swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeLeftImage))
         swipeLeftGesture.direction = .left
@@ -62,15 +62,18 @@ class PopupLibraryView: UIView {
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
     
-        // Select first cell for default
-//        let indexPath = IndexPath(row: 0, section: 0)
-//        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
-//            if let cell = row.collectionView.visibleCells.first {
-//                let indexPath = row.collectionView.indexPath(for: cell)
-//                
-//                self.collectionView(row.collectionView, didSelectItemAt: indexPath!)
-//            }
-//        }
+
+        if selectedIndex! > dataSourceImages.count / 2 {
+            let indexPath = IndexPath(row: 0, section: 0)
+            if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
+                row.collectionView.scrollToItem(at: IndexPath(item: dataSourceImages.count/2, section: 0), at: .centeredHorizontally, animated: false)
+            }
+        }
+        delay(delay: 0.2) {
+            if let index = self.selectedIndex {
+                self.selectCell(byIndex: index)
+            }
+        }
         
     }
     
@@ -129,6 +132,7 @@ class PopupLibraryView: UIView {
                         }
                         
                         
+                        
                         break
                     }
                     
@@ -137,6 +141,25 @@ class PopupLibraryView: UIView {
             }
         }
         
+    }
+    
+    func selectCell(byIndex index: Int) {
+        let indexPath = IndexPath(row: 0, section: 0)
+        if let row = tableView.cellForRow(at: indexPath) as? GLCollectionTableViewCell {
+                var indexPath: IndexPath!
+                indexPath = IndexPath(item: index , section: 0)
+            
+            
+                
+                if let _ = row.collectionView.cellForItem(at: indexPath) {
+                    row.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+                    self.collectionView(row.collectionView, didSelectItemAt: indexPath)
+                }
+            
+            
+                
+            
+        }
     }
     
     class func instanceFromNib() -> PopupLibraryView {
@@ -212,6 +235,7 @@ extension PopupLibraryView: UITableViewDataSource {
             
         }
         
+        
         return cell!
         
     }
@@ -229,6 +253,7 @@ extension PopupLibraryView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         guard let cell: BaseCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: BaseCollectionViewCell.identifier, for: indexPath) as? BaseCollectionViewCell else {
             fatalError("UICollectionViewCell must be of ContactCollectionViewCell type")
         }
@@ -257,8 +282,10 @@ extension PopupLibraryView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) as? BaseCollectionViewCell {
             self.imageView.image = cell.imageView.image
-            print(indexPath.item)
+
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name.init(rawValue: Constant.Notification.tapInteractionNotification), object: nil)
         }
         
     }

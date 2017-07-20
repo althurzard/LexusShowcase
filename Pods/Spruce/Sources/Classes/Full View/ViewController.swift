@@ -46,6 +46,7 @@ open class ViewController: UIViewController {
         animationType = StandardAnimation(duration: duration)
         sortFunction = LinearSortFunction(direction: .topToBottom, interObjectDelay: 0.05)
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {

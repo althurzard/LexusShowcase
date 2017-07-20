@@ -8,9 +8,18 @@
 
 import UIKit
 
+struct Constant {
+    struct Notification {
+        static let tapInteractionNotification = "tapInteractionNotification"
+    }
+}
+
 class AccordionView: UIView {
     
     open var total = 0
+    
+    /// Notification when interact with table view
+    
     
     /// The identifier for the parent cells.
     let parentCellIdentifier = "ParentCell"
@@ -258,9 +267,15 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         self.tableView.beginUpdates()
         self.updateCells(parent, index: indexPath.row)
         self.tableView.endUpdates()
+        
+        NotificationCenter.default.post(name: Notification.Name.init(rawValue: Constant.Notification.tapInteractionNotification), object: nil)
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return !self.findParent(indexPath.row).isParentCell ? 40 : 48.0
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        NotificationCenter.default.post(name: Notification.Name.init(rawValue: Constant.Notification.tapInteractionNotification), object: nil)
     }
 }

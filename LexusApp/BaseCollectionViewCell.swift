@@ -30,5 +30,9 @@ class BaseCollectionViewCell: UICollectionViewCell {
         selectedView.layer.cornerRadius = imageView.cornerRadius
         self.selectedBackgroundView = selectedView
     }
+    
+    class func instanceFromNib() -> BaseCollectionViewCell {
+        return UINib(nibName: "BaseCollectionViewCell", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! BaseCollectionViewCell
+    }
 
 }

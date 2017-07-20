@@ -9,6 +9,7 @@
 import UIKit
 import Eureka
 import DLRadioButton
+import Spring
 class ViewController: FormViewController {
 
     struct Constants {
@@ -44,12 +45,23 @@ class ViewController: FormViewController {
     
     @IBOutlet weak var radioGroupStackview: UIStackView!
     
+    @IBOutlet weak var countdownView: SpringView!
+    
+    @IBOutlet weak var countdownLabel: UILabel!
+    
+    @IBOutlet weak var goToTopView: UIView!
+    
+    var isTopPosition = true
+    var timer: Timer = Timer()
+    
+    var secondsPassed = 0
+    var timeCountdown = 10
     fileprivate var currentContentOffset: CGPoint = .zero
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadForm()
-        
+        addObservers()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -121,11 +133,13 @@ class ViewController: FormViewController {
         
         let locationOnScreenY = scrollView.contentOffset.y
         self.currentContentOffset.y = locationOnScreenY
+        startTimer()
         
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let locationOnScreenY = scrollView.contentOffset.y
         stopScrolling()
+        stopTimer()
         if locationOnScreenY < customOverviewRow.cell.height!() / 2 {
             customOverviewRow.cell.startAnimation()
         } else {
@@ -174,14 +188,27 @@ class ViewController: FormViewController {
     }
     
     func scrollToTop() {
+        isTopPosition = true
         hideAllRadioButton()
         headerView?.hideUnderline()
         self.tableView.scrollToRow(at: customOverviewRow.indexPath!, at: .top, animated: true)
+        
+        // Remove subview if any
+        for view in self.view.subviews {
+            if let popupView = view as? PopupLibraryView {
+                popupView.removeFromSuperview()
+                break
+            }
+        }
     }
     
     func loadForm() {
         
         tableView.decelerationRate = UIScrollViewDecelerationRateNormal
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapLogoHeader))
+        goToTopView.addGestureRecognizer(tapGesture)
         
         self.form
         +++
@@ -204,62 +231,61 @@ class ViewController: FormViewController {
         
             <<< CustomOverviewRow(Constants.overviewRow) {
                 $0.cell.height = { self.heightRow}
-                
-                
             }
             
             <<< CustomColorPickerRow(Constants.colorPicker) {
                 $0.cell.height = { self.heightRow }
-            }
+            }.onCellSelection({ (cell, row) in
+                self.startTimer()
+            })
         
             <<< CustomBodyRow(Constants.designRow) {
                 $0.cell.height = { self.heightRow}
-        }
+                }.onCellSelection({ (cell, row) in
+                    self.startTimer()
+                })
             
             <<< CustomOperationRow(Constants.operationRow) {
                 $0.cell.height = { self.heightRow }
-            }
+                }.onCellSelection({ (cell, row) in
+                    self.startTimer()
+                })
             
             <<< CustomSafetyRow(Constants.safetyRow) {
                 $0.cell.height = { self.heightRow }
-            }
-        
+                }.onCellSelection({ (cell, row) in
+                   self.startTimer()
+                })
             
             <<< CustomSpecificationRow(Constants.specificationRow) {
                 
-//                let tableView = $0.cell.accordianTableView
-//                let totalHeight = CGFloat(tableView!.dataSource.count) * Specification.cellHeight + CGFloat(tableView!.numberOfSection) * Specification.cellHeight
                 
                 $0.cell.height = { self.heightRow }
+                
+                
         }
-        
+            
             <<< CustomLibraryRow(Constants.libraryRow) {
                 $0.cell.height = { self.heightRow }
+                $0.cell.libraryView.delegate = self
         }.onCellSelection({ (cell, row) in
-            let popupView = PopupLibraryView.instanceFromNib()
-            self.view.addSubview(popupView)
-            
-            popupView.translatesAutoresizingMaskIntoConstraints = false
-            popupView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: -10).isActive = true
-            popupView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 10).isActive = true
-            popupView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: -10).isActive = true
-            popupView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -CustomFooterView.height).isActive = true
+            self.startTimer()
         })
-
+        
     }
-    
     
     @IBAction fileprivate func didTapOnRadioButtonGroup(sender: UIButton) {
         let category = CustomHeader.LabelName(rawValue: sender.tag)!
         goToRowBy(category: category)
     }
     
-    func didTapLogoHeader(sender: UIButton) {
+    func didTapLogoHeader(sender: Any) {
         scrollToTop()
     }
     
     func goToRowBy(category: CustomHeader.LabelName, position: UITableViewScrollPosition = .top) {
         
+        isTopPosition = false
         
         switch category {
         case .TongQuan:
@@ -276,16 +302,10 @@ class ViewController: FormViewController {
             self.tableView.scrollToRow(at: self.customLirabryRow.indexPath!, at: position, animated: true)
         }
 
-        
         hideAllRadioButton(exclude: category)
         
         headerView?.switchState(category: category)
     }
-    
-    func automateScrolling() {
-        
-    }
-    
     
     func hideAllRadioButton(exclude category: CustomHeader.LabelName? = nil) {
         for view in radioGroupStackview.subviews {
@@ -299,6 +319,55 @@ class ViewController: FormViewController {
                 } else {
                     button.deselectOtherButtons()
                 }
+            }
+        }
+    }
+    
+    func addObservers() {
+        NotificationCenter.default.addObserver(forName: Notification.Name.init(rawValue:Constant.Notification.tapInteractionNotification), object: nil, queue: nil) { (notification) in
+            self.startTimer()
+        }
+    }
+    
+    func startTimer() {
+        if !isTopPosition {
+            self.stopTimer()
+            self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
+                self.secondsPassed += 1
+                print("Timer \(self.secondsPassed)")
+                
+                if self.secondsPassed == 60 {
+                    
+                    self.countdownView.isHidden = false
+                    self.countdownView.animation = "fadeInLeft"
+                    self.countdownView.animate()
+                    
+                }
+                
+                if self.secondsPassed > 60 {
+                    
+                    let second = self.timeCountdown - (self.secondsPassed % self.timeCountdown)
+                    self.countdownLabel.text = "\(second)s"
+                    
+                }
+                
+                if self.secondsPassed == 70 {
+                    self.scrollToTop()
+                    self.stopTimer()
+                }
+
+            })
+        }
+    }
+    
+    func stopTimer() {
+        self.timer.invalidate()
+        secondsPassed = 0
+        if !self.countdownView.isHidden {
+            self.countdownView.animation = "fadeOut"
+            self.countdownView.animateNext {
+                self.countdownLabel.text = "10s"
+                self.countdownView.isHidden = true
                 
             }
         }
@@ -307,13 +376,30 @@ class ViewController: FormViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+}
 
+extension ViewController: CustomLibraryViewProtocol {
+    func didTapImage(withView View: CustomLibraryView,withIndex index: Int ) {
+        print("Tapped image \(index)")
+        let popupView = PopupLibraryView.instanceFromNib()
+        popupView.selectedIndex = index
+        self.view.insertSubview(popupView, belowSubview: self.countdownView)
 
+        popupView.translatesAutoresizingMaskIntoConstraints = false
+        popupView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: -10).isActive = true
+        popupView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 10).isActive = true
+        popupView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: -10).isActive = true
+        popupView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -CustomFooterView.height).isActive = true
+        
+        startTimer()
+
+    }
 }
 
 extension ViewController: CustomHeaderProtocol {
     func didTapCategory(name: CustomHeader.LabelName) {
         goToRowBy(category: name)
+        
     }
 }
 
