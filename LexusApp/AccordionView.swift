@@ -32,7 +32,7 @@ class AccordionView: UIView {
     
     var sectionTitle: String?
     
-    var heightForHeaderInSection: CGFloat = 70
+    var heightForHeaderInSection: CGFloat = 50.0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -208,8 +208,11 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         
         if !isParentCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath) as! DetailSpecificationCell
-            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-            
+            cell.lblTitle.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].title
+            cell.lblDescription.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].description
+            if cell.lblDescription.text == nil {
+                cell.lblTitle.textColor = .black
+            }
             return cell
         }
         else {
@@ -220,6 +223,7 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         }
         
     }
+
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return heightForHeaderInSection
@@ -257,6 +261,6 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
+        return !self.findParent(indexPath.row).isParentCell ? 40 : 48.0
     }
 }

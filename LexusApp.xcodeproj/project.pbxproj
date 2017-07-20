@@ -108,6 +108,18 @@
 		22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876BB51F1E42D700227DB2 /* ColorPickerView.xib */; };
 		22876BC21F1FBFAC00227DB2 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BC01F1FBFAC00227DB2 /* Parent.swift */; };
 		22876BC41F1FBFBF00227DB2 /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BC31F1FBFBF00227DB2 /* AccordionView.swift */; };
+		22876BCB1F1FD05900227DB2 /* tong-quan-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BCA1F1FD05900227DB2 /* tong-quan-bg.jpg */; };
+		22876BD21F1FD26400227DB2 /* tong-quan-thum-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD01F1FD26400227DB2 /* tong-quan-thum-2.png */; };
+		22876BD31F1FD26400227DB2 /* tong-quan-thumb-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */; };
+		22876BD51F205D5D00227DB2 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BD41F205D5D00227DB2 /* UILabel.swift */; };
+		22876BDF1F20658400227DB2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD71F20658400227DB2 /* 1.jpg */; };
+		22876BE01F20658400227DB2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD81F20658400227DB2 /* 2.jpg */; };
+		22876BE11F20658400227DB2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD91F20658400227DB2 /* 3.jpg */; };
+		22876BE21F20658400227DB2 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDA1F20658400227DB2 /* 4.jpg */; };
+		22876BE31F20658400227DB2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDB1F20658400227DB2 /* 5.jpg */; };
+		22876BE41F20658400227DB2 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDC1F20658400227DB2 /* 6.jpg */; };
+		22876BE51F20658400227DB2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDD1F20658400227DB2 /* 7.jpg */; };
+		22876BE61F20658400227DB2 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDE1F20658400227DB2 /* 8.jpg */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +227,18 @@
 		22876BB51F1E42D700227DB2 /* ColorPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
 		22876BC01F1FBFAC00227DB2 /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		22876BC31F1FBFBF00227DB2 /* AccordionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
+		22876BCA1F1FD05900227DB2 /* tong-quan-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "tong-quan-bg.jpg"; path = "RC Turbo/tong-quan-bg.jpg"; sourceTree = "<group>"; };
+		22876BD01F1FD26400227DB2 /* tong-quan-thum-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tong-quan-thum-2.png"; path = "RC Turbo/tong-quan-thum-2.png"; sourceTree = "<group>"; };
+		22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tong-quan-thumb-1.png"; path = "RC Turbo/tong-quan-thumb-1.png"; sourceTree = "<group>"; };
+		22876BD41F205D5D00227DB2 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		22876BD71F20658400227DB2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "RC Turbo/Thu Vien/1.jpg"; sourceTree = "<group>"; };
+		22876BD81F20658400227DB2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "RC Turbo/Thu Vien/2.jpg"; sourceTree = "<group>"; };
+		22876BD91F20658400227DB2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "RC Turbo/Thu Vien/3.jpg"; sourceTree = "<group>"; };
+		22876BDA1F20658400227DB2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = "RC Turbo/Thu Vien/4.jpg"; sourceTree = "<group>"; };
+		22876BDB1F20658400227DB2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = "RC Turbo/Thu Vien/5.jpg"; sourceTree = "<group>"; };
+		22876BDC1F20658400227DB2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = "RC Turbo/Thu Vien/6.jpg"; sourceTree = "<group>"; };
+		22876BDD1F20658400227DB2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "RC Turbo/Thu Vien/7.jpg"; sourceTree = "<group>"; };
+		22876BDE1F20658400227DB2 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = "RC Turbo/Thu Vien/8.jpg"; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LexusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E013A8C8C427253C39A6AF9A /* Pods-LexusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -305,12 +329,8 @@
 		04A9BCF91F0605C00032BDBC /* Materials */ = {
 			isa = PBXGroup;
 			children = (
-				04A9BD451F060E360032BDBC /* Font Lexus VN */,
-				04A9BCFA1F0605F60032BDBC /* 00 Mau xe */,
-				04A9BD021F0605F60032BDBC /* 01 Hinh thu vien */,
-				04A9BD0A1F0605F60032BDBC /* 01 Thiet ke va tien nghi */,
-				04A9BD131F0605F60032BDBC /* 02 Van hanh */,
-				04A9BD1C1F0605F60032BDBC /* 03 An toan */,
+				22876BC71F1FD02C00227DB2 /* RC Turbo */,
+				22876BC61F1FCF8C00227DB2 /* RC */,
 			);
 			name = Materials;
 			sourceTree = "<group>";
@@ -525,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				22876B801F1D033900227DB2 /* UICollectionView+Extensions.swift */,
+				22876BD41F205D5D00227DB2 /* UILabel.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -543,6 +564,45 @@
 			children = (
 			);
 			name = AccordionView;
+			sourceTree = "<group>";
+		};
+		22876BC61F1FCF8C00227DB2 /* RC */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BD451F060E360032BDBC /* Font Lexus VN */,
+				04A9BCFA1F0605F60032BDBC /* 00 Mau xe */,
+				04A9BD021F0605F60032BDBC /* 01 Hinh thu vien */,
+				04A9BD0A1F0605F60032BDBC /* 01 Thiet ke va tien nghi */,
+				04A9BD131F0605F60032BDBC /* 02 Van hanh */,
+				04A9BD1C1F0605F60032BDBC /* 03 An toan */,
+			);
+			name = RC;
+			sourceTree = "<group>";
+		};
+		22876BC71F1FD02C00227DB2 /* RC Turbo */ = {
+			isa = PBXGroup;
+			children = (
+				22876BD61F20657100227DB2 /* New Group */,
+				22876BD01F1FD26400227DB2 /* tong-quan-thum-2.png */,
+				22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */,
+				22876BCA1F1FD05900227DB2 /* tong-quan-bg.jpg */,
+			);
+			name = "RC Turbo";
+			sourceTree = "<group>";
+		};
+		22876BD61F20657100227DB2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				22876BD71F20658400227DB2 /* 1.jpg */,
+				22876BD81F20658400227DB2 /* 2.jpg */,
+				22876BD91F20658400227DB2 /* 3.jpg */,
+				22876BDA1F20658400227DB2 /* 4.jpg */,
+				22876BDB1F20658400227DB2 /* 5.jpg */,
+				22876BDC1F20658400227DB2 /* 6.jpg */,
+				22876BDD1F20658400227DB2 /* 7.jpg */,
+				22876BDE1F20658400227DB2 /* 8.jpg */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		6D24365CEE93E398AC7227F9 /* Frameworks */ = {
@@ -619,8 +679,10 @@
 				04A9BD271F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png in Resources */,
 				04A9BD401F0605F60032BDBC /* rc-safety-popuphood.jpg in Resources */,
 				04A9BD551F060E360032BDBC /* NOBD____.TTF in Resources */,
+				22876BE51F20658400227DB2 /* 7.jpg in Resources */,
 				04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */,
 				22876B7E1F1CFFC400227DB2 /* CustomLibraryView.xib in Resources */,
+				22876BE31F20658400227DB2 /* 5.jpg in Resources */,
 				04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */,
 				04A9BD611F060E360032BDBC /* NOR_____.TTF in Resources */,
 				04A9BD331F0605F60032BDBC /* rc-7-inch-display.jpg in Resources */,
@@ -631,6 +693,7 @@
 				04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */,
 				22876B831F1D0A0100227DB2 /* RC5047.png in Resources */,
 				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
+				22876BD31F1FD26400227DB2 /* tong-quan-thumb-1.png in Resources */,
 				04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */,
 				04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */,
 				22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */,
@@ -642,6 +705,7 @@
 				04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */,
 				22876B881F1D0AFC00227DB2 /* RC3402.png in Resources */,
 				04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */,
+				22876BDF1F20658400227DB2 /* 1.jpg in Resources */,
 				04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */,
 				04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */,
 				22876BA41F1DFA5900227DB2 /* BaseCollectionViewCell.xib in Resources */,
@@ -652,10 +716,12 @@
 				04A9BD421F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png in Resources */,
 				04A9BD381F0605F60032BDBC /* DRIVE-MODE-SELECT.png in Resources */,
 				04A9BD311F0605F60032BDBC /* Dual-Exhaust-pipes.png in Resources */,
+				22876BE01F20658400227DB2 /* 2.jpg in Resources */,
 				04F40A891F077C0300D38D4D /* CustomHeaderSectionView.xib in Resources */,
 				04A9BD581F060E360032BDBC /* NobelVnu-Book.ttf in Resources */,
 				04A9BCF01F05FB5F0032BDBC /* CustomHeader.xib in Resources */,
 				22876B8F1F1D1B4700227DB2 /* CustomFooterView.xib in Resources */,
+				22876BE61F20658400227DB2 /* 8.jpg in Resources */,
 				04A9BD2F1F0605F60032BDBC /* 3-eye-LED-headlamps.png in Resources */,
 				04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */,
 				04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */,
@@ -668,11 +734,15 @@
 				04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */,
 				04A9BD3E1F0605F60032BDBC /* RC8053---superior-stability.jpg in Resources */,
 				22876B6C1F1C9E7E00227DB2 /* CustomSafetyCell.xib in Resources */,
+				22876BE11F20658400227DB2 /* 3.jpg in Resources */,
 				22876BAE1F1E3EFC00227DB2 /* ColorPickerViewCell.xib in Resources */,
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
 				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
 				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
+				22876BE21F20658400227DB2 /* 4.jpg in Resources */,
+				22876BE41F20658400227DB2 /* 6.jpg in Resources */,
 				04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */,
+				22876BCB1F1FD05900227DB2 /* tong-quan-bg.jpg in Resources */,
 				04A9BCDB1F05FA760032BDBC /* Main.storyboard in Resources */,
 				04A9BD231F0605F60032BDBC /* Trang-Sonic-Quartz-(085).png in Resources */,
 				04A9BD351F0605F60032BDBC /* rc200t-wheels.jpg in Resources */,
@@ -690,6 +760,7 @@
 				04A9BCF41F06022C0032BDBC /* CustomOverviewCell.xib in Resources */,
 				22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */,
 				04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */,
+				22876BD21F1FD26400227DB2 /* tong-quan-thum-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,6 +821,7 @@
 			files = (
 				22876B911F1D22C200227DB2 /* CustomFooterView.swift in Sources */,
 				04A9BCD81F05FA760032BDBC /* ViewController.swift in Sources */,
+				22876BD51F205D5D00227DB2 /* UILabel.swift in Sources */,
 				22876B9E1F1DED4A00227DB2 /* GLCollectionTableViewCell.swift in Sources */,
 				22876B8C1F1D106A00227DB2 /* CustomLibraryCell.swift in Sources */,
 				04F40A911F07939A00D38D4D /* Specification.swift in Sources */,

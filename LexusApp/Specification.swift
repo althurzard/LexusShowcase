@@ -13,7 +13,7 @@ open class Specification {
     var description: String?
     static let cellHeight: CGFloat = 50.0
     
-    init(title: String?, description: String?) {
+    init(title: String?, description: String? = nil) {
         self.title = title
         self.description = description
     }
