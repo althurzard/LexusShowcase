@@ -81,6 +81,7 @@
 		04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */; };
 		224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */; };
 		224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */; };
+		22548F3C1F22516E007AE347 /* antoan.png in Resources */ = {isa = PBXBuildFile; fileRef = 22548F3B1F22516E007AE347 /* antoan.png */; };
 		22876B6B1F1C9E7E00227DB2 /* CustomSafetyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */; };
 		22876B6C1F1C9E7E00227DB2 /* CustomSafetyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22876B6A1F1C9E7E00227DB2 /* CustomSafetyCell.xib */; };
 		22876B711F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876B701F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift */; };
@@ -200,6 +201,7 @@
 		04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecificationCell.swift; sourceTree = "<group>"; };
 		224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperationCell.swift; sourceTree = "<group>"; };
 		224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOperationCell.xib; sourceTree = "<group>"; };
+		22548F3B1F22516E007AE347 /* antoan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = antoan.png; path = "../RC Turbo/An Toan/antoan.png"; sourceTree = "<group>"; };
 		22876B691F1C9E7E00227DB2 /* CustomSafetyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSafetyCell.swift; sourceTree = "<group>"; };
 		22876B6A1F1C9E7E00227DB2 /* CustomSafetyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSafetyCell.xib; sourceTree = "<group>"; };
 		22876B701F1CFCFD00227DB2 /* SquareMosaicLayoutPatterns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareMosaicLayoutPatterns.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 		04A9BD1C1F0605F60032BDBC /* 03 An toan */ = {
 			isa = PBXGroup;
 			children = (
+				22548F3B1F22516E007AE347 /* antoan.png */,
 				04A9BD1D1F0605F60032BDBC /* 8-SRS-AIRBAGS.png */,
 				04A9BD1E1F0605F60032BDBC /* rc-safety-popuphood.jpg */,
 				04A9BD1F1F0605F60032BDBC /* rc350-safety-blindspot.jpg */,
@@ -692,6 +695,7 @@
 				04A9BD5C1F060E360032BDBC /* NOBKI___.TTF in Resources */,
 				04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */,
 				22876B831F1D0A0100227DB2 /* RC5047.png in Resources */,
+				22548F3C1F22516E007AE347 /* antoan.png in Resources */,
 				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
 				22876BD31F1FD26400227DB2 /* tong-quan-thumb-1.png in Resources */,
 				04A9BD671F0655B80032BDBC /* CustomBodyCell.xib in Resources */,

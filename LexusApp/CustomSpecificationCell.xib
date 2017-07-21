@@ -26,26 +26,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="Jcl-W2-8xq">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="Apy-4b-9Yj"/>
+                            <constraint firstAttribute="height" constant="35" id="Apy-4b-9Yj"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG SỐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-09-fb0">
-                        <rect key="frame" x="28" y="8" width="100" height="35"/>
+                        <rect key="frame" x="28" y="3" width="90" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="FZB-XQ-NQh"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="MHA-q4-3Eg"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-JM-hu3" userLabel="Left View" customClass="AccordionView" customModule="LexusApp" customModuleProvider="target">
-                        <rect key="frame" x="8" y="50" width="512" height="709.5"/>
+                        <rect key="frame" x="8" y="35" width="512" height="724.5"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="black" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-5P-2K9">
-                                <rect key="frame" x="0.0" y="0.0" width="512" height="709.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="724.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -61,10 +61,10 @@
                         </connections>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-yX-EHe" userLabel="Right View" customClass="AccordionView" customModule="LexusApp" customModuleProvider="target">
-                        <rect key="frame" x="504" y="50" width="512" height="709.5"/>
+                        <rect key="frame" x="504" y="35" width="512" height="724.5"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="black" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9S0-IB-sJp">
-                                <rect key="frame" x="0.0" y="0.0" width="512" height="709.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="724.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -91,7 +91,7 @@
                     <constraint firstItem="QYc-JM-hu3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cHL-BW-hbe"/>
                     <constraint firstItem="nJx-yX-EHe" firstAttribute="width" secondItem="QYc-JM-hu3" secondAttribute="width" id="fpT-7S-XQ0"/>
                     <constraint firstAttribute="bottomMargin" secondItem="nJx-yX-EHe" secondAttribute="bottom" id="kgV-oM-LFa"/>
-                    <constraint firstItem="Qf5-09-fb0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kjo-sg-e37"/>
+                    <constraint firstItem="Qf5-09-fb0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="kjo-sg-e37"/>
                     <constraint firstItem="Jcl-W2-8xq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rWF-cD-E1S"/>
                     <constraint firstItem="Qf5-09-fb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="sam-2l-xmU"/>
                 </constraints>

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -22,16 +23,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AVd-e9-4qt">
-                    <rect key="frame" x="0.0" y="50" width="1024" height="718"/>
+                    <rect key="frame" x="0.0" y="35" width="1024" height="733"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ilK-tZ-B0N">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="359"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="366.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-nB-uvS">
-                                    <rect key="frame" x="0.0" y="0.0" width="512" height="359"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-TF-6pR">
-                                            <rect key="frame" x="0.0" y="0.0" width="512" height="359"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -43,13 +44,13 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-aF-OJ8">
-                                    <rect key="frame" x="512" y="0.0" width="512" height="359"/>
+                                    <rect key="frame" x="512" y="0.0" width="512" height="366.5"/>
                                     <subviews>
                                         <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkM-vA-W2D">
-                                            <rect key="frame" x="0.0" y="0.0" width="512" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="512" height="183.5"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4M0-bJ-hBp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="512" height="179.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="512" height="183.5"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -61,10 +62,10 @@
                                             </constraints>
                                         </view>
                                         <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-WC-J8l">
-                                            <rect key="frame" x="0.0" y="179.5" width="256" height="179.5"/>
+                                            <rect key="frame" x="0.0" y="183.5" width="256" height="183"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="llK-dV-gwY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="179.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -76,10 +77,10 @@
                                             </constraints>
                                         </view>
                                         <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-zL-LNJ">
-                                            <rect key="frame" x="256" y="179.5" width="256" height="179.5"/>
+                                            <rect key="frame" x="256" y="183.5" width="256" height="183"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-y0-ijP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="179.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -110,16 +111,16 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r0P-Dk-VFO">
-                            <rect key="frame" x="0.0" y="359" width="1024" height="359"/>
+                            <rect key="frame" x="0.0" y="366.5" width="1024" height="366.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-I7-sWY">
-                                    <rect key="frame" x="0.0" y="0.0" width="512" height="359"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                     <subviews>
                                         <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmp-RT-6iM">
-                                            <rect key="frame" x="256" y="179.5" width="256" height="179.5"/>
+                                            <rect key="frame" x="256" y="183.5" width="256" height="183"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC3004.png" translatesAutoresizingMaskIntoConstraints="NO" id="s93-h6-AtE">
-                                                    <rect key="frame" x="0.0" y="-0.5" width="256" height="179.5"/>
+                                                    <rect key="frame" x="0.0" y="-0.5" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -131,10 +132,10 @@
                                             </constraints>
                                         </view>
                                         <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-0F-Ql8">
-                                            <rect key="frame" x="0.0" y="0.0" width="256" height="359"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="366.5"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wFQ-nX-f8i">
-                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="359"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="366.5"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,10 +147,10 @@
                                             </constraints>
                                         </view>
                                         <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Of7-li-lpc">
-                                            <rect key="frame" x="256" y="0.0" width="256" height="179.5"/>
+                                            <rect key="frame" x="256" y="0.0" width="256" height="183.5"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BIJ-iG-jgM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="179.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="183.5"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -178,10 +179,10 @@
                                     </constraints>
                                 </view>
                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-QQ-BsB">
-                                    <rect key="frame" x="512" y="0.0" width="512" height="359"/>
+                                    <rect key="frame" x="512" y="0.0" width="512" height="366.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yjC-vs-q5N">
-                                            <rect key="frame" x="0.0" y="0.0" width="512" height="359"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -197,18 +198,18 @@
                     </subviews>
                 </stackView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-Gc-4QA">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="35"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="JaX-fL-g3I"/>
+                        <constraint firstAttribute="height" constant="35" id="JaX-fL-g3I"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THƯ VIỆN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-Nv-f56">
-                    <rect key="frame" x="28" y="8" width="83" height="35"/>
+                    <rect key="frame" x="28" y="3" width="74.5" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Cjq-HP-PT9"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="T04-40-GdI"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -219,10 +220,10 @@
                 <constraint firstAttribute="trailing" secondItem="FTn-Gc-4QA" secondAttribute="trailing" id="HuJ-a6-LpZ"/>
                 <constraint firstItem="AVd-e9-4qt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mnh-yj-bUc"/>
                 <constraint firstAttribute="bottom" secondItem="AVd-e9-4qt" secondAttribute="bottom" id="SJR-2l-DI8"/>
-                <constraint firstItem="FFC-Nv-f56" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="T0v-16-jbs"/>
+                <constraint firstItem="FFC-Nv-f56" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="-5" id="T0v-16-jbs"/>
                 <constraint firstItem="FTn-Gc-4QA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xtp-bj-4rf"/>
                 <constraint firstItem="FTn-Gc-4QA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z8v-3m-Yt3"/>
-                <constraint firstItem="AVd-e9-4qt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="ZKT-lf-VFz"/>
+                <constraint firstItem="AVd-e9-4qt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="ZKT-lf-VFz"/>
                 <constraint firstItem="FFC-Nv-f56" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="20" id="h5h-8y-eYm"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

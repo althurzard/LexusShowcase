@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -28,9 +29,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="pga-lG-SXp">
-                        <rect key="frame" x="0.0" y="0.0" width="993" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="993" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="N4p-1E-Nhf"/>
+                            <constraint firstAttribute="height" constant="35" id="N4p-1E-Nhf"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-C2-2Qy">
@@ -116,23 +117,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JZh-1B-38y">
                                 <rect key="frame" x="173.5" y="425" width="251.5" height="243.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-50" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-60" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLp-dH-5AW">
                                         <rect key="frame" x="0.0" y="0.0" width="251.5" height="243.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RC Turbo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-Uf-s34">
-                                                <rect key="frame" x="0.0" y="0.0" width="251.5" height="135.5"/>
+                                                <rect key="frame" x="0.5" y="0.0" width="250.5" height="142.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="70"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạc sonic silver&lt;1J2&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYK-oJ-Tc9">
-                                                <rect key="frame" x="0.0" y="51" width="251.5" height="136"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạc sonic silver&lt;1J2&gt; " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYK-oJ-Tc9">
+                                                <rect key="frame" x="33.5" y="48" width="184.5" height="142"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.980.000.000 VNĐ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
-                                                <rect key="frame" x="0.0" y="108" width="251.5" height="135.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.980.000.000 VNĐ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-k6-a8P">
+                                                <rect key="frame" x="0.0" y="101" width="251.5" height="142.5"/>
                                                 <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="30"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -149,18 +150,18 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TỔNG QUAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-h0-Heq">
-                        <rect key="frame" x="28" y="8" width="117" height="35"/>
+                        <rect key="frame" x="28" y="3" width="105" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="cgt-Q7-a5f"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="pga-lG-SXp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1U9-ke-7SF"/>
-                    <constraint firstItem="jDz-h0-Heq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="C2E-X1-anf"/>
+                    <constraint firstItem="jDz-h0-Heq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="C2E-X1-anf"/>
                     <constraint firstItem="pga-lG-SXp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EFh-5O-649"/>
                     <constraint firstAttribute="bottomMargin" secondItem="WJe-C2-2Qy" secondAttribute="bottom" constant="-10" id="G8J-nD-2gI"/>
                     <constraint firstAttribute="trailing" secondItem="huE-Z9-OZf" secondAttribute="trailing" id="LoK-lX-zmS"/>

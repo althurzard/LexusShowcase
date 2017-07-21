@@ -14,6 +14,7 @@ struct Constant {
     }
 }
 
+
 class AccordionView: UIView {
     
     open var total = 0

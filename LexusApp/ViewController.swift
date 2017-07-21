@@ -23,8 +23,6 @@ class ViewController: FormViewController {
         static let specificationRow = "THÔNG SỐ"
     }
     
-    
-    
     fileprivate lazy var heightRow:CGFloat = UIScreen.main.bounds.height - CustomHeader.height
     
     fileprivate lazy var customColorPickerRow: CustomColorPickerRow = self.form.rowBy(tag: Constants.colorPicker) as! CustomColorPickerRow
@@ -73,6 +71,7 @@ class ViewController: FormViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
 
@@ -138,41 +137,46 @@ class ViewController: FormViewController {
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let locationOnScreenY = scrollView.contentOffset.y
-        stopScrolling()
+
+        self.stopScrolling()
         stopTimer()
         if locationOnScreenY < customOverviewRow.cell.height!() / 2 {
+            stopScrolling()
             customOverviewRow.cell.startAnimation()
         } else {
             customOverviewRow.cell.prepareAnimation()
         }
             
         if locationOnScreenY < self.heightRow * 1.5, locationOnScreenY > self.heightRow / 2 {
-            
+            stopScrolling()
             customColorPickerRow.cell.startAnimation()
         } else {
             customColorPickerRow.cell.prepareAnimation()
         }
             
         if locationOnScreenY < self.heightRow * 2.5, locationOnScreenY > self.heightRow * 1.5 {
+            stopScrolling()
             customBodyRow.cell.startAnimation()
         } else {
             customBodyRow.cell.prepareAnimation()
         }
         
         if locationOnScreenY < self.heightRow * 3.5, locationOnScreenY > self.heightRow * 2.5 {
-
+            stopScrolling()
             customOperationRow.cell.startAnimation()
         } else {
             customOperationRow.cell.prepareAnimation()
         }
         
         if locationOnScreenY < self.heightRow * 4.5, locationOnScreenY > self.heightRow * 3.5 {
+            stopScrolling()
             customSafetyRow.cell.startAnimation()
         } else {
             customSafetyRow.cell.prepareAnimation()
         }
         
         if locationOnScreenY > self.heightRow * 4 + self.customSpecificationRow.cell.height!() {
+            
             customLirabryRow.cell.startAnimation()
         } else {
             customLirabryRow.cell.prepareAnimation()
@@ -181,6 +185,8 @@ class ViewController: FormViewController {
         
         
     }
+    
+    
     
     func stopScrolling() {
         tableView.isScrollEnabled = false

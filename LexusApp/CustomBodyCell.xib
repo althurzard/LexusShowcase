@@ -29,13 +29,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bn0-XD-iYb">
-                        <rect key="frame" x="20" y="100" width="984" height="668"/>
+                        <rect key="frame" x="20" y="70" width="984" height="698"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U2r-M4-RWA">
-                                <rect key="frame" x="0.0" y="0.0" width="984" height="334"/>
+                                <rect key="frame" x="0.0" y="0.0" width="984" height="349"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-qw-uzz">
-                                        <rect key="frame" x="0.0" y="0.0" width="314.5" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-qw-uzz">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.5" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOLD-SPINDLE-GRILLE.png" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-pI-IKE">
                                                 <rect key="frame" x="0.0" y="0.0" width="314.5" height="190"/>
@@ -44,7 +44,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LƯỚI TẢN NHIỆT SẮC XẢO" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-6H-h4R">
-                                                <rect key="frame" x="0.0" y="194" width="314.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="314.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ykb-Il-v5H"/>
                                                 </constraints>
@@ -53,16 +53,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-te-hZ1" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="314.5" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="314.5" height="133.5"/>
                                                 <string key="text">Lưới tản nhiệt lớn và được hạ thấp nhất trong các mẫu xe của Lexus kết hợp hài hoà với đường nét điêu khắc sắc sảo của thân xe giúp mang lại vẻ ngoài hoàn toàn khác biệt cho RC.</string>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sao-cM-OGV">
-                                        <rect key="frame" x="334.5" y="0.0" width="315" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sao-cM-OGV">
+                                        <rect key="frame" x="334.5" y="0.0" width="315" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dual-Exhaust-pipes.png" translatesAutoresizingMaskIntoConstraints="NO" id="0bH-6m-CCR">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="190"/>
@@ -71,7 +71,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ỐNG XẢ ĐÔI" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-15-tNU">
-                                                <rect key="frame" x="0.0" y="194" width="315" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="315" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="sgb-f1-4CL"/>
                                                 </constraints>
@@ -80,16 +80,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foj-lL-HRV" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="315" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="315" height="133.5"/>
                                                 <string key="text">Vách ngăn trên ống xả đôi được thiết kế với diện mạo đặc trưng góp phần tạo nên dấu ấn thể thao và phong cách riêng độc đáo của thiết kế xe coupe Lexus.</string>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YV9-vr-FhX">
-                                        <rect key="frame" x="669.5" y="0.0" width="314.5" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YV9-vr-FhX">
+                                        <rect key="frame" x="669.5" y="0.0" width="314.5" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc200t-wheels.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QRv-QT-yKQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="314.5" height="190"/>
@@ -98,7 +98,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÀNH XE HỢP KIM 18 INCH" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E93-jl-dfB">
-                                                <rect key="frame" x="0.0" y="194" width="314.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="314.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="u7f-Fa-Cj0"/>
                                                 </constraints>
@@ -107,9 +107,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJh-l9-s53" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="314.5" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="314.5" height="133.5"/>
                                                 <string key="text">Vành xe hợp kim 5 chấu khoẻ khoắn và sắc sảo của mẫu xe RC Turbo góp phần tạo nên vẻ ngoài ấn tượng mạnh mẽ khi chiếc xe lướt trên đường.</string>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -118,10 +118,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4N8-Pr-xgq">
-                                <rect key="frame" x="0.0" y="334" width="984" height="334"/>
+                                <rect key="frame" x="0.0" y="349" width="984" height="349"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-pT-jNB">
-                                        <rect key="frame" x="0.0" y="0.0" width="314.5" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-pT-jNB">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.5" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc-comfort-folddown-mechanism.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-vp-MHf">
                                                 <rect key="frame" x="0.0" y="0.0" width="314.5" height="190"/>
@@ -130,7 +130,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHẾ SAU GẬP 60/40" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-jC-HGO">
-                                                <rect key="frame" x="0.0" y="194" width="314.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="314.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="VGh-dB-8D3"/>
                                                 </constraints>
@@ -139,17 +139,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBI-CA-i8B" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="314.5" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="314.5" height="133.5"/>
                                                 <string key="text">Cơ cấu gập ghế được thiết kế giúp thao tác dễ dàng, cho phép gập ghế theo tỷ lệ 60/40, tạo nên không gian chứa đồ rộng rãi và tiện lợi.
 </string>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-Ug-kBq">
-                                        <rect key="frame" x="334.5" y="0.0" width="315" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-Ug-kBq">
+                                        <rect key="frame" x="334.5" y="0.0" width="315" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-eye-LED-headlamps.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJX-17-LVl">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="190"/>
@@ -158,7 +158,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐÈN PHA BA BÓNG LED" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qr-Hc-Toq">
-                                                <rect key="frame" x="0.0" y="194" width="315" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="315" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="i0j-Ei-gXR"/>
                                                 </constraints>
@@ -167,16 +167,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRW-H3-QWS" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="315" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="315" height="133.5"/>
                                                 <string key="text">Thiết kế hình chữ L bắt mắt của Đèn pha 3 bóng LED tiết kiệm năng lượng được cải tiến từ đèn pha của siêu xe Lexus LFA và LF-LC.</string>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPU-IP-jOB">
-                                        <rect key="frame" x="669.5" y="0.0" width="314.5" height="334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPU-IP-jOB">
+                                        <rect key="frame" x="669.5" y="0.0" width="314.5" height="349"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Moonroof.png" translatesAutoresizingMaskIntoConstraints="NO" id="avm-yi-FNU">
                                                 <rect key="frame" x="0.0" y="0.0" width="314.5" height="190"/>
@@ -185,7 +185,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CỬA SỔ TRỜI" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAO-Or-hI5">
-                                                <rect key="frame" x="0.0" y="194" width="314.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="189" width="314.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="wjd-pH-uEI"/>
                                                 </constraints>
@@ -194,8 +194,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cửa sổ trời đưa ánh sáng và không khí trong lành vào trong xe tạo sự giao cảm giữa hành khách và thiên nhiên." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kae-t7-adP" customClass="VerticalAlignLabel" customModule="LexusApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="226.5" width="314.5" height="107.5"/>
-                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="314.5" height="133.5"/>
+                                                <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -205,26 +205,19 @@
                             </stackView>
                         </subviews>
                     </stackView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4T-LW-ZvU">
-                        <rect key="frame" x="20" y="68" width="984" height="1"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="e9n-qx-x7h"/>
-                        </constraints>
-                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub-header" translatesAutoresizingMaskIntoConstraints="NO" id="leL-WB-ypc">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="LMT-Za-gRc"/>
+                            <constraint firstAttribute="height" constant="35" id="LMT-Za-gRc"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIẾT KẾ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icr-NO-arU">
-                        <rect key="frame" x="28" y="8" width="72.5" height="35"/>
+                        <rect key="frame" x="28" y="3" width="65.5" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="52V-23-HMF"/>
                             <constraint firstAttribute="height" constant="35" id="KbE-kt-2zb"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="20"/>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -232,16 +225,13 @@
                 <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Bn0-XD-iYb" secondAttribute="bottom" id="0hp-Ba-d04"/>
-                    <constraint firstItem="Bn0-XD-iYb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="100" id="D9Z-C6-llE"/>
+                    <constraint firstItem="Bn0-XD-iYb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="70" id="D9Z-C6-llE"/>
                     <constraint firstAttribute="trailing" secondItem="Bn0-XD-iYb" secondAttribute="trailing" constant="20" id="FOQ-Nz-5cA"/>
-                    <constraint firstItem="o4T-LW-ZvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="60" id="FPh-0w-OBS"/>
                     <constraint firstItem="leL-WB-ypc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IBl-li-75O"/>
-                    <constraint firstItem="Icr-NO-arU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Lon-Pg-wv1"/>
+                    <constraint firstItem="Icr-NO-arU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="Lon-Pg-wv1"/>
                     <constraint firstItem="Bn0-XD-iYb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="aZa-HE-6Yk"/>
-                    <constraint firstItem="o4T-LW-ZvU" firstAttribute="width" secondItem="Bn0-XD-iYb" secondAttribute="width" id="chx-yh-Hcn"/>
                     <constraint firstItem="Icr-NO-arU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="gkL-9E-xwy"/>
                     <constraint firstAttribute="trailing" secondItem="leL-WB-ypc" secondAttribute="trailing" id="oNF-Bs-xsQ"/>
-                    <constraint firstItem="o4T-LW-ZvU" firstAttribute="centerX" secondItem="Bn0-XD-iYb" secondAttribute="centerX" id="sbS-el-lR3"/>
                     <constraint firstItem="leL-WB-ypc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yDe-Rd-Dtf"/>
                 </constraints>
             </tableViewCellContentView>

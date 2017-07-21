@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-1o-HuY">
-                    <rect key="frame" x="678" y="18.5" width="828" height="33.5"/>
+                    <rect key="frame" x="678" y="19" width="828" height="33.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-JX-L8l">
                             <rect key="frame" x="0.0" y="0.0" width="113" height="33.5"/>
@@ -31,7 +32,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="aLT-cq-Td2"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -55,7 +56,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="n5L-w8-8gd"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -79,7 +80,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="J7q-UY-6xr"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -103,7 +104,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="QuK-gN-9xl"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -127,7 +128,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="0m4-0K-o6C"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -151,7 +152,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="Ehc-Pq-TJp"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
                                     <color key="textColor" red="0.96852082630000003" green="1" blue="0.98001972670000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
