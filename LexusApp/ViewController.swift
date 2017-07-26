@@ -302,9 +302,11 @@ class ViewController: FormViewController {
             self.tableView.scrollToRow(at: self.customOperationRow.indexPath!, at: position, animated: true)
         case .AnToan:
             self.tableView.scrollToRow(at: self.customSafetyRow.indexPath!, at: position, animated: true)
+            self.customSpecificationRow.cell.collapseAllCell()
         case .ThongSo:
             self.tableView.scrollToRow(at: self.customSpecificationRow.indexPath!, at: position, animated: true)
         case .ThuVien:
+            self.customSpecificationRow.cell.collapseAllCell()
             self.tableView.scrollToRow(at: self.customLirabryRow.indexPath!, at: position, animated: true)
         }
 

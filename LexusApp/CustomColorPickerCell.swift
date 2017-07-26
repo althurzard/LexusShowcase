@@ -35,7 +35,7 @@ class CustomColorPickerCell: Cell<Bool>, CellType {
     }
     
     fileprivate lazy var animation: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
-    fileprivate lazy var animateToBottom: [StockAnimation] = [.fadeIn,.slide(.down, .moderately)]
+    fileprivate lazy var animateToBottom: [StockAnimation] = [.fadeIn,.slide(.right, .moderately)]
     fileprivate lazy var animateToTop: [StockAnimation] = [.fadeIn,.slide(.up, .moderately)]
     
     public override func setup() {

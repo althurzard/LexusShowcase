@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -35,14 +36,14 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio-tab-bar" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-Yd-kZB">
-                                <rect key="frame" x="989" y="304" width="35" height="160"/>
+                                <rect key="frame" x="989" y="112" width="35" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="J5r-Vb-cXs"/>
                                     <constraint firstAttribute="width" constant="35" id="MRe-kf-zp3"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ots-Lp-Kfe">
-                                <rect key="frame" x="994" y="316" width="25" height="120"/>
+                                <rect key="frame" x="994" y="124" width="25" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKU-QR-ob2" customClass="DLRadioButton">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="20"/>
@@ -171,8 +172,8 @@
                             <constraint firstAttribute="trailing" secondItem="Uyd-zO-oq0" secondAttribute="trailing" id="FIC-QX-Ypx"/>
                             <constraint firstItem="wGV-mP-he5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IGZ-fD-WYi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wGV-mP-he5" secondAttribute="bottom" id="Nwg-64-wCM"/>
-                            <constraint firstItem="ots-Lp-Kfe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8" id="Ojq-Pe-f8s"/>
-                            <constraint firstItem="uxc-Yd-kZB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VWS-Dw-7s5"/>
+                            <constraint firstItem="ots-Lp-Kfe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" constant="-8" id="Ojq-Pe-f8s"/>
+                            <constraint firstItem="uxc-Yd-kZB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="VWS-Dw-7s5"/>
                             <constraint firstAttribute="trailing" secondItem="ots-Lp-Kfe" secondAttribute="trailing" constant="5" id="cWY-k6-e5B"/>
                             <constraint firstItem="wGV-mP-he5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="evS-6v-8Z0"/>
                             <constraint firstAttribute="trailing" secondItem="uxc-Yd-kZB" secondAttribute="trailing" id="tsV-zc-oaB"/>

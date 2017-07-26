@@ -150,18 +150,18 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TỔNG QUAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-h0-Heq">
-                        <rect key="frame" x="28" y="3" width="105" height="35"/>
+                        <rect key="frame" x="28" y="1" width="87.5" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="cgt-Q7-a5f"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="pga-lG-SXp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1U9-ke-7SF"/>
-                    <constraint firstItem="jDz-h0-Heq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="C2E-X1-anf"/>
+                    <constraint firstItem="jDz-h0-Heq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="C2E-X1-anf"/>
                     <constraint firstItem="pga-lG-SXp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EFh-5O-649"/>
                     <constraint firstAttribute="bottomMargin" secondItem="WJe-C2-2Qy" secondAttribute="bottom" constant="-10" id="G8J-nD-2gI"/>
                     <constraint firstAttribute="trailing" secondItem="huE-Z9-OZf" secondAttribute="trailing" id="LoK-lX-zmS"/>

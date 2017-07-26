@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-fr-Xzs">
                         <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tong-quan-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-sz-bcE" customClass="DesignableImageView" customModule="Spring">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6496.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-sz-bcE" customClass="DesignableImageView" customModule="Spring">
                                 <rect key="frame" x="0.0" y="0.0" width="586" height="376.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -49,7 +49,7 @@
                             <constraint firstAttribute="trailing" secondItem="ouh-sz-bcE" secondAttribute="trailing" id="vKD-P7-FWA"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tong-quan-1" translatesAutoresizingMaskIntoConstraints="NO" id="x2z-I6-gPw" customClass="DesignableImageView" customModule="Spring">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC-turbo.png" translatesAutoresizingMaskIntoConstraints="NO" id="x2z-I6-gPw" customClass="DesignableImageView" customModule="Spring">
                         <rect key="frame" x="0.0" y="-50" width="586" height="426.5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -83,7 +83,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="tong-quan-1" width="2048" height="1536"/>
-        <image name="tong-quan-bg.jpg" width="2048" height="1536"/>
+        <image name="IMG_6496.PNG" width="2048" height="1379"/>
+        <image name="RC-turbo.png" width="2048" height="1536"/>
     </resources>
 </document>

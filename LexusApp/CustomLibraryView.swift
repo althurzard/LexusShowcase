@@ -8,7 +8,7 @@
 
 import UIKit
 import Spruce
-
+import Spring
 
 protocol CustomLibraryViewProtocol {
     func didTapImage(withView View: CustomLibraryView,withIndex index: Int )
@@ -16,10 +16,10 @@ protocol CustomLibraryViewProtocol {
 
 class CustomLibraryView: UIView {
 
-    fileprivate lazy var animateToBottom: [StockAnimation] = [.fadeIn,.slide(.down, .moderately)]
-    fileprivate lazy var animateToTop: [StockAnimation] = [.fadeIn,.slide(.up, .moderately)]
-    fileprivate lazy var animateToLeft: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
-    fileprivate lazy var animateToRight: [StockAnimation] = [.fadeIn,.slide(.right, .moderately)]
+    fileprivate lazy var animateToBottom: [StockAnimation] = [.fadeIn]
+    fileprivate lazy var animateToTop: [StockAnimation] = [.fadeIn]
+    fileprivate lazy var animateToLeft: [StockAnimation] = [.fadeIn]
+    fileprivate lazy var animateToRight: [StockAnimation] = [.fadeIn]
     
     @IBOutlet weak var topRightView: UIView?
     @IBOutlet weak var topLeftView: UIView?
@@ -68,15 +68,23 @@ class CustomLibraryView: UIView {
     }
     
     func startAnimation() {
-        topRightView?.spruce.animate(animateToLeft, duration: duration)
         topLeftView?.spruce.animate(animateToRight, duration: duration)
-        topMidUpView?.spruce.animate(animateToBottom, duration: duration)
-        topMidLeftView?.spruce.animate(animateToRight, duration: duration)
-        topMidRightView?.spruce.animate(animateToLeft, duration: duration)
-        bottomLeftView?.spruce.animate(animateToRight, duration: duration)
-        bottomRightView?.spruce.animate(animateToTop, duration: duration)
-        bottomRLeftView?.spruce.animate(animateToRight, duration: duration)
-        bottomRRightView?.spruce.animate(animateToLeft, duration: duration)
+        self.bottomRLeftView?.spruce.animate(self.animateToRight, duration: duration)
+        
+        
+        delay(delay: 0.75) {
+            let duration = self.duration - 0.5
+            self.topRightView?.spruce.animate(self.animateToLeft, duration: duration)
+            
+            self.topMidUpView?.spruce.animate(self.animateToBottom, duration: duration)
+            self.topMidLeftView?.spruce.animate(self.animateToRight, duration: duration)
+            self.topMidRightView?.spruce.animate(self.animateToLeft, duration: duration)
+            self.bottomLeftView?.spruce.animate(self.animateToRight, duration: duration)
+            self.bottomRightView?.spruce.animate(self.animateToTop, duration: duration)
+            
+            self.bottomRRightView?.spruce.animate(self.animateToLeft, duration: duration)
+        }
+        
     }
     
     @IBAction func didTapImage(sender: UIGestureRecognizer) {

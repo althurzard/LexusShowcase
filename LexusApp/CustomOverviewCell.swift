@@ -14,7 +14,7 @@ import Spring
 class CustomOverviewCell: Cell<Bool>, CellType {
     
     
-    fileprivate lazy var animation1: [StockAnimation] = [.fadeIn,.slide(.left, .moderately)]
+    fileprivate lazy var animation1: [StockAnimation] = [.fadeIn]
     fileprivate lazy var animation2: [StockAnimation] = [.fadeIn]
     fileprivate var isAnimating = true
     @IBOutlet weak var desktopImageView: DesignableImageView!

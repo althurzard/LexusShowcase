@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-1o-HuY">
-                    <rect key="frame" x="678" y="19" width="828" height="33.5"/>
+                    <rect key="frame" x="678" y="18.5" width="828" height="33.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-JX-L8l">
                             <rect key="frame" x="0.0" y="0.0" width="113" height="33.5"/>

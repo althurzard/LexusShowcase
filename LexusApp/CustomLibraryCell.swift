@@ -23,10 +23,10 @@ class CustomLibraryCell: Cell<Bool>, CellType {
         self.addSubview(libraryView)
         
         libraryView.translatesAutoresizingMaskIntoConstraints = false
-        libraryView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: -10).isActive = true
-        libraryView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 10).isActive = true
-        libraryView.topAnchor.constraint(equalTo: self.topAnchor, constant: -10).isActive = true
-        libraryView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10).isActive = true
+        libraryView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        libraryView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        libraryView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        libraryView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
         prepareAnimation()
     }

@@ -53,7 +53,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="512" height="183.5"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="4M0-bJ-hBp" secondAttribute="bottom" id="0Ku-M0-LWf"/>
                                                 <constraint firstItem="4M0-bJ-hBp" firstAttribute="top" secondItem="bkM-vA-W2D" secondAttribute="top" id="ENq-1g-ETD"/>
@@ -123,7 +123,7 @@
                                                     <rect key="frame" x="0.0" y="-0.5" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="s93-h6-AtE" secondAttribute="trailing" id="FkU-Kp-nsL"/>
                                                 <constraint firstItem="s93-h6-AtE" firstAttribute="top" secondItem="Lmp-RT-6iM" secondAttribute="top" id="O6P-Uf-cXL"/>
@@ -153,7 +153,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="256" height="183.5"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="BIJ-iG-jgM" secondAttribute="bottom" id="9Hl-0W-zuW"/>
                                                 <constraint firstAttribute="trailing" secondItem="BIJ-iG-jgM" secondAttribute="trailing" id="ddC-3N-Eu1"/>
@@ -204,12 +204,12 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THƯ VIỆN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-Nv-f56">
-                    <rect key="frame" x="28" y="3" width="74.5" height="35"/>
+                    <rect key="frame" x="28" y="1" width="62" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Cjq-HP-PT9"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="T04-40-GdI"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="NobelVnu-Light" family="NobelVnu" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -220,7 +220,7 @@
                 <constraint firstAttribute="trailing" secondItem="FTn-Gc-4QA" secondAttribute="trailing" id="HuJ-a6-LpZ"/>
                 <constraint firstItem="AVd-e9-4qt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mnh-yj-bUc"/>
                 <constraint firstAttribute="bottom" secondItem="AVd-e9-4qt" secondAttribute="bottom" id="SJR-2l-DI8"/>
-                <constraint firstItem="FFC-Nv-f56" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="-5" id="T0v-16-jbs"/>
+                <constraint firstItem="FFC-Nv-f56" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="-7" id="T0v-16-jbs"/>
                 <constraint firstItem="FTn-Gc-4QA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xtp-bj-4rf"/>
                 <constraint firstItem="FTn-Gc-4QA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z8v-3m-Yt3"/>
                 <constraint firstItem="AVd-e9-4qt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="ZKT-lf-VFz"/>

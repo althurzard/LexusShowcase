@@ -84,6 +84,12 @@ class AccordionView: UIView {
         self.total += currentSubItems.count
     }
     
+    open func collapseAllCell() {
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            self.tableView(self.tableView, didSelectRowAt: indexPath)
+        }
+    }
+    
     /**
      Collapse the cell at the index specified.
      
@@ -122,6 +128,9 @@ class AccordionView: UIView {
             
         case .expanded:
             self.collapseSubItemsAtIndex(index, parent: parent)
+            let indexPath = IndexPath(row: index, section: 0)
+            self.tableView.cellForRow(at: indexPath)!.setHighlighted(false, animated: false)
+            self.tableView.reloadRows(at: [indexPath], with: .none)
             self.lastCellExpanded = NoCellExpanded
             
         case .collapsed:
