@@ -79,6 +79,11 @@
 		04F40A911F07939A00D38D4D /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A901F07939A00D38D4D /* Specification.swift */; };
 		04F40A931F07946800D38D4D /* DetailSpecificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */; };
 		04F40A951F07959C00D38D4D /* DetailSpecificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */; };
+		222EB7171F2CF01300FE39D4 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7111F2CF01300FE39D4 /* 5.png */; };
+		222EB7181F2CF01300FE39D4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7121F2CF01300FE39D4 /* 1.png */; };
+		222EB7191F2CF01300FE39D4 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7131F2CF01300FE39D4 /* 6.png */; };
+		222EB71A1F2CF01300FE39D4 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7141F2CF01300FE39D4 /* 4.png */; };
+		222EB71B1F2CF01300FE39D4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7151F2CF01300FE39D4 /* 3.png */; };
 		224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */; };
 		224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */; };
 		22548F3C1F22516E007AE347 /* antoan.png in Resources */ = {isa = PBXBuildFile; fileRef = 22548F3B1F22516E007AE347 /* antoan.png */; };
@@ -113,12 +118,7 @@
 		22876BD21F1FD26400227DB2 /* tong-quan-thum-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD01F1FD26400227DB2 /* tong-quan-thum-2.png */; };
 		22876BD31F1FD26400227DB2 /* tong-quan-thumb-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */; };
 		22876BD51F205D5D00227DB2 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BD41F205D5D00227DB2 /* UILabel.swift */; };
-		22876BDF1F20658400227DB2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD71F20658400227DB2 /* 1.jpg */; };
 		22876BE01F20658400227DB2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD81F20658400227DB2 /* 2.jpg */; };
-		22876BE11F20658400227DB2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD91F20658400227DB2 /* 3.jpg */; };
-		22876BE21F20658400227DB2 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDA1F20658400227DB2 /* 4.jpg */; };
-		22876BE31F20658400227DB2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDB1F20658400227DB2 /* 5.jpg */; };
-		22876BE41F20658400227DB2 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDC1F20658400227DB2 /* 6.jpg */; };
 		22876BE51F20658400227DB2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDD1F20658400227DB2 /* 7.jpg */; };
 		22876BE61F20658400227DB2 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDE1F20658400227DB2 /* 8.jpg */; };
 		22FB427F1F289E23005FAD5C /* IMG_6496.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 22FB427E1F289E23005FAD5C /* IMG_6496.PNG */; };
@@ -201,6 +201,11 @@
 		04F40A901F07939A00D38D4D /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		04F40A921F07946800D38D4D /* DetailSpecificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSpecificationCell.xib; sourceTree = "<group>"; };
 		04F40A941F07959C00D38D4D /* DetailSpecificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSpecificationCell.swift; sourceTree = "<group>"; };
+		222EB7111F2CF01300FE39D4 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		222EB7121F2CF01300FE39D4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		222EB7131F2CF01300FE39D4 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		222EB7141F2CF01300FE39D4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		222EB7151F2CF01300FE39D4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperationCell.swift; sourceTree = "<group>"; };
 		224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOperationCell.xib; sourceTree = "<group>"; };
 		22548F3B1F22516E007AE347 /* antoan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = antoan.png; path = "../RC Turbo/An Toan/antoan.png"; sourceTree = "<group>"; };
@@ -235,12 +240,7 @@
 		22876BD01F1FD26400227DB2 /* tong-quan-thum-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tong-quan-thum-2.png"; path = "RC Turbo/tong-quan-thum-2.png"; sourceTree = "<group>"; };
 		22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tong-quan-thumb-1.png"; path = "RC Turbo/tong-quan-thumb-1.png"; sourceTree = "<group>"; };
 		22876BD41F205D5D00227DB2 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		22876BD71F20658400227DB2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "RC Turbo/Thu Vien/1.jpg"; sourceTree = "<group>"; };
 		22876BD81F20658400227DB2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "RC Turbo/Thu Vien/2.jpg"; sourceTree = "<group>"; };
-		22876BD91F20658400227DB2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = "RC Turbo/Thu Vien/3.jpg"; sourceTree = "<group>"; };
-		22876BDA1F20658400227DB2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = "RC Turbo/Thu Vien/4.jpg"; sourceTree = "<group>"; };
-		22876BDB1F20658400227DB2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = "RC Turbo/Thu Vien/5.jpg"; sourceTree = "<group>"; };
-		22876BDC1F20658400227DB2 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = "RC Turbo/Thu Vien/6.jpg"; sourceTree = "<group>"; };
 		22876BDD1F20658400227DB2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "RC Turbo/Thu Vien/7.jpg"; sourceTree = "<group>"; };
 		22876BDE1F20658400227DB2 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = "RC Turbo/Thu Vien/8.jpg"; sourceTree = "<group>"; };
 		22FB427E1F289E23005FAD5C /* IMG_6496.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6496.PNG; sourceTree = "<group>"; };
@@ -602,12 +602,12 @@
 		22876BD61F20657100227DB2 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				22876BD71F20658400227DB2 /* 1.jpg */,
+				222EB7111F2CF01300FE39D4 /* 5.png */,
+				222EB7121F2CF01300FE39D4 /* 1.png */,
+				222EB7131F2CF01300FE39D4 /* 6.png */,
+				222EB7141F2CF01300FE39D4 /* 4.png */,
+				222EB7151F2CF01300FE39D4 /* 3.png */,
 				22876BD81F20658400227DB2 /* 2.jpg */,
-				22876BD91F20658400227DB2 /* 3.jpg */,
-				22876BDA1F20658400227DB2 /* 4.jpg */,
-				22876BDB1F20658400227DB2 /* 5.jpg */,
-				22876BDC1F20658400227DB2 /* 6.jpg */,
 				22876BDD1F20658400227DB2 /* 7.jpg */,
 				22876BDE1F20658400227DB2 /* 8.jpg */,
 			);
@@ -691,7 +691,6 @@
 				22876BE51F20658400227DB2 /* 7.jpg in Resources */,
 				04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */,
 				22876B7E1F1CFFC400227DB2 /* CustomLibraryView.xib in Resources */,
-				22876BE31F20658400227DB2 /* 5.jpg in Resources */,
 				04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */,
 				04A9BD611F060E360032BDBC /* NOR_____.TTF in Resources */,
 				04A9BD331F0605F60032BDBC /* rc-7-inch-display.jpg in Resources */,
@@ -700,6 +699,7 @@
 				22876B891F1D0AFC00227DB2 /* RC6089.png in Resources */,
 				04A9BD5C1F060E360032BDBC /* NOBKI___.TTF in Resources */,
 				04A9BD2C1F0605F60032BDBC /* img_gallery_04.jpg in Resources */,
+				222EB71B1F2CF01300FE39D4 /* 3.png in Resources */,
 				22876B831F1D0A0100227DB2 /* RC5047.png in Resources */,
 				22548F3C1F22516E007AE347 /* antoan.png in Resources */,
 				04A9BD2D1F0605F60032BDBC /* img_gallery_05.jpg in Resources */,
@@ -709,6 +709,7 @@
 				04A9BCE31F05FA760032BDBC /* LaunchScreen.storyboard in Resources */,
 				22876B931F1DD1EF00227DB2 /* CustomRadioBarView.xib in Resources */,
 				04A9BD301F0605F60032BDBC /* BOLD-SPINDLE-GRILLE.png in Resources */,
+				222EB7171F2CF01300FE39D4 /* 5.png in Resources */,
 				04A9BD2B1F0605F60032BDBC /* img_gallery_02.jpg in Resources */,
 				04A9BD211F0605F60032BDBC /* Bac-Platinum-Silver-ME.-(1J4).png in Resources */,
 				22876B9B1F1DED2E00227DB2 /* PopupLibraryView.xib in Resources */,
@@ -716,7 +717,6 @@
 				04A9BD571F060E360032BDBC /* NobelVnu-Bold.ttf in Resources */,
 				22876B881F1D0AFC00227DB2 /* RC3402.png in Resources */,
 				04A9BD561F060E360032BDBC /* NOBDI___.TTF in Resources */,
-				22876BDF1F20658400227DB2 /* 1.jpg in Resources */,
 				04A9BD5B1F060E360032BDBC /* NOBK____.TTF in Resources */,
 				04A9BD631F060E360032BDBC /* ufonts.com_nobel-bold.ttf in Resources */,
 				22876BA41F1DFA5900227DB2 /* BaseCollectionViewCell.xib in Resources */,
@@ -724,6 +724,7 @@
 				04A9BD391F0605F60032BDBC /* rc-performance-aerodynamics.jpg in Resources */,
 				04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */,
 				04A9BD591F060E360032BDBC /* NobelVnu-Light.ttf in Resources */,
+				222EB7191F2CF01300FE39D4 /* 6.png in Resources */,
 				04A9BD421F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png in Resources */,
 				04A9BD381F0605F60032BDBC /* DRIVE-MODE-SELECT.png in Resources */,
 				04A9BD311F0605F60032BDBC /* Dual-Exhaust-pipes.png in Resources */,
@@ -745,14 +746,11 @@
 				04A9BD3F1F0605F60032BDBC /* 8-SRS-AIRBAGS.png in Resources */,
 				04A9BD3E1F0605F60032BDBC /* RC8053---superior-stability.jpg in Resources */,
 				22876B6C1F1C9E7E00227DB2 /* CustomSafetyCell.xib in Resources */,
-				22876BE11F20658400227DB2 /* 3.jpg in Resources */,
 				22FB42811F28A694005FAD5C /* RC-turbo.png in Resources */,
 				22876BAE1F1E3EFC00227DB2 /* ColorPickerViewCell.xib in Resources */,
 				04A9BCE01F05FA760032BDBC /* Assets.xcassets in Resources */,
 				04A9BD3C1F0605F60032BDBC /* rc200t-performance-8-speed-automatic-transmission.jpg in Resources */,
 				04A9BD2E1F0605F60032BDBC /* Small-image-1.png in Resources */,
-				22876BE21F20658400227DB2 /* 4.jpg in Resources */,
-				22876BE41F20658400227DB2 /* 6.jpg in Resources */,
 				04A9BD261F0605F60032BDBC /* Den-Graaphite-Black-(223).png in Resources */,
 				22876BCB1F1FD05900227DB2 /* tong-quan-bg.jpg in Resources */,
 				04A9BCDB1F05FA760032BDBC /* Main.storyboard in Resources */,
@@ -764,12 +762,14 @@
 				04A9BD321F0605F60032BDBC /* Moonroof.png in Resources */,
 				04A9BD3B1F0605F60032BDBC /* rc-performance-short-wheelbase.jpg in Resources */,
 				22876B8D1F1D106A00227DB2 /* CustomLibraryCell.xib in Resources */,
+				222EB71A1F2CF01300FE39D4 /* 4.png in Resources */,
 				224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */,
 				22876B871F1D0AFC00227DB2 /* RC3004.png in Resources */,
 				04A9BD411F0605F60032BDBC /* rc350-safety-blindspot.jpg in Resources */,
 				04A9BD371F0605F60032BDBC /* 8-speed-SPDS-(Sport-Direct-Shift).png in Resources */,
 				04A9BD341F0605F60032BDBC /* rc-comfort-folddown-mechanism.jpg in Resources */,
 				04A9BCF41F06022C0032BDBC /* CustomOverviewCell.xib in Resources */,
+				222EB7181F2CF01300FE39D4 /* 1.png in Resources */,
 				22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */,
 				04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */,
 				22876BD21F1FD26400227DB2 /* tong-quan-thum-2.png in Resources */,

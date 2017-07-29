@@ -25,16 +25,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tét" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7FG-co-4Oe">
-                        <rect key="frame" x="23" y="-5.5" width="732" height="40.5"/>
+                        <rect key="frame" x="23" y="-25.5" width="732" height="80.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="Z2w-OT-OLj"/>
+                            <constraint firstAttribute="height" constant="80" id="Z2w-OT-OLj"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="18"/>
                         <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8lD-pK-yGS">
-                        <rect key="frame" x="250" y="0.0" width="24.5" height="29.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8lD-pK-yGS">
+                        <rect key="frame" x="250" y="0.0" width="0.0" height="29.5"/>
                         <fontDescription key="fontDescription" name="NobelVnu-Book" family="NobelVnu" pointSize="18"/>
                         <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>

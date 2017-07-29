@@ -227,11 +227,33 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         
         if !isParentCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath) as! DetailSpecificationCell
-            cell.lblTitle.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].title
-            cell.lblDescription.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].description
-            if cell.lblDescription.text == nil {
-                cell.lblTitle.textColor = .black
+            let data = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            if let desc = data.description {
+                cell.lblDescription.text = desc
+                
             }
+            
+            if data.cellHeight == 80.0 {
+                let attributedString = NSMutableAttributedString(string: data.title!)
+                
+                
+                // *** Create instance of `NSMutableParagraphStyle`
+                let paragraphStyle = NSMutableParagraphStyle()
+                
+                // *** set LineSpacing property in points ***
+                paragraphStyle.lineSpacing = 15 // Whatever line spacing you want in points
+                paragraphStyle.lineBreakMode = .byWordWrapping
+                cell.lblTitle.numberOfLines = 0;
+                // *** Apply attribute to string ***
+                attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+                
+                // *** Set Attributed String to your label ***
+                cell.lblTitle.attributedText = attributedString;
+                
+            } else {
+                cell.lblTitle.text = data.title
+            }
+            
             return cell
         }
         else {
@@ -242,7 +264,7 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         }
         
     }
-
+    
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return heightForHeaderInSection
@@ -282,7 +304,12 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return !self.findParent(indexPath.row).isParentCell ? 40 : 48.0
+        let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
+        if !isParentCell {
+            let cell = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            return cell.cellHeight
+        }
+        return 48.0
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

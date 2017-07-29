@@ -31,7 +31,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-nB-uvS">
                                     <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-TF-6pR">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="JmJ-TF-6pR">
                                             <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                         </imageView>
                                     </subviews>
@@ -49,7 +49,7 @@
                                         <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkM-vA-W2D">
                                             <rect key="frame" x="0.0" y="0.0" width="512" height="183.5"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4M0-bJ-hBp">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="4M0-bJ-hBp">
                                                     <rect key="frame" x="0.0" y="0.0" width="512" height="183.5"/>
                                                 </imageView>
                                             </subviews>
@@ -64,7 +64,7 @@
                                         <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-WC-J8l">
                                             <rect key="frame" x="0.0" y="183.5" width="256" height="183"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="llK-dV-gwY">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="llK-dV-gwY">
                                                     <rect key="frame" x="0.0" y="0.0" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
@@ -76,10 +76,10 @@
                                                 <constraint firstItem="llK-dV-gwY" firstAttribute="top" secondItem="OgI-WC-J8l" secondAttribute="top" id="vgU-EA-SkW"/>
                                             </constraints>
                                         </view>
-                                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-zL-LNJ">
+                                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-zL-LNJ">
                                             <rect key="frame" x="256" y="183.5" width="256" height="183"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-y0-ijP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-y0-ijP">
                                                     <rect key="frame" x="0.0" y="0.0" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
@@ -119,8 +119,8 @@
                                         <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmp-RT-6iM">
                                             <rect key="frame" x="256" y="183.5" width="256" height="183"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RC3004.png" translatesAutoresizingMaskIntoConstraints="NO" id="s93-h6-AtE">
-                                                    <rect key="frame" x="0.0" y="-0.5" width="256" height="183"/>
+                                                <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="s93-h6-AtE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="183"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -131,10 +131,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="s93-h6-AtE" secondAttribute="bottom" id="yMZ-mr-nju"/>
                                             </constraints>
                                         </view>
-                                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-0F-Ql8">
+                                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-0F-Ql8">
                                             <rect key="frame" x="0.0" y="0.0" width="256" height="366.5"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wFQ-nX-f8i">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="wFQ-nX-f8i">
                                                     <rect key="frame" x="0.0" y="0.0" width="256" height="366.5"/>
                                                 </imageView>
                                             </subviews>
@@ -178,10 +178,10 @@
                                         <constraint firstAttribute="trailing" secondItem="Of7-li-lpc" secondAttribute="trailing" id="z6Z-0H-nTf"/>
                                     </constraints>
                                 </view>
-                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-QQ-BsB">
+                                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-QQ-BsB">
                                     <rect key="frame" x="512" y="0.0" width="512" height="366.5"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yjC-vs-q5N">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjC-vs-q5N">
                                             <rect key="frame" x="0.0" y="0.0" width="512" height="366.5"/>
                                         </imageView>
                                     </subviews>
@@ -240,14 +240,14 @@
         </view>
     </objects>
     <resources>
-        <image name="1.jpg" width="1024" height="650"/>
+        <image name="1.png" width="824" height="550"/>
         <image name="2.jpg" width="1024" height="650"/>
-        <image name="3.jpg" width="1024" height="325"/>
-        <image name="4.jpg" width="512" height="325"/>
-        <image name="5.jpg" width="512" height="325"/>
-        <image name="6.jpg" width="512" height="650"/>
+        <image name="3.png" width="706" height="550"/>
+        <image name="4.png" width="621" height="550"/>
+        <image name="5.png" width="781" height="550"/>
+        <image name="6.png" width="824" height="550"/>
         <image name="7.jpg" width="512" height="325"/>
-        <image name="RC3004.png" width="683" height="325"/>
+        <image name="8.jpg" width="512" height="325"/>
         <image name="sub-header" width="2048" height="80"/>
     </resources>
 </document>

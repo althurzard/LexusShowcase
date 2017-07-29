@@ -24,12 +24,12 @@ class PopupLibraryView: UIView {
     
     lazy var dataSourceImages: [UIImage] = {
         var images: [UIImage] = []
-        images.append(UIImage(named: "1.jpg")!)
+        images.append(UIImage(named: "1")!)
         images.append(UIImage(named: "2.jpg")!)
-        images.append(UIImage(named: "3.jpg")!)
-        images.append(UIImage(named: "4.jpg")!)
-        images.append(UIImage(named: "5.jpg")!)
-        images.append(UIImage(named: "6.jpg")!)
+        images.append(UIImage(named: "3")!)
+        images.append(UIImage(named: "4")!)
+        images.append(UIImage(named: "5")!)
+        images.append(UIImage(named: "6")!)
         images.append(UIImage(named: "7.jpg")!)
         images.append(UIImage(named: "8.jpg")!)
         return images

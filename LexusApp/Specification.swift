@@ -11,10 +11,11 @@ import UIKit
 open class Specification {
     var title: String?
     var description: String?
-    static let cellHeight: CGFloat = 50.0
+    var cellHeight: CGFloat!
     
-    init(title: String?, description: String? = nil) {
+    init(title: String?, description: String? = nil, cellHeight: CGFloat = 40.0) {
         self.title = title
         self.description = description
+        self.cellHeight = cellHeight
     }
 }

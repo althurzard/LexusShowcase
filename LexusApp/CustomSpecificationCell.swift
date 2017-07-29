@@ -67,8 +67,8 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Dung tích bình xăng", description: "66L"),
             ], title: "KÍCH THƯỚC")
         let item4 = Parent(state: .collapsed, childs: [
-            Specification(title: "Vành hợp kim nhôm 235/45R18", description: " "),
-            Specification(title: "Lốp tạm thời", description: " ")
+            Specification(title: "Vành hợp kim nhôm 235/45R18"),
+            Specification(title: "Lốp tạm thời")
             ], title: "VÀNH VÀ LỐP")
         
         
@@ -86,66 +86,66 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
     
     func setupRightView() {
         let item1 = Parent(state: .collapsed, childs: [
-            Specification(title: "Hệ thống chống bó cứng phanh đa địa hình (Multi-terrain ABS)", description: " "),
-            Specification(title: "Hỗ trợ lực phanh (BA)", description: " "),
-            Specification(title: "Hệ thống phân phối lực phanh điện tử (EBD)", description: " "),
-            Specification(title: "Hệ thống ổn định thân xe (VSC)", description: " "),
-            Specification(title: "Hệ thống kiểm soat lực bám đường (TRAC)", description: " "),
-            Specification(title: "Hệ thống hỗ trợ khởi hành ngang dốc (HAS)", description: " "),
-            Specification(title: "Hệ thống quản lý động lực học tích hợp (VDIM)", description: " "),
-            Specification(title: "Hệ thống điều khiển hành trình", description: " "),
+            Specification(title: "Hệ thống chống bó cứng phanh đa địa hình (Multi-terrain ABS)"),
+            Specification(title: "Hỗ trợ lực phanh (BA)"),
+            Specification(title: "Hệ thống phân phối lực phanh điện tử (EBD)"),
+            Specification(title: "Hệ thống ổn định thân xe (VSC)"),
+            Specification(title: "Hệ thống kiểm soat lực bám đường (TRAC)"),
+            Specification(title: "Hệ thống hỗ trợ khởi hành ngang dốc (HAS)"),
+            Specification(title: "Hệ thống quản lý động lực học tích hợp (VDIM)"),
+            Specification(title: "Hệ thống điều khiển hành trình"),
             Specification(title: "Hệ thống 8 túi khí"),
-            Specification(title: "Túi khí phía trước cho ghế lái & ghế phụ (2)", description: " "),
-            Specification(title: "Túi khí đầu gối hàng ghế trước (2)", description: " "),
-            Specification(title: "Túi khí bên hàng ghế trước (2)", description: " "),
-            Specification(title: "Dây đai an toàn với Chức năng căng đai khẩn cấp hàng ghế trước và sau; Bộ hạn chế tì lực vai hàng ghế trước ", description: " "),
-            Specification(title: "Camera lùi", description: " "),
-            Specification(title: "Cảm biến quanh xe (Trước: 4, Sau: 4)", description: " "),
-            Specification(title: "Hệ thống cảnh báo điểm mù (BSM)", description: " "),
-            Specification(title: "Hệ thống cảnh báo va chạm khi lùi (RCTA)", description: " "),
-            Specification(title: "Tính năng mui xe an toàn", description: " ")
+            Specification(title: "Túi khí phía trước cho ghế lái & ghế phụ (2)"),
+            Specification(title: "Túi khí đầu gối hàng ghế trước (2)"),
+            Specification(title: "Túi khí bên hàng ghế trước (2)"),
+            Specification(title: "Dây đai an toàn với Chức năng căng đai khẩn cấp hàng ghế trước và sau; Bộ hạn chế tì lực vai hàng ghế trước ", cellHeight: 80.0),
+            Specification(title: "Camera lùi"),
+            Specification(title: "Cảm biến quanh xe (Trước: 4, Sau: 4)"),
+            Specification(title: "Hệ thống cảnh báo điểm mù (BSM)"),
+            Specification(title: "Hệ thống cảnh báo va chạm khi lùi (RCTA)"),
+            Specification(title: "Tính năng mui xe an toàn")
             ], title: "AN TOÀN VÀ NHANH")
         let item2 = Parent(state: .collapsed, childs: [
-            Specification(title: "Đèn pha 3 bóng LED", description: " "),
-            Specification(title: "Đèn chiếu sáng ban ngày LED", description: " "),
-            Specification(title: "Rửa đèn pha", description: " "),
-            Specification(title: "Đèn sương mù phía trước LED", description: " "),
-            Specification(title: "Đèn sương mù phía sau", description: " "),
-            Specification(title: "Cụm đèn sau LED", description: " "),
-            Specification(title: "Đèn phanh trên cao LED", description: " "),
-            Specification(title: "Gương chiếu hậu ngoài có chức năng gập điện, mặt gương điều chỉnh tự động, sấy gương, nhớ vị trí, mặt gương chống chói, tích hợp đèn báo rẽ", description: " "),
-            Specification(title: "Cửa kính điều chỉnh điện lên/xuống với chức năng chống kẹt (lên/xuống)", description: " "),
-            Specification(title: "Kính chắn gió và kính cửa sổ phía trước cách âm", description: " "),
-            Specification(title: "Cửa sổ trời điều chỉnh điện nghiêng/trượt, một chạm đóng/mở, chống kẹt", description: " "),
-            Specification(title: "Cốp sau mở bằng điện", description: " "),
-            Specification(title: "Nắp bình nhiên liệu mở bằng điện", description: " "),
-            Specification(title: "Ống xả đôi", description: " ")
+            Specification(title: "Đèn pha 3 bóng LED"),
+            Specification(title: "Đèn chiếu sáng ban ngày LED"),
+            Specification(title: "Rửa đèn pha"),
+            Specification(title: "Đèn sương mù phía trước LED"),
+            Specification(title: "Đèn sương mù phía sau"),
+            Specification(title: "Cụm đèn sau LED"),
+            Specification(title: "Đèn phanh trên cao LED"),
+            Specification(title: "Gương chiếu hậu ngoài có chức năng gập điện, mặt gương điều chỉnh tự động, sấy gương, nhớ vị trí, mặt gương chống chói, tích hợp đèn báo rẽ", cellHeight: 80.0),
+            Specification(title: "Cửa kính điều chỉnh điện lên/xuống với chức năng chống kẹt (lên/xuống)", cellHeight: 80.0),
+            Specification(title: "Kính chắn gió và kính cửa sổ phía trước cách âm"),
+            Specification(title: "Cửa sổ trời điều chỉnh điện nghiêng/trượt, một chạm đóng/mở, chống kẹt", cellHeight: 80.0),
+            Specification(title: "Cốp sau mở bằng điện"),
+            Specification(title: "Nắp bình nhiên liệu mở bằng điện"),
+            Specification(title: "Ống xả đôi")
             ], title: "NGOẠI THẤT")
         let item3 = Parent(state: .collapsed, childs: [
-            Specification(title: "Gương chiếu hậu bên trong tự động điều chỉnh ngày và đêm, mặt gương chống chói", description: " "),
-            Specification(title: "Trục lái điều chỉnh điện với chức năng nhớ vị trí", description: " "),
-            Specification(title: "Lẫy chuyển số trên vô lăng", description: " "),
-            Specification(title: "Màn hình hiển thị đa thông tin", description: " "),
-            Specification(title: "Cần số bọc da", description: " "),
-            Specification(title: "Ốp gỗ và da cho cánh cửa, bảng táp lô, vô lăng", description: " "),
-            Specification(title: "Hệ thống mở cửa và khởi động thông minh", description: " "),
-            Specification(title: "Chìa khóa dạng thẻ", description: " "),
+            Specification(title: "Gương chiếu hậu bên trong tự động điều chỉnh ngày và đêm, mặt gương chống chói", cellHeight: 80.0),
+            Specification(title: "Trục lái điều chỉnh điện với chức năng nhớ vị trí"),
+            Specification(title: "Lẫy chuyển số trên vô lăng"),
+            Specification(title: "Màn hình hiển thị đa thông tin"),
+            Specification(title: "Cần số bọc da"),
+            Specification(title: "Ốp gỗ và da cho cánh cửa, bảng táp lô, vô lăng"),
+            Specification(title: "Hệ thống mở cửa và khởi động thông minh"),
+            Specification(title: "Chìa khóa dạng thẻ"),
             ], title: "NỘI THẤT")
         let item4 = Parent(state: .collapsed, childs: [
-            Specification(title: "Chất liệu ghế da cao cấp", description: " "),
-            Specification(title: "Ghế lái điều chỉnh điện 10 hướng, hỗ trợ tựa lưng ghế, với chức năng nhớ vị trí", description: " "),
-            Specification(title: "Ghế hành khách phía trước điều chỉnh điện 8 hướng", description: " "),
-            Specification(title: "Làm mát ghế (Ghế lái và ghế phụ)", description: " ")
+            Specification(title: "Chất liệu ghế da cao cấp"),
+            Specification(title: "Ghế lái điều chỉnh điện 10 hướng, hỗ trợ tựa lưng ghế, với chức năng nhớ vị trí", cellHeight: 80.0),
+            Specification(title: "Ghế hành khách phía trước điều chỉnh điện 8 hướng"),
+            Specification(title: "Làm mát ghế (Ghế lái và ghế phụ)")
             ], title: "GHẾ")
         let item5 = Parent(state: .collapsed, childs: [
-            Specification(title: "Hệ thống điều hòa tự động 2 vùng độc lập", description: " "),
-            Specification(title: "Tự động điều chỉnh lấy gió", description: " ")
+            Specification(title: "Hệ thống điều hòa tự động 2 vùng độc lập"),
+            Specification(title: "Tự động điều chỉnh lấy gió")
             ], title: "HỆ THỐNG ĐIỀU HOÀ")
         let item6 = Parent(state: .collapsed, childs: [
-            Specification(title: "Hệ thống âm thanh Mark Levinson 17 loa", description: " "),
-            Specification(title: "Màn hình LCD 7 inch", description: " "),
-            Specification(title: "DVD, USB, AUX, Bluetooth", description: " "),
-            Specification(title: "2 ổ cắm điện 12V", description: " ")
+            Specification(title: "Hệ thống âm thanh Mark Levinson 17 loa"),
+            Specification(title: "Màn hình LCD 7 inch"),
+            Specification(title: "DVD, USB, AUX, Bluetooth"),
+            Specification(title: "2 ổ cắm điện 12V")
             ], title: "HỆ THỐNG GIẢI TRÍ")
         
         rightView.tableView.register(UINib(nibName: "ExpandableCell", bundle: nil), forCellReuseIdentifier: leftView.parentCellIdentifier)
