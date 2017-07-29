@@ -129,8 +129,11 @@ class AccordionView: UIView {
         case .expanded:
             self.collapseSubItemsAtIndex(index, parent: parent)
             let indexPath = IndexPath(row: index, section: 0)
-            self.tableView.cellForRow(at: indexPath)!.setHighlighted(false, animated: false)
-            self.tableView.reloadRows(at: [indexPath], with: .none)
+            if let cell = self.tableView.cellForRow(at: indexPath) {
+                cell.setHighlighted(false, animated: false)
+                self.tableView.reloadRows(at: [indexPath], with: .none)
+            }
+            
             self.lastCellExpanded = NoCellExpanded
             
         case .collapsed:
