@@ -68,11 +68,14 @@ class CustomLibraryView: UIView {
     }
     
     func startAnimation() {
-        topLeftView?.spruce.animate(animateToRight, duration: duration)
-        self.bottomRLeftView?.spruce.animate(self.animateToRight, duration: duration)
+        delay(delay: 0.1){
+            self.topLeftView?.spruce.animate(self.animateToRight, duration: self.duration)
+            self.bottomRLeftView?.spruce.animate(self.animateToRight, duration: self.duration)
+        }
         
         
-        delay(delay: 0.75) {
+        
+        delay(delay: 0.25) {
             let duration = self.duration - 0.5
             self.topRightView?.spruce.animate(self.animateToLeft, duration: duration)
             
