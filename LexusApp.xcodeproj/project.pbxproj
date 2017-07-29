@@ -84,6 +84,8 @@
 		222EB7191F2CF01300FE39D4 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7131F2CF01300FE39D4 /* 6.png */; };
 		222EB71A1F2CF01300FE39D4 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7141F2CF01300FE39D4 /* 4.png */; };
 		222EB71B1F2CF01300FE39D4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB7151F2CF01300FE39D4 /* 3.png */; };
+		222EB71E1F2D010500FE39D4 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB71D1F2D010500FE39D4 /* 7.png */; };
+		222EB7201F2D010C00FE39D4 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 222EB71F1F2D010C00FE39D4 /* 8.png */; };
 		224A1F8C1F1A766E008CDDB1 /* CustomOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */; };
 		224A1F8D1F1A766E008CDDB1 /* CustomOperationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */; };
 		22548F3C1F22516E007AE347 /* antoan.png in Resources */ = {isa = PBXBuildFile; fileRef = 22548F3B1F22516E007AE347 /* antoan.png */; };
@@ -119,8 +121,6 @@
 		22876BD31F1FD26400227DB2 /* tong-quan-thumb-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */; };
 		22876BD51F205D5D00227DB2 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22876BD41F205D5D00227DB2 /* UILabel.swift */; };
 		22876BE01F20658400227DB2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BD81F20658400227DB2 /* 2.jpg */; };
-		22876BE51F20658400227DB2 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDD1F20658400227DB2 /* 7.jpg */; };
-		22876BE61F20658400227DB2 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22876BDE1F20658400227DB2 /* 8.jpg */; };
 		22FB427F1F289E23005FAD5C /* IMG_6496.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 22FB427E1F289E23005FAD5C /* IMG_6496.PNG */; };
 		22FB42811F28A694005FAD5C /* RC-turbo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FB42801F28A694005FAD5C /* RC-turbo.png */; };
 		9310EE949F8DC88F60B59628 /* Pods_LexusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC09DA38CFA140C976DEBE89 /* Pods_LexusApp.framework */; };
@@ -206,6 +206,8 @@
 		222EB7131F2CF01300FE39D4 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		222EB7141F2CF01300FE39D4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		222EB7151F2CF01300FE39D4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		222EB71D1F2D010500FE39D4 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		222EB71F1F2D010C00FE39D4 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		224A1F8A1F1A766E008CDDB1 /* CustomOperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperationCell.swift; sourceTree = "<group>"; };
 		224A1F8B1F1A766E008CDDB1 /* CustomOperationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOperationCell.xib; sourceTree = "<group>"; };
 		22548F3B1F22516E007AE347 /* antoan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = antoan.png; path = "../RC Turbo/An Toan/antoan.png"; sourceTree = "<group>"; };
@@ -241,8 +243,6 @@
 		22876BD11F1FD26400227DB2 /* tong-quan-thumb-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tong-quan-thumb-1.png"; path = "RC Turbo/tong-quan-thumb-1.png"; sourceTree = "<group>"; };
 		22876BD41F205D5D00227DB2 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		22876BD81F20658400227DB2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = "RC Turbo/Thu Vien/2.jpg"; sourceTree = "<group>"; };
-		22876BDD1F20658400227DB2 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "RC Turbo/Thu Vien/7.jpg"; sourceTree = "<group>"; };
-		22876BDE1F20658400227DB2 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = "RC Turbo/Thu Vien/8.jpg"; sourceTree = "<group>"; };
 		22FB427E1F289E23005FAD5C /* IMG_6496.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6496.PNG; sourceTree = "<group>"; };
 		22FB42801F28A694005FAD5C /* RC-turbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RC-turbo.png"; sourceTree = "<group>"; };
 		3C5E56AED86B6501C55E1A8D /* Pods-LexusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LexusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -604,12 +604,12 @@
 			children = (
 				222EB7111F2CF01300FE39D4 /* 5.png */,
 				222EB7121F2CF01300FE39D4 /* 1.png */,
+				222EB71D1F2D010500FE39D4 /* 7.png */,
 				222EB7131F2CF01300FE39D4 /* 6.png */,
 				222EB7141F2CF01300FE39D4 /* 4.png */,
 				222EB7151F2CF01300FE39D4 /* 3.png */,
+				222EB71F1F2D010C00FE39D4 /* 8.png */,
 				22876BD81F20658400227DB2 /* 2.jpg */,
-				22876BDD1F20658400227DB2 /* 7.jpg */,
-				22876BDE1F20658400227DB2 /* 8.jpg */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -688,7 +688,6 @@
 				04A9BD271F0605F60032BDBC /* Do--Radiant-Red-CL.-(3T5).png in Resources */,
 				04A9BD401F0605F60032BDBC /* rc-safety-popuphood.jpg in Resources */,
 				04A9BD551F060E360032BDBC /* NOBD____.TTF in Resources */,
-				22876BE51F20658400227DB2 /* 7.jpg in Resources */,
 				04A9BD291F0605F60032BDBC /* Big-Image-2-(1000x560).png in Resources */,
 				22876B7E1F1CFFC400227DB2 /* CustomLibraryView.xib in Resources */,
 				04A9BD3A1F0605F60032BDBC /* rc-performance-powerful-braking.jpg in Resources */,
@@ -724,6 +723,7 @@
 				04A9BD391F0605F60032BDBC /* rc-performance-aerodynamics.jpg in Resources */,
 				04F40A7A1F07675500D38D4D /* CustomSpecificationCell.xib in Resources */,
 				04A9BD591F060E360032BDBC /* NobelVnu-Light.ttf in Resources */,
+				222EB7201F2D010C00FE39D4 /* 8.png in Resources */,
 				222EB7191F2CF01300FE39D4 /* 6.png in Resources */,
 				04A9BD421F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png in Resources */,
 				04A9BD381F0605F60032BDBC /* DRIVE-MODE-SELECT.png in Resources */,
@@ -733,7 +733,6 @@
 				04A9BD581F060E360032BDBC /* NobelVnu-Book.ttf in Resources */,
 				04A9BCF01F05FB5F0032BDBC /* CustomHeader.xib in Resources */,
 				22876B8F1F1D1B4700227DB2 /* CustomFooterView.xib in Resources */,
-				22876BE61F20658400227DB2 /* 8.jpg in Resources */,
 				04A9BD2F1F0605F60032BDBC /* 3-eye-LED-headlamps.png in Resources */,
 				04A9BCF81F0605220032BDBC /* CustomColorPickerCell.xib in Resources */,
 				04A9BD5D1F060E360032BDBC /* NOBL____.TTF in Resources */,
@@ -773,6 +772,7 @@
 				22876BB61F1E42D700227DB2 /* ColorPickerView.xib in Resources */,
 				04A9BD3D1F0605F60032BDBC /* rc350-performance-tuned-exhaust.jpg in Resources */,
 				22876BD21F1FD26400227DB2 /* tong-quan-thum-2.png in Resources */,
+				222EB71E1F2D010500FE39D4 /* 7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

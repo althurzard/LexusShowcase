@@ -30,8 +30,8 @@ class PopupLibraryView: UIView {
         images.append(UIImage(named: "4")!)
         images.append(UIImage(named: "5")!)
         images.append(UIImage(named: "6")!)
-        images.append(UIImage(named: "7.jpg")!)
-        images.append(UIImage(named: "8.jpg")!)
+        images.append(UIImage(named: "7")!)
+        images.append(UIImage(named: "8")!)
         return images
     }()
     
