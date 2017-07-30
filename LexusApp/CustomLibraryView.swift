@@ -75,7 +75,7 @@ class CustomLibraryView: UIView {
         
         
         
-        delay(delay: 0.25) {
+        delay(delay: 1.5) {
             let duration = self.duration - 0.5
             self.topRightView?.spruce.animate(self.animateToLeft, duration: duration)
             
