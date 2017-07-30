@@ -231,6 +231,7 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
         if !isParentCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath) as! DetailSpecificationCell
             let data = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            cell.lblDescription.text = ""
             if let desc = data.description {
                 cell.lblDescription.text = desc
                 
@@ -256,6 +257,16 @@ extension AccordionView: UITableViewDelegate,UITableViewDataSource {
             } else {
                 cell.lblTitle.text = data.title
             }
+            
+            if let font = data.font {
+                cell.lblTitle.font = UIFont(name: font, size: 18);
+                cell.lblTitle.textColor = .black
+                
+            } else {
+                cell.lblTitle.font = UIFont(name: "NobelVnu-Book", size: 18);
+                cell.lblTitle.textColor = UIColor(red: 54/255, green: 52/255, blue: 54/255, alpha: 1.0)
+            }
+            
             
             return cell
         }

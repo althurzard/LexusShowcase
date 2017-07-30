@@ -32,12 +32,12 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Loại động cơ", description: "I4 16 van trục cam kép, Turbo tăng áp"),
             Specification(title: "Dung tích xy lanh", description: "1.998 cc"),
             Specification(title: "Công suất tối đa", description: "241 Hp /5.800 Rpm"),
-            Specification(title: "Momen xoắn cực đại", description: "350 Nm /1.650-4.400 Rpm"),
+            Specification(title: "Mômen xoắn cực đại", description: "350 Nm /1.650-4.400 Rpm"),
             Specification(title: "Hệ dẫn động", description: "Dẫn động cầu sau"),
             Specification(title: "Hộp số", description: "Hộp số tự động 8 cấp thể thao"),
             Specification(title: "Vận tốc tối đa", description: "230 km/h"),
             Specification(title: "Khả năng tăng tốc", description: "7,5 giây (0 - 100 km/h)"),
-            Specification(title: "Mức tiêu hao nhiên liệu"),
+            Specification(title: "Mức tiêu hao nhiên liệu", font: "NobelVnu-Bold"),
             Specification(title: "Chu trình tổ hợp", description: "8,0L/100km"),
             Specification(title: "Chu trình đô thị cơ bản", description: "11,2L/100 km"),
             Specification(title: "Chu trình đô thị phụ", description: "6,1L/100km"),
@@ -46,22 +46,23 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
         
         let item2 = Parent(state: .collapsed, childs: [
             Specification(title: "Trước", description: "Đĩa thông gió 334mm"),
-            Specification(title: "Sau", description: "Đĩa thông gió 330mm"),
-            Specification(title: "Hệ thống treo"),
+            Specification(title: "Sau", description: "Đĩa thông gió 310mm"),
+            Specification(title: "Hệ thống treo", font: "NobelVnu-Bold"),
             Specification(title: "Trước", description: "Tay đòn kép"),
             Specification(title: "Sau", description: "Đĩa liên kết"),
-            Specification(title: "Hệ thống lái", description: "Trợ lực điện"),
-            Specification(title: "Vận tốc tối đa", description: "230 km/h"),
+            Specification(title: "Hệ thống lái", description: "Trợ lực điện")
             ], title: "KHUNG GẦM")
         let item3 = Parent(state: .collapsed, childs: [
-            Specification(title: "Tổng thể"),
+            Specification(title: "Tổng thể", font: "NobelVnu-Bold"),
             Specification(title: "Chiều dài", description: "4.695 mm"),
             Specification(title: "Chiều rộng", description: "1.840 mm"),
             Specification(title: "Chiều cao", description: "1.395 mm"),
             Specification(title: "Chiều dài cơ sở", description: "2.730 mm"),
-            Specification(title: "Vệt bánh xe"),
+            Specification(title: "Vệt bánh xe", font: "NobelVnu-Bold"),
+            Specification(title: "Trước", description: "1.580 mm"),
+            Specification(title: "Sau", description: "1.600 mm"),
             Specification(title: "Bán kính vòng quay tối thiểu (Lốp)", description: "5,2 m"),
-            Specification(title: "Trọng lượng"),
+            Specification(title: "Trọng lượng", font: "NobelVnu-Bold"),
             Specification(title: "Trọng lượng không tải", description: "1.675 - 1.725 kg"),
             Specification(title: "Trọng lượng toàn tải", description: "2.170 kg"),
             Specification(title: "Dung tích bình xăng", description: "66L"),
@@ -85,7 +86,7 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
     }
     
     func setupRightView() {
-        let item1 = Parent(state: .collapsed, childs: [
+        let item6 = Parent(state: .collapsed, childs: [
             Specification(title: "Hệ thống chống bó cứng phanh đa địa hình (Multi-terrain ABS)"),
             Specification(title: "Hỗ trợ lực phanh (BA)"),
             Specification(title: "Hệ thống phân phối lực phanh điện tử (EBD)"),
@@ -94,18 +95,19 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Hệ thống hỗ trợ khởi hành ngang dốc (HAS)"),
             Specification(title: "Hệ thống quản lý động lực học tích hợp (VDIM)"),
             Specification(title: "Hệ thống điều khiển hành trình"),
-            Specification(title: "Hệ thống 8 túi khí"),
+            Specification(title: "Hệ thống 8 túi khí", font:"NobelVnu-Bold"),
             Specification(title: "Túi khí phía trước cho ghế lái & ghế phụ (2)"),
             Specification(title: "Túi khí đầu gối hàng ghế trước (2)"),
             Specification(title: "Túi khí bên hàng ghế trước (2)"),
+            Specification(title: "Túi khí rèm 2 bên hàng ghế trước & sau (2)"),
             Specification(title: "Dây đai an toàn với Chức năng căng đai khẩn cấp hàng ghế trước và sau; Bộ hạn chế tì lực vai hàng ghế trước ", cellHeight: 80.0),
             Specification(title: "Camera lùi"),
             Specification(title: "Cảm biến quanh xe (Trước: 4, Sau: 4)"),
             Specification(title: "Hệ thống cảnh báo điểm mù (BSM)"),
             Specification(title: "Hệ thống cảnh báo va chạm khi lùi (RCTA)"),
             Specification(title: "Tính năng mui xe an toàn")
-            ], title: "AN TOÀN VÀ NHANH")
-        let item2 = Parent(state: .collapsed, childs: [
+            ], title: "AN TOÀN VÀ AN NINH")
+        let item1 = Parent(state: .collapsed, childs: [
             Specification(title: "Đèn pha 3 bóng LED"),
             Specification(title: "Đèn chiếu sáng ban ngày LED"),
             Specification(title: "Rửa đèn pha"),
@@ -121,7 +123,7 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Nắp bình nhiên liệu mở bằng điện"),
             Specification(title: "Ống xả đôi")
             ], title: "NGOẠI THẤT")
-        let item3 = Parent(state: .collapsed, childs: [
+        let item2 = Parent(state: .collapsed, childs: [
             Specification(title: "Gương chiếu hậu bên trong tự động điều chỉnh ngày và đêm, mặt gương chống chói", cellHeight: 80.0),
             Specification(title: "Trục lái điều chỉnh điện với chức năng nhớ vị trí"),
             Specification(title: "Lẫy chuyển số trên vô lăng"),
@@ -131,17 +133,17 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Hệ thống mở cửa và khởi động thông minh"),
             Specification(title: "Chìa khóa dạng thẻ"),
             ], title: "NỘI THẤT")
-        let item4 = Parent(state: .collapsed, childs: [
+        let item3 = Parent(state: .collapsed, childs: [
             Specification(title: "Chất liệu ghế da cao cấp"),
             Specification(title: "Ghế lái điều chỉnh điện 10 hướng, hỗ trợ tựa lưng ghế, với chức năng nhớ vị trí", cellHeight: 80.0),
             Specification(title: "Ghế hành khách phía trước điều chỉnh điện 8 hướng"),
             Specification(title: "Làm mát ghế (Ghế lái và ghế phụ)")
             ], title: "GHẾ")
-        let item5 = Parent(state: .collapsed, childs: [
+        let item4 = Parent(state: .collapsed, childs: [
             Specification(title: "Hệ thống điều hòa tự động 2 vùng độc lập"),
             Specification(title: "Tự động điều chỉnh lấy gió")
             ], title: "HỆ THỐNG ĐIỀU HOÀ")
-        let item6 = Parent(state: .collapsed, childs: [
+        let item5 = Parent(state: .collapsed, childs: [
             Specification(title: "Hệ thống âm thanh Mark Levinson 17 loa"),
             Specification(title: "Màn hình LCD 7 inch"),
             Specification(title: "DVD, USB, AUX, Bluetooth"),
