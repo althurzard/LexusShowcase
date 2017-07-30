@@ -31,15 +31,15 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
         let item1 = Parent(state: .collapsed, childs: [
             Specification(title: "Loại động cơ", description: "I4 16 van trục cam kép, Turbo tăng áp"),
             Specification(title: "Dung tích xy lanh", description: "1.998 cc"),
-            Specification(title: "Công suất tối đa", description: "241 hp/5.800 rpm"),
-            Specification(title: "Momen xoắn cực đại", description: "350Nm/1.650-4.400rpm"),
+            Specification(title: "Công suất tối đa", description: "241 Hp /5.800 Rpm"),
+            Specification(title: "Momen xoắn cực đại", description: "350 Nm /1.650-4.400 Rpm"),
             Specification(title: "Hệ dẫn động", description: "Dẫn động cầu sau"),
             Specification(title: "Hộp số", description: "Hộp số tự động 8 cấp thể thao"),
-            Specification(title: "Vận tốc tối đa", description: "230km/h"),
+            Specification(title: "Vận tốc tối đa", description: "230 km/h"),
             Specification(title: "Khả năng tăng tốc", description: "7,5 giây (0 - 100 km/h)"),
             Specification(title: "Mức tiêu hao nhiên liệu"),
             Specification(title: "Chu trình tổ hợp", description: "8,0L/100km"),
-            Specification(title: "Chu trình đô thị cơ bản", description: "11,2L/100km"),
+            Specification(title: "Chu trình đô thị cơ bản", description: "11,2L/100 km"),
             Specification(title: "Chu trình đô thị phụ", description: "6,1L/100km"),
             Specification(title: "Tiêu chuẩn khí thải", description: "Euro 4")
             ], title: "VẬN HÀNH VÀ HỆ DẪN ĐỘNG")
@@ -51,7 +51,7 @@ class CustomSpecificationCell: Cell<Bool>, CellType {
             Specification(title: "Trước", description: "Tay đòn kép"),
             Specification(title: "Sau", description: "Đĩa liên kết"),
             Specification(title: "Hệ thống lái", description: "Trợ lực điện"),
-            Specification(title: "Vận tốc tối đa", description: "230km/h"),
+            Specification(title: "Vận tốc tối đa", description: "230 km/h"),
             ], title: "KHUNG GẦM")
         let item3 = Parent(state: .collapsed, childs: [
             Specification(title: "Tổng thể"),
