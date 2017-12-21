@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E283A7DC50AC6F78769FF3EA5A8BE6EC'
+               BlueprintIdentifier = '4677EB20C5C03032E4853A76C1F2D97D'
                BlueprintName = 'YNExpandableCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'YNExpandableCell.framework'>

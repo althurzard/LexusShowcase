@@ -5,7 +5,7 @@ use_frameworks!
 
 
 target ‘LexusApp’ do
-    pod 'Eureka'
+    pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift3_2'
     pod "Spruce"
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
     pod 'YNExpandableCell'

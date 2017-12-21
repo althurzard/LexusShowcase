@@ -175,20 +175,20 @@
 		04A9BD1E1F0605F60032BDBC /* rc-safety-popuphood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc-safety-popuphood.jpg"; sourceTree = "<group>"; };
 		04A9BD1F1F0605F60032BDBC /* rc350-safety-blindspot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rc350-safety-blindspot.jpg"; sourceTree = "<group>"; };
 		04A9BD201F0605F60032BDBC /* RCTA-(Rear-Cross-Traffic-Alert).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RCTA-(Rear-Cross-Traffic-Alert).png"; sourceTree = "<group>"; };
-		04A9BD461F060E360032BDBC /* NOBD____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBD____.TTF"; sourceTree = "<group>"; };
-		04A9BD471F060E360032BDBC /* NOBDI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBDI___.TTF"; sourceTree = "<group>"; };
+		04A9BD461F060E360032BDBC /* NOBD____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBD____.TTF; sourceTree = "<group>"; };
+		04A9BD471F060E360032BDBC /* NOBDI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBDI___.TTF; sourceTree = "<group>"; };
 		04A9BD481F060E360032BDBC /* NobelVnu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Bold.ttf"; sourceTree = "<group>"; };
 		04A9BD491F060E360032BDBC /* NobelVnu-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Book.ttf"; sourceTree = "<group>"; };
 		04A9BD4A1F060E360032BDBC /* NobelVnu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Light.ttf"; sourceTree = "<group>"; };
 		04A9BD4B1F060E360032BDBC /* NobelVnu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NobelVnu-Regular.ttf"; sourceTree = "<group>"; };
-		04A9BD4C1F060E360032BDBC /* NOBK____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBK____.TTF"; sourceTree = "<group>"; };
-		04A9BD4D1F060E360032BDBC /* NOBKI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBKI___.TTF"; sourceTree = "<group>"; };
-		04A9BD4E1F060E360032BDBC /* NOBL____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBL____.TTF"; sourceTree = "<group>"; };
-		04A9BD4F1F060E360032BDBC /* NOBLI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOBLI___.TTF"; sourceTree = "<group>"; };
-		04A9BD501F060E360032BDBC /* NOLT____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOLT____.TTF"; sourceTree = "<group>"; };
-		04A9BD511F060E360032BDBC /* NOLTI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOLTI___.TTF"; sourceTree = "<group>"; };
-		04A9BD521F060E360032BDBC /* NOR_____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NOR_____.TTF"; sourceTree = "<group>"; };
-		04A9BD531F060E360032BDBC /* NORI____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NORI____.TTF"; sourceTree = "<group>"; };
+		04A9BD4C1F060E360032BDBC /* NOBK____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBK____.TTF; sourceTree = "<group>"; };
+		04A9BD4D1F060E360032BDBC /* NOBKI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBKI___.TTF; sourceTree = "<group>"; };
+		04A9BD4E1F060E360032BDBC /* NOBL____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBL____.TTF; sourceTree = "<group>"; };
+		04A9BD4F1F060E360032BDBC /* NOBLI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOBLI___.TTF; sourceTree = "<group>"; };
+		04A9BD501F060E360032BDBC /* NOLT____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOLT____.TTF; sourceTree = "<group>"; };
+		04A9BD511F060E360032BDBC /* NOLTI___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOLTI___.TTF; sourceTree = "<group>"; };
+		04A9BD521F060E360032BDBC /* NOR_____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NOR_____.TTF; sourceTree = "<group>"; };
+		04A9BD531F060E360032BDBC /* NORI____.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NORI____.TTF; sourceTree = "<group>"; };
 		04A9BD541F060E360032BDBC /* ufonts.com_nobel-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_nobel-bold.ttf"; sourceTree = "<group>"; };
 		04A9BD641F0655B80032BDBC /* CustomBodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBodyCell.swift; sourceTree = "<group>"; };
 		04A9BD651F0655B80032BDBC /* CustomBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomBodyCell.xib; sourceTree = "<group>"; };
@@ -800,13 +800,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LexusApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE8C73D8F437453D2C67B113 /* [CP] Embed Pods Frameworks */ = {
@@ -815,9 +818,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LexusApp/Pods-LexusApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/IncrementableLabel/IncrementableLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/Spruce/Spruce.framework",
+				"${BUILT_PRODUCTS_DIR}/SquareMosaicLayout/SquareMosaicLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/YNExpandableCell/YNExpandableCell.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IncrementableLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spruce.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareMosaicLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNExpandableCell.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
